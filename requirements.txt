@@ -1,0 +1,10 @@
+flask
+flask-sqlalchemy
+flask-security
+Flask-WTF
+email-validator
+mysqlclient
+flask-marshmallow
+bcrypt
+pytz
+WTForms
