@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<h1 class="text-center" style="color: #f4640a">Inventario</h1>
+<br>
+<div class="contenedor-principal-inv">
+
+    <div class="contenedor-form-inv">
+        <h3 class="titulo-h3">Registro de materia prima</h3>
+        <hr style="border: none; height: 2px; background-color: #000;">
+        <div class="row text-start">
+            <div class="col">
+                <label class="form-label">ID inventario: </label>
+                <input class="form-control form-control-sm" type="text" name="idInv" disabled>
+            </div>
+            <div class="col">
+                <label class="form-label">ID materia prima: </label>
+                <input class="form-control form-control-sm" type="text" name="idMPr" disabled>
+            </div>
+        </div>
+        <br>
+        <div class="row text-start">
+            <div class="col">
+                <label class="form-label">Proveedor: </label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected disabled>Seleccione un proveedor</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row text-start">
+            <div class="col-7">
+                <label class="form-label">Nombre de materia: </label>
+                <input class="form-control form-control-sm" type="text" name="idInv">
+            </div>
+            <div class="col-5">
+                <label class="form-label">Unidad de medida: </label>
+                <input class="form-control form-control-sm" type="text" name="idMPr">
+            </div>
+        </div>
+        <br>
+        <div class="row text-start">
+            <div class="col-6">
+                <label class="form-label">Cantidad minima: </label>
+                <input class="form-control form-control-sm" type="text" name="idInv">
+            </div>
+            <div class="col-6">
+                <label class="form-label">Precio compra: </label>
+                <input class="form-control form-control-sm" type="text" name="idMPr">
+            </div>
+        </div>
+        <div class="botones-inv">
+            <button class="btn btn-success" id="btn-registrar-inv"><i class="bi bi-bag-plus"></i> Registrar</button>        
+            <button class="btn btn-warning" id="btn-editar-inv"><i class="bi bi-pencil-square"></i> Editar</button>     
+            <button class="btn btn-danger" id="btn-cancelar-inv"><i class="bi bi-x-octagon"></i> Eliminar</button>
+        </div>
+
+    </div>
+    <div class="contenedor-table-inv">
+        <table id="tabla-inv">
+            <thead>
+                <tr>
+                    <th class="sticky">ID inventario</th>
+                    <th class="sticky">ID materia prima</th>
+                    <th class="sticky">Cantidad almacenada</th>
+                    <th class="sticky">Fecha de registro</th>
+                    <th class="sticky">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for inventario in inv %}
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button class="btn btn-light btn-sm">E</button></td>
+                    </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+      
+</div>
+
+{% endblock %}
