@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ejemplo de Autenticación con Flask</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,6 +35,21 @@
                                 Registro
                             </a>
                             {% endif %}
+
+                            {% if current_user.is_authenticated %}
+                            <a href="{{ url_for('main.obtenerProveedores') }}" class="navbar-item">
+                                Proveedores
+                            </a>
+                            {% endif %}
+
+                            {% if current_user.is_authenticated %}
+                            <a href="{{ url_for('main.obtenerUsuarios') }}" class="navbar-item">
+                                usuarios
+                            </a>
+                            {% endif %}
+
+
+
                             {% if current_user.is_authenticated %}
                             <a href="{{ url_for('auth.logout') }}" class="navbar-item">
                                 Cerrar Sesión

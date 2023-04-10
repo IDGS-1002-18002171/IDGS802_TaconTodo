@@ -20,7 +20,7 @@ def create_app(test_config=None):
     #Creamos la configuración de la aplicación
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = os.urandom(24)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:root@127.0.0.1/TaconTodo"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:1234@127.0.0.1/TaconTodo"
     app.config['SECURITY_PASSWORD_HASH'] = 'pbkdf2_sha512'
     app.config['SECURITY_PASSWORD_SALT'] = 'secretsalt'
 

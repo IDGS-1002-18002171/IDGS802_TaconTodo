@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Bienvenido</h1>
+<h2>A la seccion de usuarios</h2>
+
+<br>
+
+<form method="POST" action="/obtenerUsuarios">
+<button>Buscar</button>
+<input value="" name="filtro" type="text"/>
+</form>
+
+<br>
+
+<table style="border: 1px solid black">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>nombre</th>
+        <th>correo electronico</th>
+        <th>estatus</th>
+        <th>Revision</th>
+        <th>Eliminacion</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for usuarios in lista %}
+      <tr>
+        <td>{{usuarios.id}}</td>
+        <td>{{usuarios.name}}</td>
+        <td>{{usuarios.email}}</td>
+
+    {%if usuarios.active == 1 %}
+        <td>Activo</td>
+    
+    {%endif%}
+    {%if usuarios.active == 0 %}
+        <td>Inactivo</td>
+    
+    {%endif%}
+        
+        <td>
+            
+            <form action="/usuarioSeleccionado" method="post">
+                <input name="id" value="{{ usuarios.id }}" hidden>
+                <input name="name" value="{{ usuarios.name }}" hidden>
+                <input name="email" value="{{ usuarios.email }}" hidden>
+        
+                <button class="btn btn-warning" type="submit">Modificar</button>
+              </form>
+
+        </td>
+        <td>
+            
+            <form action="/eliminarUsuario" method="post">
+                <input name="id" value="{{ usuarios.id }}" hidden>
+        
+                <button class="btn btn-danger" type="submit">Eliminar</button>
+              </form>
+        </td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+  
+
+  <form method="POST" action="/guardarUsuario">
+  <h1>ID</h1>
+  <input value="{{id}}" name="id" type="text"/>
+  <br>
+  <h1>Nombre</h1>
+  <input value="{{name}}" name="name" type="text"/>
+  <br>
+  <h1>correo Electronico</h1>
+  <input value="{{email}}" name="email" type="text"/>
+  <br>
+  <br>
+
+  
+  <button>Guardar</button>
+  </form>
+
+
+
+
+{% endblock %}
