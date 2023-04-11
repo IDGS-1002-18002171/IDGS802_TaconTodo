@@ -10,13 +10,7 @@ user_roles=db.Table('user_roles',
     db.Column('roleId',db.Integer,db.ForeignKey('role.id'))
 )
 
-ventas_productos=db.Table('ventas_productos',
-    db.Column('id_venta',db.Integer,db.ForeignKey('Venta.id_venta')),
-    db.Column('id_producto',db.Integer,db.ForeignKey('Producto.id_producto')),
-    db.Column('cantidad',db.Integer, nullable=False)
-)
-
-pedidos_productos=db.Table('pedidos_productos',
+Pedidos_Productos=db.Table('Pedidos_Productos',
     db.Column('id_pedido',db.Integer,db.ForeignKey('Pedidos.id_pedido')),
     db.Column('id_producto',db.Integer,db.ForeignKey('Producto.id_producto')),
     db.Column('cantidad',db.Integer, nullable=False)

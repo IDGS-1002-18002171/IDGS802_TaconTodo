@@ -1,4 +1,4 @@
-from flask import Blueprint,render_template,redirect,url_for,request,flash
+from flask import Blueprint,render_template,redirect,url_for,request,flash,abort,session
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_security import login_required
 from flask_security.utils import login_user,logout_user,hash_password,encrypt_password
@@ -7,19 +7,29 @@ import logging
 from . import db,userDataStore
 from flask_login import current_user
 from datetime import datetime
+from flask_wtf.csrf import generate_csrf
+from flask_wtf.csrf import validate_csrf
+
+
 auth=Blueprint('auth', __name__,url_prefix='/security')
+
 
 
 @auth.route('/login')
 def login():
-    return render_template('/security/login.html')
+    csrf_token = generate_csrf()
+    return render_template('/security/login.html',csrf_token=csrf_token)
 
 @auth.route('/login', methods=['POST'])
 def login_post():
     email = request.form.get('email')
     password = request.form.get('password')
     remember = True if request.form.get('remember') else False
-
+    try:
+        validate_csrf(request.form.get('csrf_token'))
+    except ValidationError:
+        # El token CSRF no coincide, rechazar la solicitud
+        abort(403)
     #Consultamos si existe el usuario registrado con ese email
     user = User.query.filter_by(email=email).first()
     

@@ -1,10 +1,8 @@
-import os
-from flask import Flask
-from flask_login import LoginManager
+from flask import Flask, session
+from flask_login import LoginManager,current_user
 from flask_security import Security,SQLAlchemyUserDatastore
 from flask_sqlalchemy import SQLAlchemy
-import logging
-from flask_login import current_user
+import json,os,stripe,logging
 
 #Creamos instancia de SQLAlchemy
 db = SQLAlchemy()
@@ -12,10 +10,14 @@ from .models import User,Role
 #Creamos un objeto de SQLAlchemyUserDatastore
 userDataStore=SQLAlchemyUserDatastore(db,User,Role)
 
+stripe.api_key = 'sk_test_51MtEODBMu9RgSpPEini9G9YdSjjoepnch1SljAmu7plwuVrwEm8QhxNs63Pi7585IZo7byXP2ee64jHukEobNc7c00LUPvOz6q'
+    
 #Método de inicio de la aplicación
 def create_app(test_config=None):
     #Creamos nuestra aplicación de Flask
-    app = Flask(__name__)
+    app = Flask(__name__,static_folder='templates',
+            static_url_path='', template_folder='templates')
+    
     
     #Creamos la configuración de la aplicación
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -40,7 +42,11 @@ def create_app(test_config=None):
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
+    from .venta.routes import venta as venta_blueprint
+    app.register_blueprint(venta_blueprint)
+
     logging.basicConfig(filename='trazabilidad.log',level=logging.DEBUG)
+    logging.basicConfig(filename='pedidos.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
     logging.info('Arranque de aplicacion')
     logging.shutdown()
 
