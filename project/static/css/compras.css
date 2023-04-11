@@ -1,0 +1,20 @@
+.contenedor-compras-principal{
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+
+}
+
+.contenedor-solicitud{
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.warnings{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    color:red;
+    padding: 20px;
+}

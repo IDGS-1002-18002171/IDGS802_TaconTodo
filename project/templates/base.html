@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="../static/bootstrap-5.2.3/css/bootstrap.min.css">
     <script src="../static/bootstrap-5.2.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/diseño_inv.css">
+    <link rel="stylesheet" href="../static/css/compras.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/css/productos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -31,10 +34,10 @@
                         </a>
                         {% endif %}
                         {% if "Administrador" in current_user.roles %}
-                        <a href="" class="navbar-item">
+                        <a href="{{ url_for('main.producto') }}" class="navbar-item">
                             Productos
                         </a>
-                        <a href="" class="navbar-item">
+                        <a href="{{ url_for('main.compras') }}" class="navbar-item">
                             Compras
                         </a>
                         <a href="{{ url_for('main.inventario') }}" class="navbar-item">
@@ -69,6 +72,12 @@
     
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="../static/js/jquery-3.6.4.js"></script>
+    <script src="../static/js/main.js"></script>
+    <!-- <script src="../static/js/compras.js"></script>
+    <script src="../static/js/inventario.js"></script> -->
     
 </body>
 

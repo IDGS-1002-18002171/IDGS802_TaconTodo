@@ -1,0 +1,36 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<h1 style="color: #f4640a">Productos</h1>
+<br>
+<div class="contenedor-producto">
+    <ul class="nav nav-tabs" id="tabs_content" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos-tab-pane" type="button" role="tab" aria-controls="productos-tab-pane" aria-selected="true">Productos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Recetas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Crear productos</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="tabs_panels">
+        <div class="tab-pane fade show active" id="productos-tab-pane" role="tabpanel" aria-labelledby="productos-tab" tabindex="0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, tenetur.
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, consequuntur.
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iure unde rem adipisci ut mollitia obcaecati dolor eius nobis nostrum eligendi iste ipsa, nemo dolorum dignissimos reiciendis consequatur enim veritatis repellendus nam expedita corrupti ad aperiam? Adipisci rem unde ipsa, ipsum id rerum, possimus dolor incidunt, at laborum libero eos?
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+

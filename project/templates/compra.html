@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="contenedor-compras-principal">
+  <h1 class="text-center">Compras</h1>
+  <div class="contenedor-solicitud">
+    <h3 class="titulo-h3">Solicitud de compra</h3>
+    <hr style="border: none; height: 2px; background-color: #000;">
+    <br>
+
+
+    <form action="/solicitud_compra" method="post" id="solicitud_compra">
+
+      <div class="row text-start">
+        <div class="col">
+          <label class="form-label">Materia prima: </label>
+          <select class="form-select" aria-label="Default select example" name="IDMP" id="select_compra" onchange="cargarDatosCompra()" required>
+            <option selected value="disabled" disabled>Seleccione la materia prima</option>
+            {% for matpri in materia %}
+              <option value="{{ matpri.id_materia_prima }}">{{ matpri.nombre }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
+      <div class="row text-start">
+        <div class="col">
+          <label class="form-label">ID materia prima: </label>
+          <input class="form-control form-control-sm" type="text" name="idMapr" id="txtIdMaPr" disabled>
+        </div>
+        <div class="col">
+          <label class="form-label">Proveedor: </label>
+          <input class="form-control form-control-sm" type="text" name="txtProveedor" id="txtproveedor" disabled>
+        </div>
+      </div>
+      <br>
+      <div class="row text-start">
+          <div class="col-4">
+              <label class="form-label">Unidad de medida: </label>
+              <input class="form-control form-control-sm" type="text" name="unidad_medida" id="txtUnidadM" disabled>
+          </div>
+          <div class="col-5">
+            <label class="form-label">Cantidad minima recomendada: </label>
+            <input class="form-control form-control-sm" type="number" name="cantidad_minima" id="txtCantidadMin" disabled>
+          </div>
+          <div class="col-3">
+            <label class="form-label">Cantidad: </label>
+            <input class="form-control form-control-sm" type="number" step="any" min="1" max="100" name="cantidad_c" id="txtCantidad" value="0" onblur="this.value = (+this.value).toFixed(2)" required>
+          </div>
+          <input type="number" step="any" id="txtPreciocom" hidden>
+          <div class="col-2">
+            <label class="form-label">Precio total: </label>
+            <input class="form-control form-control-sm" type="text" name="precioTotal" id="txtPrecioTotal" disabled>
+          </div>
+      </div>
+      <br>
+      
+      <button class="btn btn-success" id="btn-registrar-inv" name="btnComprar" type="submit"><i class="bi bi-bag-plus"></i> Comprar</button> 
+      <hr style="border: none; height: 2px; background-color: #000;">
+      {% if errores %}
+        <div class="alert alert-danger">
+          <ul>
+            {% for error in errores %}
+              <li style="color: red
+              ;">{{ error }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </form>
+
+    
+  </div>
+
+</div>
+
+
+{% endblock %}

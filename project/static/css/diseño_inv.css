@@ -21,7 +21,7 @@ a{
 /* Estilo para contenedor principal de inventario */
 .contenedor-principal-inv{
     display: flex;
-    margin-left: 15px;
+    margin: auto;
 }
 
 .titulo-h3{
@@ -32,7 +32,8 @@ a{
 .contenedor-form-inv{
     margin-right: 10px;
     color:#000000;
-    width: 500px;
+    font-size: small;
+    width: 350px;
     height: 475px;
     padding: 15px;
     border: 3px solid black;
@@ -44,28 +45,61 @@ a{
     color:#ffffff;
     margin-left: 10px;
     margin-right: 5px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 950px;
     height: 475px;
     border: 3px solid black;
     border-radius: 10px;
     background-color: #ffffff;
-    overflow-y: scroll;
-
 }
 
-.contenedor-table-inv::-webkit-scrollbar{
+#inventario-tab-pane{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+#materia-tab-pane{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+/* Diseño de scroll para tabla inventario */
+
+#inventario-tab-pane::-webkit-scrollbar{
     -webkit-appearance: none;
 }
 
-.contenedor-table-inv::-webkit-scrollbar:vertical{
+#inventario-tab-pane::-webkit-scrollbar:vertical{
     width: 6px;
 }
 
-.contenedor-table-inv::-webkit-scrollbar-thumb{
+#inventario-tab-pane::-webkit-scrollbar-thumb{
     
     background-color: rgba(255, 255, 255, .4);
     border-radius: 6px;
 }
+
+/* Diseño de scroll para tabla materia */
+
+#materia-tab-pane{
+    overflow-y: scroll;
+}
+
+#materia-tab-pane::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+#materia-tab-pane::-webkit-scrollbar:vertical{
+    width: 6px;
+}
+
+#materia-tab-pane::-webkit-scrollbar-thumb{
+    
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 6px;
+}
+
+/* Tabla inventario diseño */
 
 #tabla-inv{
     width: 100%;
@@ -75,6 +109,7 @@ a{
 #tabla-inv thead th{
     color: rgb(255, 255, 255);
     text-align: center;
+    vertical-align: middle;
     border-bottom: 2px solid rgb(0, 0, 0);
     background-color: #f4640a;
     padding: 0.5rem;
@@ -116,6 +151,60 @@ a{
     padding: 0.5rem;
 }
 
+
+/* Tabla materia diseño */
+
+#tabla-materia{
+    width: 100%;
+    
+}
+
+#tabla-materia thead th{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: #f4640a;
+    padding: 0.5rem;
+}
+
+#tabla-materia td{
+    text-align: center;
+    border-right: 2px solid #000000;
+    padding: 0.5rem;
+}
+
+#tabla-materia td:last-child{
+    border-right: 0;
+}
+
+#tabla-materia td{
+    border-bottom: 2px solid #000000;
+}
+
+#tabla-materia tbody tr{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+#tabla-materia tbody tr:nth-child(2n){
+    background-color: rgba(244, 100, 10, 0.25);
+}
+
+#tabla-materia .sticky{
+    position: sticky;
+    top: 0;
+}
+
+#tabla-materia thead th .sticky{
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    background-color: #ff8a1d;
+    padding: 0.5rem;
+}
+
+
 .botones-inv{
     display: flex;
     margin-top: 10px;
@@ -123,4 +212,13 @@ a{
 
 .botones-inv #btn-registrar-inv, #btn-editar-inv, #btn-cancelar-inv{
     margin-right: 10px;
+}
+
+.warnings2{
+    width: 350px;
+    margin: auto;
+    font-size: small;
+    text-align: center;
+    color:red;
+    padding: 20px;
 }
