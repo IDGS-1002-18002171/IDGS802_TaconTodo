@@ -208,3 +208,442 @@ DEBUG:root:Sesion concluida para.... id:6 name:Juan Carlos correo:charlyxbox360n
 INFO:werkzeug:127.0.0.1 - - [01/Apr/2023 13:26:25] "[32mGET /security/logout HTTP/1.1[0m" 302 -
 INFO:werkzeug:127.0.0.1 - - [01/Apr/2023 13:26:25] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [01/Apr/2023 13:26:26] "GET / HTTP/1.1" 200 -
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:16:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:16:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:16:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:16:13] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:16:15] "GET /security/register HTTP/1.1" 200 -
+INFO:root:Registro exitoso
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:17:09] "[32mPOST /security/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:17:09] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Jorge Armando Ramirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-08 22:18:36
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:18:38] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Apr/2023 22:18:38] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:08:48] "[32mGET /profile HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:08:48] "GET /login?next=%2Fprofile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:08:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:09:00] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Jorge Armando Ramirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-09 00:09:06
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:09:06] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:09:07] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:09:09
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:09:09] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:09:47] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:09:48
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:09:49] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:10:18
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:10:18] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:11:51
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:52] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:53] "GET /obtenerProveedores?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:53] "GET /obtenerProveedores?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:54] "GET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:54] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:11:58
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:58] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:58] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:58] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:11:58] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:12:10
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:12:10] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:12:38
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:12:38] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:16:07
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:16:07] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:17:11
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:17:12] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:17:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:18:49
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:18:49] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:18:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:19:04
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:19:04] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:19:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:21:32
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:21:32] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:22:13
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:22:13] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:22:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:24:09
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:24:09] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:26:13
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:13] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:13] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:13] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:13] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:13] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:25] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:51] "[32mGET /profile HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:51] "GET /login?next=%2Fprofile HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Jorge Armando Ramirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-09 00:26:56
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:56] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:56] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:26:57
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:57] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:57] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:57] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:26:57] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:31:38
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:31:39] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:31:43] "[31m[1mPOST /obtenerProveedores HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:32:19
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:32:19] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:32:24
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:32:24] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:32:30
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:32:30] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:32:38
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:32:38] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:33:33
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:33:33] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:33:46] "[35m[1mPOST /guardarproveedor HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:33:46] "GET /guardarproveedor?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:33:46] "GET /guardarproveedor?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:33:46] "GET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:33:46] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:34:33
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:34:33] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:34:39] "[35m[1mPOST /guardarproveedor HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:34:39] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:34:39] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:34:39] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:35:49] "[35m[1mPOST /guardarproveedor HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:35:50] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:35:50] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:35:50] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:44] "[35m[1mPOST /guardarproveedor HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:44] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:44] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:44] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:47] "[35m[1mPOST /guardarproveedor HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:47] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:47] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:47] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:36:51
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:36:51] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 1 el dia: 09/04/2023 00:37:00
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:37:00] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:37:00
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:37:00] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id:  el dia: 09/04/2023 00:38:36
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:38:36] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:38:36
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:38:36] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:50:17
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:50:17] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 1 el dia: 09/04/2023 00:50:19
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:50:19] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 2 el dia: 09/04/2023 00:50:20
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:50:20] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 2 el dia: 09/04/2023 00:50:25
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:50:25] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:50:25
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:50:25] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:51:40
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:51:40] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se elimino el proveedor con el id: 2 el dia: 09/04/2023 00:51:42
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:51:42] "[32mPOST /eliminarProveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:51:42
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:51:42] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:51:44
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:51:44] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 1 el dia: 09/04/2023 00:51:45
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:51:45] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 1 el dia: 09/04/2023 00:51:49
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:51:49] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:51:49
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:51:49] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:52:42
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:52:42] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:52:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:52:52
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:52:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:52:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:16] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Jorge Armando Ramirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-09 00:54:21
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:21] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:21] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:54:23
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:23] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:54:24
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:24] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:54:25
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:25] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 1 el dia: 09/04/2023 00:54:27
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:27] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 1 el dia: 09/04/2023 00:54:30
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:30] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:54:30
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:30] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 1 el dia: 09/04/2023 00:54:32
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:32] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 1 el dia: 09/04/2023 00:54:35
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:35] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:54:35
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:35] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se elimino el proveedor con el id: 1 el dia: 09/04/2023 00:54:40
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:40] "[32mPOST /eliminarProveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 00:54:40
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:40] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 00:54:41] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:19:27] "[32mGET /profile HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:19:27] "GET /login?next=%2Fprofile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:19:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:19:32] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Jorge Armando Ramirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-09 01:19:36
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:19:36] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:19:36] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:19:40
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:19:40] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:21:08
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:21:08] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:23:08
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:23:08] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:23:21
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:23:21] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:23:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\p de d\\IDGS802_TaconTodo-main\\project\\main.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 833-660-692
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:24:48
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:24:48] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se selecciono el usuario con el id: 6 el dia: 09/04/2023 01:24:50
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:24:50] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:24:55] "[33mPOST /guardarUsuarios HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:14] "[33mPOST /guardarUsuarios HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:16] "[33mPOST /guardarUsuarios HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:19] "[32mGET /profile HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:19] "GET /login?next=%2Fprofile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:25] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Jorge Armando Ramirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-09 01:25:29
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:29] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:29] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:25:31
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:31] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se selecciono el usuario con el id: 6 el dia: 09/04/2023 01:25:32
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:32] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el usuario con el id: 6 el dia: 09/04/2023 01:25:36
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:36] "[32mPOST /guardarUsuario HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:25:36
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:25:36] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:26:06
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:06] "POST /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:26:08
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:08] "POST /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:26:09
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:09] "POST /obtenerUsuarios HTTP/1.1" 200 -
+DEBUG:root:Sesion concluida para.... id:6 name:Jorge finnRamirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-09 01:26:13
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:13] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:14] "GET /security/register HTTP/1.1" 200 -
+INFO:root:Registro exitoso
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:22] "[32mPOST /security/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:22] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:7 name:Jorge Armando Ramirez Patlan armando correo:minecraftfinn150@gmail.com fecha:2023-04-09 01:26:27
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:27] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:28] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:26:29
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:29] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se elimino el usuario con el id: 7 el dia: 09/04/2023 01:26:33
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:33] "[32mPOST /eliminarUsuario HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:26:34
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:34] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 09/04/2023 01:26:54
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:54] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 01:26:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-123-358
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-123-358
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 22:58:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 22:58:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 22:58:07] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 22:59:48] "GET /security/register HTTP/1.1" 200 -
+INFO:root:Registro exitoso
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 23:00:03] "[32mPOST /security/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 23:00:03] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:7 name:dulce correo:dulce@gmail.com fecha:2023-04-09 23:00:16
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 23:00:16] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 23:00:16] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 23:00:23
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 23:00:24] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 09/04/2023 23:12:45
+INFO:werkzeug:127.0.0.1 - - [09/Apr/2023 23:12:45] "GET /obtenerProveedores HTTP/1.1" 200 -
