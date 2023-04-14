@@ -2,11 +2,37 @@
 
 {% block content %}
 
-
+{%from "_macros.html" import render_field%}
 
 <div class="contenedor_editar_matpri">
+    
+    <div class="editar-form-matpri">
+        <h2 class="text-center">Editar Materia Prima</h2>
+        <br>
+        <form action="/editarMateria" method="post">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <div class="row">
+                {{render_field(form.idMateria,class="form-control")}}
+                {{render_field(form.proveedor,class="form-select")}}
+            </div>
+            <br>
+            <div class="row">
+                {{render_field(form.nombreMatpri,class="form-control")}}
+                {{render_field(form.unidadMedida,class="form-control")}}
+            </div>
+            <br>
+            <div class="row">
+                {{render_field(form.cantMinima,class="form-control")}}
+                {{render_field(form.precioCompra,class="form-control")}}
+            </div>
+            <br>
+            <div class="row justify-content-around">
+                <button type="submit" class="btn btn-success col-3"><i class="bi bi-pencil-square"></i> Editar</button>
+                <a href="/inventario" class="btn btn-danger col-3">Cancelar</a>
+            </div>
 
-    <h1>Hola mundo aqui se edita</h1>
+        </form>
+    </div>
 
 </div>
 

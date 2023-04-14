@@ -40,6 +40,15 @@ def create_app(test_config=None):
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
+    from .inventario.routes import inven as inven_blueprint
+    app.register_blueprint(inven_blueprint)
+
+    from .compra.routes import compra as compra_blueprint
+    app.register_blueprint(compra_blueprint)
+
+    from .producto.routes import product as product_blueprint
+    app.register_blueprint(product_blueprint)
+
     logging.basicConfig(filename='trazabilidad.log',level=logging.DEBUG)
     logging.info('Arranque de aplicacion')
     logging.shutdown()

@@ -8,3 +8,15 @@ flask-marshmallow
 bcrypt
 pytz
 WTForms
+stripe
+certifi
+chardet
+Click
+idna
+itsdangerous
+Jinja2
+MarkupSafe
+requests
+toml
+Werkzeug
+plyer

@@ -58,16 +58,18 @@
       
       <button class="btn btn-success" id="btn-registrar-inv" name="btnComprar" type="submit"><i class="bi bi-bag-plus"></i> Comprar</button> 
       <hr style="border: none; height: 2px; background-color: #000;">
-      {% if errores %}
-        <div class="alert alert-danger">
-          <ul>
-            {% for error in errores %}
-              <li style="color: red
-              ;">{{ error }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
+      {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            {% if category, message%}
+              <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            {%endif%}
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
     </form>
 
     

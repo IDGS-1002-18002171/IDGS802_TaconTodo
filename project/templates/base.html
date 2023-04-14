@@ -34,13 +34,13 @@
                         </a>
                         {% endif %}
                         {% if "Administrador" in current_user.roles %}
-                        <a href="{{ url_for('main.producto') }}" class="navbar-item">
+                        <a href="{{ url_for('product.producto') }}" class="navbar-item">
                             Productos
                         </a>
-                        <a href="{{ url_for('main.compras') }}" class="navbar-item">
+                        <a href="{{ url_for('compra.compras') }}" class="navbar-item">
                             Compras
                         </a>
-                        <a href="{{ url_for('main.inventario') }}" class="navbar-item">
+                        <a href="{{ url_for('inven.inventario') }}" class="navbar-item">
                             Inventario
                         </a>
                         {% endif %}

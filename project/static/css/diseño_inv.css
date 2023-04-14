@@ -222,3 +222,20 @@ a{
     color:red;
     padding: 20px;
 }
+
+/* Formulario para edición de materia prima o inventario */
+
+.contenedor_editar_matpri{
+    display: flex;
+    justify-content: center;
+}
+
+.editar-form-matpri{
+    margin: 50px;
+    border: 3px solid #f4640a;
+    border-radius: 10px;
+    width: 58%;
+    height: 400px;
+    padding: 10px;
+}
+

@@ -5,11 +5,11 @@
 <br>
 <h1 class="text-center" style="color: #f4640a">Inventario</h1>
 <br>
-{% with messages = get_flashed_messages() %}
+{% with messages = get_flashed_messages(with_categories=True) %}
     {% if messages %}
-        {% for message in messages %}
-            {% if message%}
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {% for category, message in messages %}
+            {% if category, message%}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
                     {{ message }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -24,6 +24,7 @@
         <hr style="border: none; height: 2px; background-color: #000;">
         
         <form action="/agregarMateria" method="post" id="form_matpr">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
             <div class="row text-start">
                 <div class="col">
                     <label class="form-label">Proveedor: </label>
@@ -128,7 +129,7 @@
                             <td>{{matpr.unidad_medida}}</td>
                             <td>{{matpr.cantidad_minima_requerida}}</td>
                             <td>{{matpr.precio_compra}}</td>
-                            <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarMateria"><i class="bi bi-pencil-square"></i></a></td>
+                            <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarMateria?id={{matpr.id_materia_prima}}"><i class="bi bi-pencil-square"></i></a></td>
                         </tr>
                         {%endfor%}
                     </tbody>
