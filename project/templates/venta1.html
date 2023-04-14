@@ -1,0 +1,190 @@
+{% extends "layout1.html" %}
+
+{% block content1 %}
+<style>
+    /* Estilos para el contenedor del carrito */
+    .carrito {
+        position: relative;
+        /* Hacer que el contenedor sea un elemento de posición relativa */
+        display: inline-block;
+        /* Hacer que el contenedor se muestre como un elemento en línea */
+    }
+
+    /* Estilos para el número de artículos en el carrito */
+    .carrito .cantidad {
+        position: absolute;
+        /* Hacer que el número sea un elemento de posición absoluta */
+        top: 1rem;
+        /* Colocar el número 10px por encima del contenedor */
+        right: 1rem;
+        /* Colocar el número 10px por la derecha del contenedor */
+        background-color: red;
+        /* Fondo rojo para el número */
+        color: white;
+        /* Texto blanco para el número */
+        border-radius: 50%;
+        /* Hacer que el número sea redondeado */
+        width: 20px;
+        /* Ancho del número */
+        height: 20px;
+        /* Altura del número */
+        line-height: 1rem;
+        /* Altura de línea igual a la altura del número */
+        text-align: center;
+        /* Centrar el texto dentro del número */
+        font-size: 1rem;
+        /* Tamaño de fuente del número */
+        font-weight: bold;
+        /* Hacer que el número sea negrita */
+        z-index: 1;
+        /* Hacer que el número tenga una capa superior */
+    }
+
+    /* Estilos para la imagen del carrito */
+    .carrito img {
+        display: block;
+        /* Hacer que la imagen sea un elemento de bloque */
+        width: 10rem;
+        /* Ancho de la imagen */
+        height: 8rem;
+        /* Altura de la imagen */
+        z-index: 0;
+        /* Hacer que la imagen tenga una capa inferior */
+    }
+</style>
+<br>
+<div class="row">
+    <div class="col-md-10">
+        <h1 class="text-center">Lista articulos de la tienda</h1>
+    </div>
+    <div class="carrito col-md-2" style="border-radius: 1rem;">
+        <a href="{{ url_for('venta.cart') }}">
+            <span class="cantidad">{{items}}</span>
+            <img src="../static/bootstrap/img/carrito.png" alt="Carrito de compras">
+        </a>
+    </div>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-outline-primary active" id="promociones-btn">
+            <input type="hidden" name="Promociones" id="Promociones" autocomplete="off" checked> Promociones
+        </label>
+        <label class="btn btn-outline-secondary" id="ordenar-btn">
+            <input type="hidden" name="Ordenar" id="Ordenar" autocomplete="off"> Ordenar
+        </label>
+    </div>
+    <div id="promociones-section" style="display: block;">
+        <br><br>
+        <div class="row d-flex">
+            {% for producto in productos %}
+            {% if producto.tipo_producto==1 :%}
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid rounded" src="data:image/jpeg;base64,{{ producto.imagen }}"
+                        alt="Imagen de producto">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">{{ producto.nombre }}</h2>
+                        <h5 class="card-">Precio: {{ producto.precio_venta }}</h5>
+                        <h6 class="card-title">Descripcion: {{ producto.descripcion }}</h6>
+                        <form method="post" action="/agregar_al_carrito">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                            <input type="hidden" name="id" value="{{ producto.id_producto }}">
+                            <label for="cantidad">Cantidad:</label>
+                            <input type="number" id="cantidad" name="cantidad" value="1" max="10" min="1" class="form-control" style="height: 2rem;">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary active">
+                                    <input type="radio" name="options1" id="option11" autocomplete="off" value="Sin verdura" checked> Sin
+                                    verdura
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options1" id="option22" autocomplete="off" value="Con verdura"> Con verdura
+                                </label>
+                            </div>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" value="Sin salsa" checked> Sin
+                                    salsa
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off" value="Con salsa"> Con salsa
+                                </label>
+                            </div>
+                            <br><br>
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                            <button type="submit" class="btn btn-outline-primary">Agregar al carrito</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {%endif%}
+            {% endfor %}
+        </div>
+    </div>
+    <div id="ordenar-section" style="display:none;">
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form method="post" action="/agregar_al_carrito">
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="70" class="form-control" style="height: 2rem;">
+                    </div>
+                    <div class="form-group">
+                        <label for="producto">Producto:</label>
+                        <select id="id" name="id" class="form-control" style="height: 2rem;">
+                            {% for producto in productos %}
+                                {% if producto.tipo_producto==2 %}
+                                    <option value="{{ producto.id_producto }}">{{ producto.nombre }}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary active">
+                            <input type="radio" name="options1" id="option11" autocomplete="off" value="Sin verdura" checked> Sin verdura
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options1" id="option22" autocomplete="off" value="Con verdura"> Con verdura
+                        </label>
+                    </div>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" value="Sin salsa" checked> Sin salsa
+                        </label>
+                        <label class="btn btn-outline-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off" value="Con salsa"> Con salsa
+                        </label>
+                    </div>
+                    <br><br>
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                    <button type="submit" class="btn btn-outline-primary offset-3">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+    </div>    
+    <script>
+        // Obtener los elementos de los botones y los elementos que se deben ocultar
+        const promocionesBtn = document.getElementById("promociones-btn");
+        const ordenarBtn = document.getElementById("ordenar-btn");
+        const promocionesSection = document.getElementById("promociones-section");
+        const ordenarSection = document.getElementById("ordenar-section");
+
+        // Agregar un evento click a los botones
+        promocionesBtn.addEventListener("click", () => {
+            // Ocultar la sección de ordenar
+            ordenarSection.style.display = "none";
+            // Mostrar la sección de promociones
+            promocionesSection.style.display = "block";
+        });
+
+        ordenarBtn.addEventListener("click", () => {
+            // Ocultar la sección de promociones
+            promocionesSection.style.display = "none";
+            // Mostrar la sección de ordenar
+            ordenarSection.style.display = "block";
+        });
+    </script>
+    {% endblock %}
