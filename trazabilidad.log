@@ -25098,3 +25098,5 @@ INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 12:12:03] "[36mGET /static/bootstrap/i
 INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\venta\\routes.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
