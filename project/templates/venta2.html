@@ -1,0 +1,73 @@
+{% extends "layout1.html" %}
+
+{% block content1 %}
+<div class="container mt-5">
+    <h1 class="text-center">{{tittle}}</h1>
+    <hr>
+    {% if items %}
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    {% if tittle =='Ventas Concluidas' %}
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">ID</th>
+                    {%endif%}
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Productos</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Cantidad Solicitada</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Precio</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Usuario</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Estado de la orden</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Fecha de la venta</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pedido in items %}
+                <tr>
+                    {% if tittle =='Ventas Concluidas' %}
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {{ pedido.pedido.id_pedido }}
+                    </td>
+                    {%endif%}
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {% for producto in pedido.productos %}
+                        {{ producto.nombre }}<br>
+                        {% endfor %}
+                    </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {% for producto in pedido.productos %}
+                        {{ producto.tipo_producto }}<br>
+                        {% endfor %}
+                    </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {{ pedido.total }}
+                    </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {{ pedido.usuario.name }}
+                    </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {%if pedido.pedido.estado_pedido ==1 :%}
+                        <p>En proceso</p>
+                        {%else :%}
+                        <p>Finalizado</p>
+                        {%endif%}
+                    </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {{ pedido.pedido.fecha_hora_pedido }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <p>No hay ventas registradas.</p>
+            <form action="{{ url_for('main.index') }}">
+                <button type="submit" class="btn btn-outline-info">Regresar</button>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -5,24 +5,24 @@
     <h1 class="text-center">Carrito de compras</h1>
     <hr>
     {% if items %}
-      <table class="table">
+      <table class="table table-light table-bordered table-hover">
         <thead>
           <tr>
-            <th scope="col">Producto</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad Solicitada</th>
-            <th scope="col">Detalles de la orden</th>
-            <th scope="col"></th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Producto</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Precio</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Cantidad Solicitada</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Detalles de la orden</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;"></th>
           </tr>
         </thead>
         <tbody>
           {% for item in items %}
             <tr>
-              <td>{{ item.nombre }}</td>
-              <td>{{ item.precio_venta }}</td>
-              <td>{{ item.cantidad_disponible }}</td>
-              <td>{{ item.descripcion }}</td>
-              <td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.nombre }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.precio_venta }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.cantidad_disponible }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.descripcion }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">
                 <form action="/eliminar_al_carrito" method="POST">
                   <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                   <input type="hidden" id="id" name="id" value="{{ item.id_producto }}">
@@ -33,9 +33,9 @@
           {% endfor %}
         </tbody>
       </table>
-      <h1>Total :${{total}}</h1>
+      <h1 style="text-align: center;">Total :${{total}}</h1>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
             <form action="{{ url_for('venta.getproduct') }}">
                 <button type="submit" class="btn btn-outline-danger offset-1">Regresar</button>
             </form>

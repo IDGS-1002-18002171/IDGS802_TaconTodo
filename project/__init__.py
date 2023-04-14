@@ -15,10 +15,9 @@ stripe.api_key = 'sk_test_51MtEODBMu9RgSpPEini9G9YdSjjoepnch1SljAmu7plwuVrwEm8Qh
 #Método de inicio de la aplicación
 def create_app(test_config=None):
     #Creamos nuestra aplicación de Flask
-    app = Flask(__name__,static_folder='templates',
-            static_url_path='', template_folder='templates')
-    
-    
+    app = Flask(__name__)
+        #,static_folder='templates',
+            #static_url_path='', template_folder='templates'
     #Creamos la configuración de la aplicación
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = os.urandom(24)
@@ -27,11 +26,7 @@ def create_app(test_config=None):
     app.config['SECURITY_PASSWORD_SALT'] = 'secretsalt'
 
     db.init_app(app)
-    #Método para crear la BD en la primera petición
-    @app.before_first_request
-    def create_all():
-        db.create_all()
-    
+
     #Conectando los modelos de Flask-security usando SQLAlchemyUserDatastore
     security=Security(app,userDataStore)
 
@@ -44,6 +39,9 @@ def create_app(test_config=None):
 
     from .venta.routes import venta as venta_blueprint
     app.register_blueprint(venta_blueprint)
+
+    from .pedido.routes import pedido as pedido_blueprint
+    app.register_blueprint(pedido_blueprint)
 
     logging.basicConfig(filename='trazabilidad.log',level=logging.DEBUG)
     logging.basicConfig(filename='pedidos.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')

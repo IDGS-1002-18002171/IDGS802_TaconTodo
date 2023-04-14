@@ -54,8 +54,8 @@
 </style>
 <br>
 <div class="row">
-    <div class="col-md-10">
-        <h1 class="text-center">Lista articulos de la tienda</h1>
+    <div class="col-md-10" style="text-align: center;vertical-align: middle;margin: auto;">
+        <h1 class="text-center ">Articulos de la TaconTodo</h1>
     </div>
     <div class="carrito col-md-2" style="border-radius: 1rem;">
         <a href="{{ url_for('venta.cart') }}">
@@ -81,9 +81,9 @@
             {% for producto in productos %}
             {% if producto.tipo_producto==1 :%}
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" style="margin-bottom: 3rem;font-family: 'Arial Narrow Bold', sans-serif;">
                     <img class="card-img-top img-fluid rounded" src="data:image/jpeg;base64,{{ producto.imagen }}"
-                        alt="Imagen de producto">
+                        alt="Imagen de producto" style="width: 20rem;height: 15rem;">
                     <div class="card-body text-center">
                         <h2 class="card-title">{{ producto.nombre }}</h2>
                         <h5 class="card-">Precio: {{ producto.precio_venta }}</h5>
@@ -92,26 +92,31 @@
                             <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                             <input type="hidden" name="id" value="{{ producto.id_producto }}">
                             <label for="cantidad">Cantidad:</label>
-                            <input type="number" id="cantidad" name="cantidad" value="1" max="10" min="1" class="form-control" style="height: 2rem;">
+                            <input type="number" id="cantidad" name="cantidad" value="1" max="10" min="1"
+                                class="form-control" style="height: 2rem;">
+                            <br>
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-outline-secondary active">
-                                    <input type="radio" name="options1" id="option11" autocomplete="off" value="Sin verdura" checked> Sin
+                                    <input type="radio" name="options1" id="option11" autocomplete="off"
+                                        value="Sin verdura" checked> Sin
                                     verdura
                                 </label>
                                 <label class="btn btn-outline-secondary">
-                                    <input type="radio" name="options1" id="option22" autocomplete="off" value="Con verdura"> Con verdura
+                                    <input type="radio" name="options1" id="option22" autocomplete="off"
+                                        value="Con verdura"> Con verdura
                                 </label>
                             </div>
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-outline-secondary active">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" value="Sin salsa" checked> Sin
-                                    salsa
-                                </label>
-                                <label class="btn btn-outline-secondary">
-                                    <input type="radio" name="options" id="option2" autocomplete="off" value="Con salsa"> Con salsa
-                                </label>
+                            <br>
+                            <div>
+                                <label for="salsa">Selecciona tu salsa:</label>
+                                <select name="salsa" id="salsa">
+                                    <option value="sin_salsa" selected>Sin salsa</option>
+                                    <option value="salsa_roja">Salsa roja</option>
+                                    <option value="salsa_verde">Salsa verde</option>
+                                    <option value="ambas_salsas">Ambas salsas</option>
+                                </select>
                             </div>
-                            <br><br>
+                            <br>
                             <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                             <button type="submit" class="btn btn-outline-primary">Agregar al carrito</button>
                         </form>
@@ -125,46 +130,85 @@
     <div id="ordenar-section" style="display:none;">
         <br><br>
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form method="post" action="/agregar_al_carrito">
+            <div class="col-md-6" style="font-family: 'Arial Narrow Bold', sans-serif;">
+                <form method="post" action="/agregar_al_carrito" class="border border-3 p-3">
                     <div class="form-group">
                         <label for="cantidad">Cantidad:</label>
-                        <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="70" class="form-control" style="height: 2rem;">
+                        <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="70"
+                            class="form-control" style="height: 2rem;">
                     </div>
                     <div class="form-group">
-                        <label for="producto">Producto:</label>
-                        <select id="id" name="id" class="form-control" style="height: 2rem;">
+                        <label for="filtro-productos">Filtrar por:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="filtro-productos" id="todos-productos"
+                                value=" " checked>
+                            <label class="form-check-label" for="todos-productos">
+                                Todos los productos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="filtro-productos" id="tacos"
+                                value="Taco">
+                            <label class="form-check-label" for="tacos">
+                                Tacos
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="filtro-productos" id="quesadillas"
+                                value="Quesadilla">
+                            <label class="form-check-label" for="quesadillas">
+                                Quesadillas
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="filtro-productos" id="tortas"
+                                value="Torta">
+                            <label class="form-check-label" for="tortas">
+                                Tortas
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="id">Producto:</label>
+                        <select id="id" name="id" class="form-control" style="height: 3rem;">
                             {% for producto in productos %}
-                                {% if producto.tipo_producto==2 %}
-                                    <option value="{{ producto.id_producto }}">{{ producto.nombre }}</option>
-                                {% endif %}
+                            {% if producto.tipo_producto==2:%}
+                            <option value="{{ producto.id_producto }}">{{ producto.nombre }}</option>
+                            {% endif %}
                             {% endfor %}
                         </select>
                     </div>
-                    <br><br>
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary active">
-                            <input type="radio" name="options1" id="option11" autocomplete="off" value="Sin verdura" checked> Sin verdura
-                        </label>
-                        <label class="btn btn-outline-secondary">
-                            <input type="radio" name="options1" id="option22" autocomplete="off" value="Con verdura"> Con verdura
-                        </label>
+                    <br>
+                    <div class="col-md-6">
+                        <div class="btn-group offset-6" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="options1" id="option11" autocomplete="off" value="Sin verdura"
+                                    checked> Sin verdura
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options1" id="option22" autocomplete="off"
+                                    value="Con verdura">
+                                Con verdura
+                            </label>
+                        </div>
                     </div>
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary active">
-                            <input type="radio" name="options" id="option1" autocomplete="off" value="Sin salsa" checked> Sin salsa
-                        </label>
-                        <label class="btn btn-outline-secondary">
-                            <input type="radio" name="options" id="option2" autocomplete="off" value="Con salsa"> Con salsa
-                        </label>
+                    <br>
+                    <div class="col-md-4 offset-3">
+                        <label for="salsa">Selecciona tu salsa:</label>
+                        <select name="salsa" id="salsa">
+                            <option value="sin_salsa" selected>Sin salsa</option>
+                            <option value="salsa_roja">Salsa roja</option>
+                            <option value="salsa_verde">Salsa verde</option>
+                            <option value="ambas_salsas">Ambas salsas</option>
+                        </select>
                     </div>
                     <br><br>
                     <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
-                    <button type="submit" class="btn btn-outline-primary offset-3">Agregar al carrito</button>
+                    <button type="submit" class="btn btn-outline-primary offset-4">Agregar al carrito</button>
                 </form>
             </div>
         </div>
-    </div>    
+    </div>
     <script>
         // Obtener los elementos de los botones y los elementos que se deben ocultar
         const promocionesBtn = document.getElementById("promociones-btn");
@@ -185,6 +229,50 @@
             promocionesSection.style.display = "none";
             // Mostrar la sección de ordenar
             ordenarSection.style.display = "block";
+        });
+    </script>
+    <script>
+        const radioButtons = document.querySelectorAll('input[name="filtro-productos"]');
+        const selectElement = document.getElementById('id');
+
+        radioButtons.forEach(button => {
+            button.addEventListener('click', event => {
+                selectElement.value='';
+                const selectedOptionType = event.target.value;
+
+                // Hide all options
+                Array.from(selectElement.options).forEach(option => {
+                    option.style.display = 'none';
+                });
+
+                // Show options with matching tipo_producto and containing the search term, or show all options if todos is selected
+                Array.from(selectElement.options).forEach(option => {
+                    if (selectedOptionType === ' ') {
+                        option.style.display = '';
+                    }
+                });
+
+                Array.from(selectElement.options).forEach(option => {
+                    if (selectedOptionType === 'Taco' && option.text.includes('Taco')) {
+                        option.style.display = '';
+                    }
+                });
+                
+                Array.from(selectElement.options).forEach(option => {
+                    if (selectedOptionType === 'Quesadilla' && option.text.includes('Quesadilla')) {
+                        option.style.display = '';
+                    }
+                });
+
+                Array.from(selectElement.options).forEach(option => {
+                    if (selectedOptionType === 'Torta' && 'Torta' in option.value ) {
+                        option.style.display = '';
+                    }
+                });
+
+                // Set the first visible option as selected
+                selectElement.selectedIndex = Array.from(selectElement.options).findIndex(option => option.style.display !== 'none');
+            });
         });
     </script>
     {% endblock %}
