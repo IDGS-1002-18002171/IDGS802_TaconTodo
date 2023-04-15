@@ -21,7 +21,7 @@ def create_app(test_config=None):
     #Creamos la configuración de la aplicación
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = os.urandom(24)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:root@127.0.0.1/TaconTodo"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:1218@127.0.0.1/TaconTodo"
     app.config['SECURITY_PASSWORD_HASH'] = 'pbkdf2_sha512'
     app.config['SECURITY_PASSWORD_SALT'] = 'secretsalt'
     
@@ -52,6 +52,14 @@ def create_app(test_config=None):
     app.register_blueprint(usuarios_blueprint)
 
 
+    from .inventario.routes import inven as inven_blueprint
+    app.register_blueprint(inven_blueprint)
+
+    from .compra.routes import compra as compra_blueprint
+    app.register_blueprint(compra_blueprint)
+
+    from .producto.routes import product as product_blueprint
+    app.register_blueprint(product_blueprint)
 
     logging.basicConfig(filename='trazabilidad.log',level=logging.DEBUG)
     logging.basicConfig(filename='pedidos.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
