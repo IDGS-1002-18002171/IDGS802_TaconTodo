@@ -15,8 +15,8 @@ venta=Blueprint('venta', __name__)
 
 items = []
 
-venta.config(RAPPI_CLIENT_ID = "TU_ID_DE_CLIENTE_RAPPI")
-venta.config(RAPPI_CLIENT_SECRET = "TU_CLAVE_SECRETA_RAPPI")
+#venta.config(RAPPI_CLIENT_ID = "TU_ID_DE_CLIENTE_RAPPI")
+#venta.config(RAPPI_CLIENT_SECRET = "TU_CLAVE_SECRETA_RAPPI")
 
 def make_rappi_request(url, params={}):
     headers = {

@@ -29,6 +29,7 @@ usuarios=Blueprint('usuarios', __name__)
 
 @usuarios.route("/obtenerUsuarios",  methods=['GET','POST'])
 def obtenerUsuarios():
+    csrf_token = generate_csrf()
     date = datetime.datetime.now()
     logging.basicConfig(filename='trazabilidad.log', level=logging.INFO)
     logging.info("se cargaron las listas de usuarios en la fecha: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
@@ -43,7 +44,7 @@ def obtenerUsuarios():
             ).all()
     else:
         usuarios = User.query.all()
-    return render_template("/usuarios.html", lista = usuarios)
+    return render_template("/usuarios.html", lista = usuarios,csrf_token=csrf_token)
 
 
 

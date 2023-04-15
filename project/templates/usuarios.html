@@ -7,7 +7,7 @@
 <h1 style="font-family: sans-serif; color: black">Bienvenido</h1>
 <h5 style="font-family: sans-serif; color: black">A la seccion de usuarios</h5>
 
-<img src="img/TACONTODO2.png" width="200px" height="200px">
+<img src="../static/bootstrap/img/TACONTODO2.png" width="200px" height="200px">
 </center>
 <br>
 
@@ -20,7 +20,7 @@
 
   <form method="POST" action="/obtenerUsuarios">
     <button class="btn btn-primary">Buscar</button>
-    <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
+    <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
     <input value="" name="filtro" type="text"/>
     </form>
 
@@ -58,7 +58,7 @@
                 <input name="id" value="{{ usuarios.id }}" hidden>
                 <input name="name" value="{{ usuarios.name }}" hidden>
                 <input name="email" value="{{ usuarios.email }}" hidden>
-                <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
+                <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
                 <button class="btn btn-warning" type="submit">Modificar</button>
               </form>
 
@@ -67,7 +67,7 @@
           {%if usuarios.active == 1 %}
             <form action="/eliminarUsuario" method="post">
                 <input name="id" value="{{ usuarios.id }}" hidden>
-                <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
+                <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
                 <button class="btn btn-danger" type="submit">Eliminar</button>
               </form>
               {%endif%}
@@ -102,7 +102,7 @@
         <br>
         <br>
       <center>
-        <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
+        <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
         <button class="btn btn-success">Guardar</button>
       </center>
         </form>
