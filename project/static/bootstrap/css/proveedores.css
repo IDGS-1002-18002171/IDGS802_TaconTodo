@@ -1,0 +1,53 @@
+
+#trTablaProveedores{
+    background-color: #ff5757; 
+    color: white; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+}
+#thTablaProveedores {
+    color: white"
+}
+#divDerechoProveedores {
+    float: right; 
+    padding-right: 30px;
+}
+#tr2TablaProveedores {
+    background-color: #ffffff; 
+    color: black; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+}
+#divIzquierdoProveedores {
+    float: left; 
+    padding-left: 80px;
+}
+#formatoDelCardProveedores {
+    max-width: 21rem; 
+    min-height: 400px; 
+    background-size: cover; 
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+}
+#tituloCardProveedores {
+    color:black
+}
+#tamañoInputEmpresa{
+    width: 198px;
+}
+#tamañoInputContacto {
+    width: 298px;
+}
+#tamañoInputCorreo{
+    width: 216px;
+}
+#tamañoInputTelefono {
+    width: 200px;
+}
+#tamañoInputDireccion {
+    width: 190px;
+}
+#textoProveedores {
+    font-family: sans-serif; 
+    color: black
+}

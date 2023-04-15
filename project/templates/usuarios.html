@@ -4,10 +4,9 @@
 
 <br>
 <center>
-<h1 style="font-family: sans-serif; color: black">Bienvenido</h1>
-<h5 style="font-family: sans-serif; color: black">A la seccion de usuarios</h5>
+<h1 id="textoUsuario">Bienvenido</h1>
+<h5 id="textoUsuario">A la seccion de usuarios</h5>
 
-<img src="img/TACONTODO2.png" width="200px" height="200px">
 </center>
 <br>
 
@@ -16,7 +15,7 @@
 <br>
 
 <div>
-<div style="float: right; padding-right: 30px;">
+<div id="divDerechoUsuario">
 
   <form method="POST" action="/obtenerUsuarios">
     <button class="btn btn-primary">Buscar</button>
@@ -27,18 +26,18 @@
     <br>
 <table  class="table table-hover">
     <thead>
-      <tr style="background-color: #ff5757; color: white; font-family: 'Roboto', sans-serif; font-size: 16px;">
-        <th style="color: white">ID</th>
-        <th style="color: white">nombre</th>
-        <th style="color: white">correo electronico</th>
-        <th style="color: white">estatus</th>
-        <th style="color: white">Revision</th>
-        <th style="color: white">Eliminacion</th>
+      <tr id="trTablaUsuario">
+        <th id="thTablaUsuario">ID</th>
+        <th id="thTablaUsuario">nombre</th>
+        <th id="thTablaUsuario">correo electronico</th>
+        <th id="thTablaUsuario">estatus</th>
+        <th id="thTablaUsuario">Revision</th>
+        <th id="thTablaUsuario">Eliminacion</th>
       </tr>
     </thead>
     <tbody>
     {% for usuarios in lista %}
-      <tr style="background-color: #ffffff; color: black; font-family: 'Roboto', sans-serif; font-size: 16px;">
+      <tr id="tr2TablaUsuario">
         <td>{{usuarios.id}}</td>
         <td>{{usuarios.name}}</td>
         <td>{{usuarios.email}}</td>
@@ -79,25 +78,25 @@
 </div>
 
 
-<div style="float: left; padding-left: 80px;">
-  <div class="card mb-3" style="background-image: url('img/fondo2.jpg'); max-width: 21rem; min-height: 400px; background-size: cover; color: white; font-family: 'Roboto', sans-serif;">
+<div id="divIzquierdoUsuario">
+  <div class="card mb-3" id="formatoDelCardUsuario">
     <div class="card-body">
       <center>
-      <h2 class="card-title" style="color:black">Formulario</h3>
+      <h2 class="card-title" id="tituloCardUsuario">Formulario</h3>
       </center>
       <form method="POST" action="/guardarUsuario">
         <center>
           
-          <input value="{{id}}" name="id" type="hidden"  style="width: 40px;"/>
+        <input value="{{id}}" name="id" type="hidden"/>
         </center>
         <br>
-        <h5 style="font-family: sans-serif; color: black">Nombre: <input value="{{name}}" name="name" type="text" style="width: 205px;"/></h5>
+        <h5 id="textoUsuario">Nombre: <input value="{{name}}" name="name" type="text" id="tamañoInputNombreUsuario"/></h5>
         
         <br>
-        <h5 style="font-family: sans-serif; color: black">Correo: <input value="{{email}}" name="email" type="text" style="width: 214px;"/></h5>
+        <h5 id="textoUsuario">Correo: <input value="{{email}}" name="email" type="text" id="tamañoInputCorreoUsuario"/></h5>
         
         <br>
-        <h5 style="font-family: sans-serif; color: black">Contraseña: <input value="" name="contraseña" type="text" style="width: 170px;"/></h5>
+        <h5 id="textoUsuario">Contraseña: <input value="" name="contraseña" type="text" id="tamañoInputContraseñaUsuario"/></h5>
         
         <br>
         <br>

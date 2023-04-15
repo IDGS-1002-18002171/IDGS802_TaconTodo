@@ -1,0 +1,60 @@
+#interpolacion {
+    position: relative;
+}
+#imagenInicial {
+    width: 100%; height: 300px;
+}
+#textoSobrepuesto{
+    padding-top: 55px;position: absolute; top: 0; left: 0; width: 100%; text-align: center; color: white; font-size: 100px;
+}
+#fototacos{
+    float: left; width: 50%; height: 500px;
+}
+#titulosNosotros{
+    font-family: sans-serif; color: #ff5757; font-weight: bold;
+}
+#hrNostros{
+    border-top: 1px solid black;
+}
+#textoNosotros{
+    color: black;text-align: justify;
+}
+#posicionQuienesSomos{
+    padding-right: 100px;float: right;  width: 40%;
+}
+#divServicios{
+    margin-right: 500px; margin-left: 40px;
+}
+#cardNosotros{
+    max-width: 65%
+}
+#tacos4{
+    width: 100%; height: 500px;
+}
+#divConsumidores{
+    margin-left: 500px; margin-right: 40px;
+}
+#textoConsumidores{
+    padding-right: 150px;float: right;  width: 40%; color: black; text-align: justify;
+}
+#clientes{
+    padding-left: 100px;float: left; width: 50%; height: 400px;
+}
+#divhistoria{
+    margin-right: 500px; margin-left: 40px;
+}
+#tacos2{
+    padding-right: 100px;float: right; width: 40%; height: 400px;
+}
+#textohistoria{
+    padding-left: 100px;float: left;  width: 50%; color: black; text-align: justify;
+}
+#personas{
+    width: 80%; height: 400px;
+}
+#textoValores{
+    width: 80%; color: black; text-align: justify;
+}
+#tacontodo{
+    width: 25%; height: 180px;
+}

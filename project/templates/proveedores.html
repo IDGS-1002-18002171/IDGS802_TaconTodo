@@ -6,17 +6,16 @@
 
 <br>
 <center>
-<h1 style="font-family: sans-serif; color: black">Bienvenido</h1>
-<h5 style="font-family: sans-serif; color: black">A la seccion de proveedores</h5>
+<h1 id="textoProveedores">Bienvenido</h1>
+<h5 id="textoProveedores">A la seccion de proveedores</h5>
 
-<img src="img/TACONTODO2.png" width="200px" height="200px">
 </center>
 <br>
 <br>
 
 
 <div>
-  <div style="float: right; padding-right: 30px;">
+  <div id="divDerechoProveedores">
   
 <form method="POST" action="/obtenerProveedores">
 <button class="btn btn-primary">Buscar</button>
@@ -26,22 +25,22 @@
 
 <br>
 
-<table class="table table-hover" style="max-width: 300px;">
+<table class="table table-hover">
     <thead>
-      <tr style="background-color: #ff5757; color: white; font-family: 'Roboto', sans-serif; font-size: 16px;">
-        <th style="color: white">ID</th>
-        <th style="color: white">Empresa</th>
-        <th style="color: white">Contacto</th>
-        <th style="color: white">Correo</th>
-        <th style="color: white">Telefono</th>
-        <th style="color: white">Direccion</th>
-        <th style="color: white">Revision</th>
-        <th style="color: white">Eliminacion</th>
+      <tr id="trTablaProveedores">
+        <th id="thTablaProveedores">ID</th>
+        <th id="thTablaProveedores">Empresa</th>
+        <th id="thTablaProveedores">Contacto</th>
+        <th id="thTablaProveedores">Correo</th>
+        <th id="thTablaProveedores">Telefono</th>
+        <th id="thTablaProveedores">Direccion</th>
+        <th id="thTablaProveedores">Revision</th>
+        <th id="thTablaProveedores">Eliminacion</th>
       </tr>
     </thead>
     <tbody>
     {% for proveedores in lista %}
-      <tr style="background-color: #ffffff; color: black; font-family: 'Roboto', sans-serif; font-size: 16px;">
+      <tr id="tr2TablaProveedores">
         <td>{{proveedores.id_proveedor}}</td>
         <td>{{proveedores.nombre_empresa}}</td>
         <td>{{proveedores.nombre_contacto}}</td>
@@ -81,29 +80,29 @@
 
 
   
-<div style="float: left; padding-left: 80px;">
-<div class="card mb-3" style="background-image: url('img/fondo2.jpg'); max-width: 21rem; min-height: 400px; background-size: cover; color: white; font-family: 'Roboto', sans-serif;">
+<div id="divIzquierdoProveedores">
+<div class="card mb-3" id="formatoDelCardProveedores">
   <div class="card-body">
     <center>
-    <h2 class="card-title" style="color:black">Formulario</h3>
+    <h2 class="card-title" id="tituloCardProveedores">Formulario</h3>
     </center>
   <form method="POST" action="/guardarproveedor">
   <input value="{{id_proveedor}}" name="id_proveedor" type="hidden"/>
  
   <br>
-  <h5 style="font-family: sans-serif; color: black">Empresa: <input value="{{nombre_empresa}}" name="nombre_empresa" type="text" style="width: 198px;"/></h5>
+  <h5 id="textoProveedores">Empresa: <input value="{{nombre_empresa}}" name="nombre_empresa" type="text" id="tamañoInputEmpresa"/></h5>
   
   <br>
-  <h5 style="font-family: sans-serif; color: black">Contacto: <input value="{{nombre_contacto}}" name="nombre_contacto" type="text" style="width: 198px;"/></h5>
+  <h5 id="textoProveedores">Contacto: <input value="{{nombre_contacto}}" name="nombre_contacto" type="text" id="tamañoInputContacto"/></h5>
   
   <br>
-  <h5 style="font-family: sans-serif; color: black">Correo: <input value="{{correo_electronico}}" name="correo_electronico" type="text" style="width: 216px;"/></h5>
+  <h5 id="textoProveedores">Correo: <input value="{{correo_electronico}}" name="correo_electronico" type="text" id="tamañoInputCorreo"/></h5>
   
   <br>
-  <h5 style="font-family: sans-serif; color: black">Telefono: <input value="{{telefono}}" name="telefono" type="text" style="width: 200px;"/></h5>
+  <h5 id="textoProveedores">Telefono: <input value="{{telefono}}" name="telefono" type="text" id="tamañoInputTelefono"/></h5>
   
   <br>
-  <h5 style="font-family: sans-serif; color: black">Direccion: <input value="{{direccion}}" name="direccion" type="text" style="width: 190px;"/></h5>
+  <h5 id="textoProveedores">Direccion: <input value="{{direccion}}" name="direccion" type="text" id="tamañoInputDireccion"/></h5>
   
   <br>
   <br>

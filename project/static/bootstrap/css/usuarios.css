@@ -1,0 +1,47 @@
+
+#trTablaUsuario {
+    background-color: #ff5757; 
+    color: white; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+}
+#thTablaUsuario {
+    color: white"
+}
+#divDerechoUsuario {
+    float: right; 
+    padding-right: 30px;
+}
+#tr2TablaUsuario {
+    background-color: #ffffff; 
+    color: black; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+}
+#divIzquierdoUsuario {
+    float: left; 
+    padding-left: 80px;
+}
+#formatoDelCardUsuario {
+    max-width: 21rem; 
+    min-height: 400px; 
+    background-size: cover; 
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+}
+#tituloCardUsuario {
+    color:black
+}
+#tamañoInputNombreUsuario {
+    width: 205px;
+}
+#tamañoInputCorreoUsuario {
+    width: 214px;
+}
+#tamañoInputContraseñaUsuario {
+    width: 170px;
+}
+#textoUsuario {
+    font-family: sans-serif; 
+    color: black
+}
