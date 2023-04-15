@@ -21,10 +21,18 @@ def create_app(test_config=None):
     #Creamos la configuración de la aplicación
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = os.urandom(24)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:root@127.0.0.1/TaconTodo"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:Electronica428@127.0.0.1/TaconTodo"
     app.config['SECURITY_PASSWORD_HASH'] = 'pbkdf2_sha512'
     app.config['SECURITY_PASSWORD_SALT'] = 'secretsalt'
 
+
+
+    app.config['DEBUG']=True
+    app.config['SCRET_KEY']="Esta es la clave encriptada"
+    csrf=CSRFProtect()
+
+
+    csrf.init_app(app)
     db.init_app(app)
 
     #Conectando los modelos de Flask-security usando SQLAlchemyUserDatastore
@@ -42,6 +50,14 @@ def create_app(test_config=None):
 
     from .pedido.routes import pedido as pedido_blueprint
     app.register_blueprint(pedido_blueprint)
+    
+    from .proovedores.routes import proveedores as proveedores_blueprint
+    app.register_blueprint(proveedores_blueprint)
+
+    from .usuarios.routes import usuarios as usuarios_blueprint
+    app.register_blueprint(usuarios_blueprint)
+
+
 
     logging.basicConfig(filename='trazabilidad.log',level=logging.DEBUG)
     logging.basicConfig(filename='pedidos.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
