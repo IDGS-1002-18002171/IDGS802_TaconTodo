@@ -9,10 +9,21 @@ from datetime import datetime
 from plyer import notification
 from flask_wtf.csrf import generate_csrf,validate_csrf
 from datetime import datetime
+import requests
 
 venta=Blueprint('venta', __name__)
 
 items = []
+
+venta.config(RAPPI_CLIENT_ID = "TU_ID_DE_CLIENTE_RAPPI")
+venta.config(RAPPI_CLIENT_SECRET = "TU_CLAVE_SECRETA_RAPPI")
+
+def make_rappi_request(url, params={}):
+    headers = {
+        "Authorization": f"Bearer {RAPPI_CLIENT_ID}:{RAPPI_CLIENT_SECRET}"
+    }
+    response = requests.post(url, headers=headers, json=params)
+    return response.json()
 
 def calculate_order_amount():
     cuenta = Decimal('0.0')
@@ -38,6 +49,7 @@ def calculate_order_description():
 @roles_accepted('Usuario')
 def create_payment():
     try:
+        global items
         data = json.loads(request.data)
         # Create a PaymentIntent with the order amount and currency
         intent = stripe.PaymentIntent.create(
@@ -50,6 +62,16 @@ def create_payment():
             'clientSecret': intent['client_secret'],
             'description': intent['description'],# Agrega la descripción a la respuesta del JSON
         })
+        order_info = {
+            "customer_name": current_user.name,
+            "product_name": calculate_order_description(),
+            "store_id": 99,
+            "user_id" : current_user.id,
+            "total_price": int(calculate_order_amount()),
+            "payment_method": ['card'],
+            "items": items
+        }
+        #create_rappi_order(order_info)
     except Exception as e:
         return jsonify(error=str(e)), 403
 
@@ -233,3 +255,28 @@ def thanks():
     success_message='Gracias por su compra'
     flash(success_message,category='success')
     return render_template("thanks.html", items=items,verdura=promedio_verdura,salsa_verde=promedio_salsa_verde,salsa_roja=promedio_salsa_roja)
+
+def create_rappi_order(order_info):
+    url = "https://services.rappi.com/api/orders/v2/create"
+    order = {
+        "store": {
+            "id": order_info["store_id"]
+        },
+        "user": {
+            "id": order_info["user_id"]
+        },
+        "items": order_info["items"],
+        "payment_method_id": order_info["payment_method_id"],
+        "scheduled_time": order_info["scheduled_time"],
+        "delivery": {
+            "address": {
+                "description": order_info["delivery_address"],
+                "latitude": order_info["delivery_latitude"],
+                "longitude": order_info["delivery_longitude"]
+            }
+        },
+        "total_amount": order_info["total_amount"],
+        "currency": "MXN"
+    }
+    response = make_rappi_request(url, order)
+    return response
