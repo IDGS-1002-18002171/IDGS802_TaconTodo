@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<h1 class="text-center" style="color: #f4640a">Inventario</h1>
+<br>
+{% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            {% if category, message%}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {%endif%}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<div class="contenedor-principal-inv">
+    
+    <div class="contenedor-form-inv">
+        <h3 class="titulo-h3">Registro de materia prima</h3>
+        <hr style="border: none; height: 2px; background-color: #000;">
+        
+        <form action="/agregarMateria" method="post" id="form_matpr">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <div class="row text-start">
+                <div class="col">
+                    <label class="form-label">Proveedor: </label>
+                    <select class="form-select" aria-label="Default select example" name="idPro" id="select_pro" required>
+                        <option selected value="disabled" disabled>Seleccione un proveedor</option>
+                        {%for pro in proveedor%}
+                        <option value="{{pro.id_proveedor}}">{{pro.nombre_empresa}}</option>
+                        {%endfor%}
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row text-start">
+                <div class="col-7">
+                    <label class="form-label">Nombre de materia: </label>
+                    <input class="form-control form-control-sm" type="text" name="nombreMa" id="txtNmateria" required>
+                </div>
+                <div class="col-5">
+                    <label class="form-label">Unidad de medida: </label>
+                    <input class="form-control form-control-sm" type="text" name="UnitM" id="txtUnitM" required>
+                </div>
+            </div>
+            <br>
+            <div class="row text-start">
+                <div class="col-6">
+                    <label class="form-label">Cantidad minima: </label>
+                    <input class="form-control form-control-sm" type="number" min="1" max="100" name="cantMin" step="any" id="txtCantMin" value="0" required>
+                </div>
+                <div class="col-6">
+                    <label class="form-label">Precio compra: </label>
+                    <input class="form-control form-control-sm" type="text" name="precioC" id="txtPreCo" required>
+                </div>
+            </div>
+            <div class="botones-inv">
+                <button class="btn btn-success" id="btn-registrar-inv" type="submit"><i class="bi bi-bag-plus"></i> Registrar</button>
+            </div>
+            <br>
+            
+            
+
+        </form>
+
+    </div>
+    <div class="contenedor-table-inv">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist" >
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="inventario-tab" data-bs-toggle="tab" data-bs-target="#inventario-tab-pane" type="button" role="tab" aria-controls="inventario-tab-pane" aria-selected="true">Inventario</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="materia-tab" data-bs-toggle="tab" data-bs-target="#materia-tab-pane" type="button" role="tab" aria-controls="materia-tab-pane" aria-selected="false">Materia prima registrada</button>
+            </li>
+       </ul>
+
+        <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="inventario-tab-pane" role="tabpanel" aria-labelledby="inventario-tab" tabindex="0">
+                <table id="tabla-inv">
+                    <thead>
+                        <tr style="height: 60px;">
+                            <th class="sticky">ID inventario</th>
+                            <th class="sticky">ID materia prima</th>
+                            <th class="sticky">Cantidad almacenada</th>
+                            <th class="sticky">Fecha de registro</th>
+                            <th class="sticky" style="width: 200px;" colspan="2">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for inventario in inv %}
+                            <tr>
+                                <td>{{inventario.id_inventario}}</td>
+                                <td>{{inventario.id_materia_prima}}</td>
+                                <td>{{inventario.cantidad_almacenada}}</td>
+                                <td>{{inventario.fecha_registro}}</td>
+                                <td><a class="btn btn-outline-success btn-sm" title="comprar" href="/compra"><i class="bi bi-cart"></i></a></td>
+                                <td><button class="btn btn-outline-warning btn-sm" title="editar"><i class="bi bi-pencil-square"></i></button></td>
+                            </tr>
+                        {%endfor%}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="materia-tab-pane" role="tabpanel" aria-labelledby="materia-tab" tabindex="0">
+                <table id="tabla-materia">
+                    <thead>
+                        <tr style="height: 60px;">
+                            <th class="sticky">ID materia prima</th>
+                            <th class="sticky">ID proveedor</th>
+                            <th class="sticky">Nombre de materia</th>
+                            <th class="sticky">Unidad de medida</th>
+                            <th class="sticky">Cantidad minima de compra</th>
+                            <th class="sticky">Precio compra</th>
+                            <th class="sticky" style="width: 200px;">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {%for matpr in materia%}
+                        <tr>
+                            <td>{{matpr.id_materia_prima}}</td>
+                            <td>{{matpr.id_proveedor}}</td>
+                            <td>{{matpr.nombre}}</td>
+                            <td>{{matpr.unidad_medida}}</td>
+                            <td>{{matpr.cantidad_minima_requerida}}</td>
+                            <td>{{matpr.precio_compra}}</td>
+                            <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarMateria?id={{matpr.id_materia_prima}}"><i class="bi bi-pencil-square"></i></a></td>
+                        </tr>
+                        {%endfor%}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+      
+</div>
+
+{% endblock %}

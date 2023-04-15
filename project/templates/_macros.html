@@ -1,0 +1,18 @@
+{% macro render_field(field) %}
+
+    <div class="col">
+        {{field.label}}
+        <br>
+        {{field(**kwargs)|safe}}
+    </div>
+    {%if field.errors%}
+    <ul>
+        {%for error in field.errors%}
+        <li style="color: red">
+            {{error}}
+        </li>
+        {%endfor%}
+    </ul>
+    {%endif%}
+
+{%endmacro%}

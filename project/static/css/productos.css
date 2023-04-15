@@ -1,0 +1,46 @@
+.contenedor-producto{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#tabs_panels{
+    margin-top: 2em;
+}
+#productos-tab-pane{
+    display: flex;
+    margin: auto;
+}
+.form_product{
+    border: 3px solid #ff5757;
+    border-radius: 15px;
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+}
+
+.cont_table_product{
+    border: 3px solid #ff5757;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin-left: 5px;
+}
+
+.tabla_producto{
+    width: 100%;
+}
+
+.tabla_producto thead th{
+    background-color:#ff5757;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.tabla_producto td{
+    text-align: center;
+    padding: 0.7rem;
+    border-bottom: 0.5px solid #d1d1d1;
+}

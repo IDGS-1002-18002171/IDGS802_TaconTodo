@@ -12,3 +12,5 @@ INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 00:27:37] "[33mGET /img/fototacos.jpeg
 INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 00:27:37] "[33mGET /img/tacos4.jpeg HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 00:27:37] "[33mGET /img/clientes.png HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 00:27:37] "[33mGET /img/tacos2.jpeg HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat

@@ -1,0 +1,241 @@
+
+
+/* 
+
+CSS para el modulo de inventario 
+
+Creado por Mauricio Fernández con matricula 20001500
+Universidad Tecnologíca de León
+IDGS-802
+
+Fecha: 04-04-2023
+
+*/
+
+
+/* Estilo global */
+a{
+    text-decoration: none;
+}
+
+/* Estilo para contenedor principal de inventario */
+.contenedor-principal-inv{
+    display: flex;
+    margin: auto;
+}
+
+.titulo-h3{
+    color: #f4640a;
+}
+
+/* Estilo para contendenedor del formulario para registrar */
+.contenedor-form-inv{
+    margin-right: 10px;
+    color:#000000;
+    font-size: small;
+    width: 350px;
+    height: 475px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.contenedor-table-inv{
+    color:#ffffff;
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 950px;
+    height: 475px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#inventario-tab-pane{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+#materia-tab-pane{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+/* Diseño de scroll para tabla inventario */
+
+#inventario-tab-pane::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+#inventario-tab-pane::-webkit-scrollbar:vertical{
+    width: 6px;
+}
+
+#inventario-tab-pane::-webkit-scrollbar-thumb{
+    
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 6px;
+}
+
+/* Diseño de scroll para tabla materia */
+
+#materia-tab-pane{
+    overflow-y: scroll;
+}
+
+#materia-tab-pane::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+#materia-tab-pane::-webkit-scrollbar:vertical{
+    width: 6px;
+}
+
+#materia-tab-pane::-webkit-scrollbar-thumb{
+    
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 6px;
+}
+
+/* Tabla inventario diseño */
+
+#tabla-inv{
+    width: 100%;
+    
+}
+
+#tabla-inv thead th{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: #f4640a;
+    padding: 0.5rem;
+}
+
+#tabla-inv td{
+    text-align: center;
+    border-right: 2px solid #000000;
+    padding: 0.5rem;
+}
+
+#tabla-inv td:last-child{
+    border-right: 0;
+}
+
+#tabla-inv td{
+    border-bottom: 2px solid #000000;
+}
+
+#tabla-inv tbody tr{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+#tabla-inv tbody tr:nth-child(2n){
+    background-color: rgba(244, 100, 10, 0.25);
+}
+
+#tabla-inv .sticky{
+    position: sticky;
+    top: 0;
+}
+
+#tabla-inv thead th .sticky{
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    background-color: #ff8a1d;
+    padding: 0.5rem;
+}
+
+
+/* Tabla materia diseño */
+
+#tabla-materia{
+    width: 100%;
+    
+}
+
+#tabla-materia thead th{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: #f4640a;
+    padding: 0.5rem;
+}
+
+#tabla-materia td{
+    text-align: center;
+    border-right: 2px solid #000000;
+    padding: 0.5rem;
+}
+
+#tabla-materia td:last-child{
+    border-right: 0;
+}
+
+#tabla-materia td{
+    border-bottom: 2px solid #000000;
+}
+
+#tabla-materia tbody tr{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+#tabla-materia tbody tr:nth-child(2n){
+    background-color: rgba(244, 100, 10, 0.25);
+}
+
+#tabla-materia .sticky{
+    position: sticky;
+    top: 0;
+}
+
+#tabla-materia thead th .sticky{
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+    background-color: #ff8a1d;
+    padding: 0.5rem;
+}
+
+
+.botones-inv{
+    display: flex;
+    margin-top: 10px;
+}
+
+.botones-inv #btn-registrar-inv, #btn-editar-inv, #btn-cancelar-inv{
+    margin-right: 10px;
+}
+
+.warnings2{
+    width: 350px;
+    margin: auto;
+    font-size: small;
+    text-align: center;
+    color:red;
+    padding: 20px;
+}
+
+/* Formulario para edición de materia prima o inventario */
+
+.contenedor_editar_matpri{
+    display: flex;
+    justify-content: center;
+}
+
+.editar-form-matpri{
+    margin: 50px;
+    border: 3px solid #f4640a;
+    border-radius: 10px;
+    width: 58%;
+    height: 400px;
+    padding: 10px;
+}
+
