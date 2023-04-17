@@ -5,7 +5,7 @@ class ProductoForm(Form):
     idProducto = IntegerField("Id Producto:")
     productName = StringField("Nombre producto:")
     descripcion = TextAreaField("Descripción:")
-    img = FileField("Cargar imagen:")
+    imagen = FileField("Cargar imagen:")
     tipo_prod = IntegerField("Tipo de producto:")
     precioVenta = FloatField("Precio venta:")
 

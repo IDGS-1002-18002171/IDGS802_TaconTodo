@@ -24,8 +24,8 @@
             <div class="form_product">
               <h3 style="color: #6b6b6b;">Registro de productos</h3>
               <hr>
-              <form action="/agregarProducto" method="post">
-
+              <form action="/agregarProducto" method="post" enctype=multipart/form-data>
+                <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
                 <div class="row">
                   {{render_field(form.productName,class="form-control")}}
                 </div>
@@ -35,7 +35,7 @@
                 </div>
                 <br>
                 <div class="row">
-                  {{render_field(form.img,class="form-control")}}
+                  {{render_field(form.imagen,class="form-control")}}
                 </div>
                 <br>
                 <div class="row">
@@ -66,7 +66,13 @@
                       <td>{{products.id_producto}}</td>
                       <td>{{products.nombre}}</td>
                       <td>{{products.descripcion}}</td>
-                      <td>{{products.imagen}}</td>
+                      <td  class="text-center mx-auto">
+                        {% if products.imagen %}
+                            <img height="400erm" width="300erm" src="data:image/jpeg;base64,{{products.imagen}}"/>
+                        {% else %}
+                            <p>No hay imagen seleccionada</p>
+                        {% endif %}
+                    </td>
                       <td>{{products.tipo_producto}}</td>
                       <td>{{products.precio_venta}}</td>
                       <td><a class="btn btn-outline-danger btn-sm" title="eliminar" href=""><i class="bi bi-x-square"></i></a></td>

@@ -50,6 +50,11 @@ def obtenerUsuarios():
 
 @usuarios.route("/guardarUsuario", methods=['GET','POST'])
 def guardarUsuario():
+    try:
+        validate_csrf(request.form.get('csrf_token'))
+    except :
+        # El token CSRF no coincide, rechazar la solicitud
+        abort(403)
     id= str(request.form.get("id"))
     name = str(request.form.get("name"))
     email = str(request.form.get("email"))
@@ -77,6 +82,11 @@ def guardarUsuario():
 
 @usuarios.route("/eliminarUsuario", methods=['GET','POST'])
 def eliminarUsuario():
+    try:
+        validate_csrf(request.form.get('csrf_token'))
+    except :
+        # El token CSRF no coincide, rechazar la solicitud
+        abort(403)
     id= str(request.form.get("id"))
     usuarioElejido = User.query.filter_by(id=int(id)).first()
     usuarioElejido.active = 0
@@ -92,6 +102,11 @@ def eliminarUsuario():
 
 @usuarios.route("/usuarioSeleccionado", methods=['GET','POST'])
 def usuarioSeleccionado():
+    try:
+        validate_csrf(request.form.get('csrf_token'))
+    except :
+        # El token CSRF no coincide, rechazar la solicitud
+        abort(403)
     id= str(request.form.get("id"))
     name = str(request.form.get("name"))
     email = str(request.form.get("email"))

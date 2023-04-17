@@ -102,7 +102,7 @@ def agregar_al_carrito():
         producto.cantidad_disponible = request.form["cantidad"]
         producto.descripcion = ' '+request.form["options1"]+' y '+request.form["salsa"]
         items.append(producto)
-    except ValidationError:
+    except :
         # El token CSRF no coincide, rechazar la solicitud
         abort(403)
     return redirect(url_for("venta.getproduct"))
@@ -119,7 +119,7 @@ def eliminar_al_carrito():
             if item.id_producto == int(request.form["id"]):
                 items.remove(item)
                 break
-    except ValidationError:
+    except :
         # El token CSRF no coincide, rechazar la solicitud
         abort(403)
     return redirect(url_for("venta.getproduct"))

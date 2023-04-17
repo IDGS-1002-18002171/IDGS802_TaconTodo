@@ -31,41 +31,12 @@
                         <a href="{{ url_for('main.index') }}" class="navbar-item">
                             Inicio
                         </a>
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('main.profile') }}" class="navbar-item">
-                            Perfil de Usuario
-                        </a>
-                        {% endif %}
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('venta.getproduct') }}" class="navbar-item">
-                            Venta
-                        </a>
-                        {% endif %}
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('pedido.getpedidos') }}" class="navbar-item">
-                            Pedidos
-                        </a>
-                        {% endif %}
                         {% if not current_user.is_authenticated %}
                         <a href="{{ url_for('auth.login') }}" class="navbar-item">
                             Login
                         </a>
                         <a href="{{ url_for('auth.register') }}" class="navbar-item">
                             Registro
-                        </a>
-
-
-
-                        <a href="{{ url_for('proveedores.obtenerProveedores') }}" class="navbar-item">
-                            Proveedores
-                        </a>
-                        <a href="{{ url_for('usuarios.obtenerUsuarios') }}" class="navbar-item">
-                            usuarios
-                        </a>
-                        {% endif %}
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('auth.logout') }}" class="navbar-item">
-                            Cerrar Sesión
                         </a>
                         {% endif %}
                         {% if "Administrador" in current_user.roles %}
@@ -77,6 +48,26 @@
                         </a>
                         <a href="{{ url_for('inven.inventario') }}" class="navbar-item">
                             Inventario
+                        </a>
+                        <a href="{{ url_for('proveedores.obtenerProveedores') }}" class="navbar-item">
+                            Proveedores
+                        </a>
+                        <a href="{{ url_for('usuarios.obtenerUsuarios') }}" class="navbar-item">
+                            usuarios
+                        </a>
+                        {% endif %}
+                        {% if current_user.is_authenticated %}
+                        <a href="{{ url_for('main.profile') }}" class="navbar-item">
+                            Perfil de Usuario
+                        </a>
+                        <a href="{{ url_for('pedido.getpedidos') }}" class="navbar-item">
+                            Pedidos
+                        </a>
+                        <a href="{{ url_for('venta.getproduct') }}" class="navbar-item">
+                            Venta
+                        </a>
+                        <a href="{{ url_for('auth.logout') }}" class="navbar-item">
+                            Cerrar Sesión
                         </a>
                         {% endif %}
                     </div>

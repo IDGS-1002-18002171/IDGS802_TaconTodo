@@ -102,7 +102,7 @@ def terminado():
         logging.debug(f'Orden finalizada por .... id:{current_user.id} name:{current_user.name} correo:{current_user.email} fecha:{current_time}')
         logging.shutdown()
         
-    except ValidationError:
+    except :
         # El token CSRF no coincide, rechazar la solicitud
         abort(403)
     #alumnos = Alumnos.query.filter(Alumnos.nombre.like('%CO%')).all()

@@ -14,3 +14,1446 @@ INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 00:27:37] "[33mGET /img/clientes.png H
 INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 00:27:37] "[33mGET /img/tacos2.jpeg HTTP/1.1[0m" 404 -
 INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\__init__.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:26] "GET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:26] "GET /static/css/compras.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:26] "GET /static/css/diseño_inv.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:26] "GET /static/css/productos.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:26] "GET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "GET /static/js/jquery-3.6.4.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "GET /static/js/main.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:34] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:35] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:42] "[35m[1mPOST /security/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:42] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:42] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:42] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:42] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:43] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:53] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:53] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:53] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:16:56] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:00] "[35m[1mPOST /security/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:00] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:00] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:00] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:00] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:01] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:06] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:11] "[35m[1mPOST /security/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:11] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:11] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:12] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:12] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:12] "[36mGET /security/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:35] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-15 02:17:39
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:39] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:42] "GET /getpedidos HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:43] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:43] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:43] "[36mGET /static/bootstrap/img/fondo.jpg!d HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:43] "GET /getpedidos HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:50] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:51] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:51] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:51] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:51] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:51] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:51] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:17:54] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "GET /compra HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:02] "GET /static/js/compras.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:02] "GET /compra HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:05] "GET /inventario HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "GET /static/js/inventario.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:06] "GET /inventario HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:37] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:38] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:39] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:39] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:39] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:39] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:39] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:40] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:41] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:42] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:42] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:42] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:42] "[36mGET /static/bootstrap/img/fondo.jpg!d HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:43] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:46] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:48] "GET /getpedidos HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:49] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:49] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:49] "[36mGET /static/bootstrap/img/fondo.jpg!d HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:49] "GET /getpedidos HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 02:18:52] "GET /profile HTTP/1.1" 200 -
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:14] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 08:48:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:43] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-15 09:03:49
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:49] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:56] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:56] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:56] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:57] "[36mGET /static/bootstrap/img/fondo.jpg!d HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:03:57] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:00] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:07] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:11] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "GET /compra HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "[36mGET /static/js/compras.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:13] "GET /compra HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "GET /inventario HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "[36mGET /static/js/inventario.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:04:34] "GET /inventario HTTP/1.1" 200 -
+DEBUG:root:Sesion concluida para.... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-15 09:06:34
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:34] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:34] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:34] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:34] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:34] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:34] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:36] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:36] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:36] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:37] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:37] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:37] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:37] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:37] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:7 name:Noriel Gomez correo:charly-dragon1@hotmail.com fecha:2023-04-15 09:06:40
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:40] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:40] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:41] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:43] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:44] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:44] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:44] "[36mGET /static/bootstrap/img/carrito.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:44] "[36mGET /static/bootstrap/img/fondo.jpg!d HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:06:44] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:14] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:14] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:14] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:14] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:14] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Apr/2023 09:16:15] "GET / HTTP/1.1" 200 -
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:53] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:53] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:54] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 10:41:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:37] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:38] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:38] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:38] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:38] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:38] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:38] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:39] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:00:47
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:47] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:47] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:48] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:48] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:48] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:48] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:48] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:48] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:49] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:52] "GET /inventario HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:52] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:52] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:53] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:53] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:53] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:53] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:53] "[36mGET /static/js/inventario.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:53] "GET /inventario HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:58] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:58] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:58] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:59] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:59] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:59] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:00:59] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:01:01] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:03] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:04] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:04] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:04] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:04] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:04] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:04] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:05] "GET /profile HTTP/1.1" 200 -
+DEBUG:root:Sesion concluida para.... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:05:15
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:15] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:15] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:15] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:15] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:15] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:15] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:16] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:05:18
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:18] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:18] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:18] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:18] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:18] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:18] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:19] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:19] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:19] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:05:19
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:19] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:05:40
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:40] "POST /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:05:41
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:41] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se selecciono el usuario con el id: 7 el dia: 17/04/2023 11:05:43
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:43] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el usuario con el id: None el dia: 17/04/2023 11:05:44
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:44] "GET /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el usuario con el id: 7 el dia: 17/04/2023 11:05:55
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:55] "[32mPOST /guardarUsuario HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:05:55
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:55] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:56] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:05:57
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:05:57] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se selecciono el usuario con el id: 7 el dia: 17/04/2023 11:06:02
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:02] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el usuario con el id: None el dia: 17/04/2023 11:06:03
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:03] "GET /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:14] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:14] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:14] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:14] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:14] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:14] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:15] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:15] "GET /security/login HTTP/1.1" 200 -
+ERROR:root:Fallo al iniciar sesion id:7 name:Noriel Gomez correo:charly-dragon1@hotmail.com fecha:2023-04-17 11:06:19
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:19] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:19] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:20] "GET /security/login HTTP/1.1" 200 -
+ERROR:root:Fallo al iniciar sesion id:7 name:Noriel Gomez correo:charly-dragon1@hotmail.com fecha:2023-04-17 11:06:26
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:26] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:26] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:26] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:27] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:27] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:27] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:27] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:27] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:27] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:7 name:Noriel Gomez correo:charly-dragon1@hotmail.com fecha:2023-04-17 11:06:33
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:34] "GET /profile HTTP/1.1" 200 -
+DEBUG:root:Sesion concluida para.... id:7 name:Noriel Gomez correo:charly-dragon1@hotmail.com fecha:2023-04-17 11:06:37
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:37] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:38] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:06:40
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:41] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:41] "GET /obtenerProveedores?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:41] "GET /obtenerProveedores?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:41] "GET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:06:41
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:41] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:42] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:49] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:50] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:06:54
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:54] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:54] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:06:55] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:22] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:22] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:22] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:22] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:22] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:22] "GET / HTTP/1.1" 200 -
+DEBUG:root:Sesion concluida para.... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:09:25
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:25] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:25] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:25] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:25] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:25] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:25] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:27] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:28] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:28] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:28] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:28] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:28] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:28] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:29] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:7 name:Noriel Gomez correo:charly-dragon1@hotmail.com fecha:2023-04-17 11:09:34
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:34] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:34] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:35] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:39] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:39] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:39] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:39] "[36mGET /static/bootstrap/img/carrito.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:39] "[36mGET /static/bootstrap/img/fondo.jpg!d HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:40] "GET /getproduct HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:45] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:48] "GET /getpedidos HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:48] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:48] "[36mGET /static/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:48] "[36mGET /static/bootstrap/img/fondo.jpg!d HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:49] "GET /getpedidos HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:52] "GET /profile HTTP/1.1" 200 -
+DEBUG:root:Sesion concluida para.... id:7 name:Noriel Gomez correo:charly-dragon1@hotmail.com fecha:2023-04-17 11:09:57
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:57] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:09:59] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:10:09
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:09] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:09] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:10] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:10:13
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:13] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:10:14
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:10:14] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:11:23
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:11:23] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:11:23] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:11:23] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:11:24] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:11:24
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:11:24] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:13:53
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[33mGET /img/TACONTODO2.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:54] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:13:55
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:13:55] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:14:34
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:34] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:14:35
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:14:35] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 1 el dia: 17/04/2023 11:15:00
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:01] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:01] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: None el dia: 17/04/2023 11:15:01
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:01] "GET /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:15:29
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:29] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:15:30
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:30] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:15:36
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:36] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:15:37
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:15:37] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:17:27
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:27] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:17:28
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:28] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:17:33
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:33] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:34] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:34] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 17/04/2023 11:17:34
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:34] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 1 el dia: 17/04/2023 11:17:36
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:36] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:36] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:17:37] "[35m[1mGET /registroSeleccionado HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:16] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:17] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:24] "[35m[1mGET /registroSeleccionado HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:24] "GET /registroSeleccionado?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:25] "GET /registroSeleccionado?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:25] "GET /registroSeleccionado?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:25] "[35m[1mGET /registroSeleccionado HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:25] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:46] "[35m[1mGET /registroSeleccionado HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:47] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:47] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:47] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:47] "[35m[1mGET /registroSeleccionado HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:47] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:48] "[35m[1mGET /registroSeleccionado HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:48] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:48] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:48] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:48] "[35m[1mGET /registroSeleccionado HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:18:49] "[36mGET /registroSeleccionado?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:19:17] "[31m[1mGET /registroSeleccionado HTTP/1.1[0m" 403 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:19:17] "[31m[1mGET /registroSeleccionado HTTP/1.1[0m" 403 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:19:20] "[31m[1mGET /registroSeleccionado HTTP/1.1[0m" 403 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:19:20] "[31m[1mGET /registroSeleccionado HTTP/1.1[0m" 403 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\pedido\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\venta\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\venta\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:47] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:48] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:48] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:48] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:48] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:48] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:49] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:21:53
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:53] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:53] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:54] "GET /profile HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:21:57
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:57] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:57] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:57] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:57] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:57] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:57] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:58] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:58] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:58] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 17/04/2023 11:21:58
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:21:58] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se selecciono el usuario con el id: 6 el dia: 17/04/2023 11:22:02
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:02] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[36mGET /static/bootstrap/img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[33mGET /img/fondo2.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:03] "[31m[1mGET /usuarioSeleccionado HTTP/1.1[0m" 403 -
+DEBUG:root:Sesion concluida para.... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:22:09
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:09] "[32mGET /security/logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:09] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:09] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:09] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:09] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:09] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:11] "[31m[1mGET /usuarioSeleccionado HTTP/1.1[0m" 403 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:12] "[31m[1mGET /usuarioSeleccionado HTTP/1.1[0m" 403 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:23] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:23] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:23] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:23] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:23] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:24] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:25] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:25] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:25] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:25] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:25] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:25] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:26] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:22:29
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:22:30] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:45] "[32mGET /producto HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:45] "GET /login?next=%2Fproducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:45] "GET /login?next=%2Fproducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:51] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:52] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:52] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:52] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:52] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:52] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:52] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:53] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:26:57
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:57] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:57] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:26:58] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:03] "[35m[1mGET /producto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:03] "GET /producto?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:04] "GET /producto?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:04] "GET /producto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:04] "[36mGET /producto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:04] "[35m[1mGET /producto HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:41] "[32mGET /producto HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:42] "GET /login?next=%2Fproducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:42] "GET /login?next=%2Fproducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:45] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:45] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:47] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:48] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:27:52
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:52] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:52] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:52] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:52] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:53] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:53] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:53] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:53] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:53] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:55] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:56] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:56] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:56] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:56] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:56] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:56] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:27:59] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:29:51] "[35m[1mPOST /agregarProducto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:29:51] "GET /agregarProducto?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:29:51] "GET /agregarProducto?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:29:52] "GET /agregarProducto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:29:52] "[31m[1mGET /agregarProducto HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:29:52] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:49] "[31m[1mGET /agregarProducto HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:49] "[31m[1mGET /agregarProducto HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:52] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:52] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:52] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:52] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:52] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:55] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:35:59
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:35:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:00] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:02] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:03] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:03] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:03] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:03] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:03] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:03] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:05] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:33] "[35m[1mPOST /agregarProducto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:33] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:33] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:34] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:34] "[31m[1mGET /agregarProducto HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:36:34] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:26] "[32mPOST /agregarProducto HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:26] "GET /login?next=%2FagregarProducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:27] "GET /login?next=%2FagregarProducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:32] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:34] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:37:38
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:39] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:40] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:41] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:41] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:41] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:41] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:41] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:41] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:37:44] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:38:03] "[35m[1mPOST /agregarProducto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:38:03] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:38:03] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:38:04] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:38:04] "[31m[1mGET /agregarProducto HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:38:04] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:49] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:50] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:51] "[35m[1mGET /producto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:52] "[36mGET /producto?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:52] "[36mGET /producto?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:52] "[36mGET /producto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:52] "[35m[1mGET /producto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:40:52] "[36mGET /producto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:23] "[35m[1mGET /producto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:23] "[36mGET /producto?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:23] "[36mGET /producto?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:23] "[36mGET /producto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:23] "[36mGET /producto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:23] "[35m[1mGET /producto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:31] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:41:32] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\forms.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug: * Detected change in 'C:\\Users\\2022\\IDGS802_TaconTodo\\project\\producto\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:34] "[32mGET /producto HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:34] "GET /login?next=%2Fproducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:34] "GET /login?next=%2Fproducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:37] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:37] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:37] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:37] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:37] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:37] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:39] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:40] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:43:45
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:45] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:45] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:46] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:43:48] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:44:00] "[35m[1mPOST /agregarProducto HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:44:00] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:44:00] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:44:01] "[36mGET /agregarProducto?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:44:01] "[31m[1mGET /agregarProducto HTTP/1.1[0m" 405 -
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 427-992-630
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap/img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap/img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap/img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap/img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap/img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap/img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:12] "[36mGET /static/bootstrap/img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:15] "GET /security/login HTTP/1.1" 200 -
+ERROR:root:Fallo al iniciar sesion id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:45:18
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:18] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:18] "GET /security/login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:19] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Juan Carlos correo:charlyxbox360nuevo@gmail.com fecha:2023-04-17 11:45:25
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:25] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:25] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:26] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:28] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:29] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:29] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:29] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:29] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:29] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:29] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:30] "GET /producto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:49] "POST /agregarProducto HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:50] "[36mGET /static/bootstrap-5.2.3/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:50] "[36mGET /static/css/diseño_inv.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:50] "[36mGET /static/css/compras.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:50] "[36mGET /static/css/productos.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:50] "[36mGET /static/bootstrap-5.2.3/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:50] "[36mGET /static/js/jquery-3.6.4.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2023 11:45:51] "[31m[1mGET /agregarProducto HTTP/1.1[0m" 405 -
