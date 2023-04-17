@@ -53,6 +53,7 @@ class Producto(db.Model):
     tipo_producto = db.Column(db.Integer, nullable=False)
     precio_venta = db.Column(db.Numeric(10,2), nullable=False)
     cantidad_disponible = db.Column(db.Integer, nullable=False)
+    estatus = db.Column(db.Integer, nullable=False)
 
 class Proveedor(db.Model):
     __tablename__ = 'Proveedores'
