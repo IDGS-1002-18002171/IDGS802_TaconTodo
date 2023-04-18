@@ -1,7 +1,7 @@
 from flask import Blueprint,render_template, redirect, url_for
 from flask_security import login_required,current_user
 from flask_security.decorators import roles_required,roles_accepted
-from ..models import db,Inventario, Producto, MateriaPrima, Proveedor
+from ..models import db,Inventario, Producto, MateriaPrima, Proveedor, Receta
 from flask import jsonify, request, flash
 from datetime import datetime
 import logging
@@ -18,10 +18,13 @@ product = Blueprint('product', __name__)
 def producto():
 
     prod_form = ProductoForm(request.form)
+    rect_form = RecetaForm(request.form)
+    rect_form.idProducto.choices = [(prod.id_producto, prod.nombre)for prod in Producto.query.filter_by(estatus=1).all()]
 
-    prod = Producto.query.all()
+    prod = Producto.query.filter_by(estatus=1).all()
+    rect = Receta.query.all()
 
-    return render_template("producto.html", form=prod_form, producto=prod)
+    return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod)
 
 @product.route("/agregarProducto", methods=["POST"])
 @login_required
@@ -29,6 +32,7 @@ def producto():
 def agregarPro():
 
     prod_form = ProductoForm(request.form)
+    rect_form = RecetaForm(request.form)
     csrf_token = generate_csrf()
 
     if request.method == "POST":
@@ -53,7 +57,7 @@ def agregarPro():
 
         return redirect(url_for("product.producto"))
     
-    return render_template("producto.html", form=prod_form,csrf_token=csrf_token)
+    return render_template("producto.html", form=prod_form,formR=rect_form,csrf_token=csrf_token)
 
 @product.route("/editarProducto", methods=["GET","POST"])
 @login_required
@@ -101,3 +105,30 @@ def editarProducto():
         return redirect(url_for("product.producto"))
 
     return render_template("editar_producto.html",form=pr,imagen=imagen)
+
+@product.route("/eliminar_producto/<id>")
+@login_required
+def eliminar_producto(id):
+ 
+    producto = Producto.query.filter_by(id_producto=id).first()
+
+    if producto:
+
+        producto.nombre = producto.nombre
+        producto.descripcion = producto.descripcion
+        producto.imagen = producto.imagen
+        producto.tipo_producto = producto.tipo_producto
+        producto.precio_venta = producto.precio_venta
+        producto.estatus = 0
+
+        db.session.add(producto)
+        db.session.commit()
+
+        flash("Se elimino correctamente","success")
+        return redirect(url_for("product.producto"))
+    else: 
+        flash("No existe ese producto","danger")
+        return redirect(url_for("product.producto"))
+    
+
+

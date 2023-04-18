@@ -1,28 +1,28 @@
-.contenedor-producto{
-    width: 90%;
-    margin: 0 auto;
+.contenedor_producto{
+    width: 100%;
+    margin: 30px auto;
 }
 
 #tabs_panels{
     margin-top: 2em;
 }
-#productos-tab-pane{
+
+.contenedor_product_1 {
     display: flex;
     margin: auto;
 }
+
 .form_product{
     border: 3px solid #ff5757;
     border-radius: 15px;
-    width: 400px;
+    width: 425px;
     height: 500px;
     padding: 10px;
 }
 
 .cont_table_product{
-    border: 3px solid #ff5757;
-    border-radius: 10px;
     width: 100%;
-    max-width: 800px;
+    max-width: 850px;
     height: 500px;
     margin-left: 5px;
 }
@@ -75,3 +75,46 @@
     height: 600px;
     padding: 10px;
 }
+
+
+/* Recetas apartado de CSS */
+.contenedor_recetas {
+    display: flex;
+    margin: auto
+}
+
+.cont_form_receta {
+    border: 3px solid #ff5757;
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    padding: 10px;
+}
+
+.cont_second_recetas {
+    width: 800px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buscar_recetas {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    order: 1;
+}
+
+.cont_tabla_recetas {
+    border: 3px solid #ff5757;
+    border-radius: 15px;
+    width: 100%;
+    height: 550px;
+    padding: 15px;
+    order: 2;
+}
+
+
+

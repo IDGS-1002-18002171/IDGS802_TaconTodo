@@ -3,113 +3,131 @@
 {% block content %}
 
 {%from "_macros.html" import render_field%}
-
-<h1 style="color: #f4640a">Productos</h1>
 <br>
+<h1 style="color: #f4640a" class="text-center">Productos</h1>
 {% with messages = get_flashed_messages(with_categories=True) %}
-    {% if messages %}
-        {% for category, message in messages %}
-            {% if category, message%}
-                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
-                    {{ message }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            {%endif%}
-        {% endfor %}
-    {% endif %}
+  {% if messages %}
+      {% for category, message in messages %}
+        {% if category, message%}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {%endif%}
+      {% endfor %}
+  {% endif %}
 {% endwith %}
-<br>
-<div class="contenedor-producto">
-    <ul class="nav nav-tabs" id="tabs_content" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos-tab-pane" type="button" role="tab" aria-controls="productos-tab-pane" aria-selected="true">Productos</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="recetas-tab" data-bs-toggle="tab" data-bs-target="#recetas-tab-pane" type="button" role="tab" aria-controls="recetas-tab-pane" aria-selected="false">Recetas</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="procesos-tab" data-bs-toggle="tab" data-bs-target="#procesos-tab-pane" type="button" role="tab" aria-controls="procesos-tab-pane" aria-selected="false">Crear productos</button>
-        </li>
-    </ul>
+<script>
+  
+</script>
+<div class="contenedor_producto">
 
-    <div class="tab-content" id="tabs_panels">
-        <div class="tab-pane fade show active" id="productos-tab-pane" role="tabpanel" aria-labelledby="productos-tab" tabindex="0">
-            <div class="form_product">
-              <h3 style="color: #6b6b6b;">Registro de productos</h3>
-              <hr>
-              <form action="/agregarProducto" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
-                <div class="row">
-                  {{render_field(form.productName,class="form-control")}}
-                </div>
-                <br>
-                <div class="row">
-                  {{render_field(form.descripcion,class="form-control")}}
-                </div>
-                <br>
-                <div class="row">
-                  <div class="col">
-                    <label class="form-label">Cargar imagen: </label>
-                    <input type="file" class="form-control" name="imagenes" required="Ingrese una foto">
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  {{render_field(form.tipo_prod,class="form-control")}}
+  <ul class="nav nav-tabs" id="tabs_content" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos-tab-pane" type="button" role="tab" aria-controls="productos-tab-pane" aria-selected="true">Productos</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="recetas-tab" data-bs-toggle="tab" data-bs-target="#recetas-tab-pane" type="button" role="tab" aria-controls="recetas-tab-pane" aria-selected="false">Recetas</button>
+    </li>
+  </ul>
 
-                  {{render_field(form.precioVenta,class="form-control")}}
-                </div>
-                <br>
-                <button class="btn btn-success" type="submit"><i class="bi bi-bag-plus"></i> Registrar</button>
-              </form>
+  <div class="tab-content" id="tabs_panels">
+
+    <div class="tab-pane fade show active" id="productos-tab-pane" role="tabpanel" aria-labelledby="productos-tab" tabindex="0">
+      
+      <div class="contenedor_product_1">
+        <div class="form_product tab-pane fade show activate">
+          <h3 style="color: #6b6b6b;">Registro de productos</h3>
+          <hr>
+          <form action="/agregarProducto" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+            <div class="row">
+              {{render_field(form.productName,class="form-control")}}
             </div>
-            <div class="cont_table_product">
-              <table class="tabla_producto">
-                <thead>
-                  <tr>
-                    <th class="sticky2">ID producto</th>
-                    <th class="sticky2">Producto</th>
-                    <th class="sticky2">Descripción</th>
-                    <th class="sticky2">Imagen</th>
-                    <th class="sticky2">Tipo</th>
-                    <th class="sticky2">Precio</th>
-                    <th class="sticky2" colspan="2">Acciones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {% for products in producto %}
-                    <tr>
-                      <td>{{products.id_producto}}</td>
-                      <td>{{products.nombre}}</td>
-                      <td>{{products.descripcion}}</td>
-                      <td class="align-content-center"><img src="data:image/png;base64,{{ products.imagen }}" width="128px" height="128px"></td>
-                      <td>{{products.tipo_producto}}</td>
-                      <td>{{products.precio_venta}}</td>
-                      <td><a class="btn btn-outline-danger btn-sm" title="eliminar" href=""><i class="bi bi-x-square"></i></a></td>
-                      <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarProducto?id={{products.id_producto}}"><i class="bi bi-pencil-square"></i></a></td>
-                    </tr>
-                  {%endfor%}
-                </tbody>
-              </table>
+            <br>
+            <div class="row">
+              {{render_field(form.descripcion,class="form-control")}}
             </div>
-        </div>
-        <div class="tab-pane fade" id="recetas-tab-pane" role="tabpanel" aria-labelledby="recetas-tab" tabindex="0">
-            <div class="cont_form_receta">
-
-            </div>
-            <div class="cont_second_recetas">
-              <div class="buscar_recetas">
-
-              </div>
-              <div class="cont_tabla_recetas">
-
+            <br>
+            <div class="row">
+              <div class="col">
+                <label class="form-label">Cargar imagen: </label>
+                <input type="file" class="form-control" name="imagenes" required="Ingrese una foto">
               </div>
             </div>
+            <br>
+            <div class="row">
+              {{render_field(form.tipo_prod,class="form-control")}}
+              {{render_field(form.precioVenta,class="form-control")}}
+            </div>
+            <br>
+            <button class="btn btn-success" type="submit"><i class="bi bi-bag-plus"></i> Registrar</button>
+          </form>
         </div>
-        <div class="tab-pane fade" id="procesos-tab-pane" role="tabpanel" aria-labelledby="procesos-tab" tabindex="0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iure unde rem adipisci ut mollitia obcaecati dolor eius nobis nostrum eligendi iste ipsa, nemo dolorum dignissimos reiciendis consequatur enim veritatis repellendus nam expedita corrupti ad aperiam? Adipisci rem unde ipsa, ipsum id rerum, possimus dolor incidunt, at laborum libero eos?
+        <div class="cont_table_product tab-pane fade show active">
+          <table class="tabla_producto">
+            <thead>
+              <tr>
+                <th class="sticky2">ID producto</th>
+                <th class="sticky2">Producto</th>
+                <th class="sticky2">Descripción</th>
+                <th class="sticky2">Imagen</th>
+                <th class="sticky2">Tipo</th>
+                <th class="sticky2">Precio</th>
+                <th class="sticky2" colspan="2">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for products in producto %}
+                <tr>
+                  <td>{{products.id_producto}}</td>
+                  <td>{{products.nombre}}</td>
+                  <td>{{products.descripcion}}</td>
+                  <td class="align-content-center"><img src="data:image/png;base64,{{ products.imagen }}" width="128px" height="128px"></td>
+                  <td>{{products.tipo_producto}}</td>
+                  <td>{{products.precio_venta}}</td>
+                  <td><button class="btn btn-outline-danger btn-sm" id="btnEliminarProducto" title="eliminar" onclick="window.location.href='/eliminar_producto/{{products.id_producto}}'"><i class="bi bi-x-square"></i></button></td>
+                  <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarProducto?id={{products.id_producto}}"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
+              {%endfor%}
+            </tbody>
+          </table>
         </div>
+      </div>
+
     </div>
+
+    <div class="tab-pane fade" id="recetas-tab-pane" role="tabpanel" aria-labelledby="recetas-tab"  tabindex="0">
+      <div class="contenedor_recetas">
+        <div class="cont_form_receta">
+          <h3 class="text-secondary">Crear Receta</h3>
+          <hr>
+          <form action="">
+            <div class="row">
+              {{render_field(formR.idProducto,class="form-select")}}
+            </div>
+          </form>
+        </div>
+        <div class="cont_second_recetas">
+          <div class="buscar_recetas">
+            <form action="" class="row g-3">
+              <div class="col-auto">
+                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-search"></i> Buscar</button>
+              </div>
+              <div class="col-auto">
+                <input type="text" name="searchProducto" id="searchProducto" class="form-control" required>
+              </div>
+            </form>
+            <hr>
+          </div>
+          <div class="cont_tabla_recetas">
+            <p>KSDNKSMKCMSKCMKLSMCLSMKCC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </div>
 
