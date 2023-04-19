@@ -28,7 +28,11 @@ def create_app(test_config=None):
 
 
     db.init_app(app)
-
+    #Método para crear la BD en la primera petición
+    @app.before_first_request
+    def create_all():
+        db.create_all()
+        
     #Conectando los modelos de Flask-security usando SQLAlchemyUserDatastore
     security=Security(app,userDataStore)
 

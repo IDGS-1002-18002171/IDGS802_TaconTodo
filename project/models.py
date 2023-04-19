@@ -87,6 +87,10 @@ class Pedidos(db.Model):
     id_usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
     estado_pedido = db.Column(db.Integer, nullable=False)
     fecha_hora_pedido = db.Column(db.DateTime, nullable=False)
+    domicilio  = db.Column(db.String(70))
+    cocinero = db.Column(db.Integer, db.ForeignKey('user.id'))
+    repartidor = db.Column(db.Integer, db.ForeignKey('user.id'))
+    fecha_hora_entrega = db.Column(db.DateTime)
 
 class Inventario(db.Model):
     id_inventario = db.Column(db.Integer, primary_key=True, autoincrement=True)

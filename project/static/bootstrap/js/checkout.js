@@ -7,6 +7,7 @@ const stripe = Stripe("pk_test_51MtEODBMu9RgSpPE73uA5jOG7SYLaorW6hU8u4wE1VNN6ERc
 const items = [{ id: "xl-tshirt" }];
 
 let elements;
+let direccion = '';
 
 initialize();
 checkStatus();
@@ -14,25 +15,25 @@ checkStatus();
 document
   .querySelector("#payment-form")
   .addEventListener("submit", handleSubmit);
-let emailAddress=''
-// Fetches a payment intent and captures the client secret
+
 async function initialize() {
+  const items = [{ id: "xl-tshirt" }];
   const response = await fetch("/create-payment-intent", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ items})
+    body: JSON.stringify({ items })
   });
   const { clientSecret } = await response.json();
 
   const appearance = {
     theme: 'stripe'
   };
+  
   elements = stripe.elements({ appearance, clientSecret });
 
   const linkAuthenticationElement = elements.create("linkAuthentication");
   linkAuthenticationElement.mount("#link-authentication-element");
 
-    
   linkAuthenticationElement.on('change', (event) => {
     emailAddress = event.value.email;
   });
@@ -46,33 +47,45 @@ async function initialize() {
 }
 
 async function handleSubmit(e) {
+  const address = document.querySelector('#address').value;
   e.preventDefault();
   setLoading(true);
-
-  const { error } = await stripe.confirmPayment({
-    elements,
-    confirmParams: {
-      // Make sure to change this to your payment completion page
-      return_url: "http://localhost:5000/thanks",
-      receipt_email: emailAddress,
-    },
+  
+  // Envía la dirección del usuario al servicio externo
+  const response = await fetch('/update-direccion', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ direccion: address })
   });
 
-  // This point will only be reached if there is an immediate error when
-  // confirming the payment. Otherwise, your customer will be redirected to
-  // your `return_url`. For some payment methods like iDEAL, your customer will
-  // be redirected to an intermediate site first to authorize the payment, then
-  // redirected to the `return_url`.
-  if (error.type === "card_error" || error.type === "validation_error") {
-    showMessage(error.message);
+  // Si la solicitud fue exitosa, continúa con el pago
+  if (response.ok) {
+    const { error } = await stripe.confirmPayment({
+      elements,
+      confirmParams: {
+        // Make sure to change this to your payment completion page
+        return_url: "http://localhost:5000/thanks",
+        receipt_email: emailAddress
+      },
+    });
+
+    // Este punto solo se alcanzará si hay un error inmediato al
+    // confirmar el pago. De lo contrario, el cliente será redirigido a
+    // la `return_url`.
+    if (error.type === "card_error" || error.type === "validation_error") {
+      showMessage(error.message);
+    } else if (error.type === "api_error") {
+      showMessage("An error occurred while processing your payment. Please try again later.");
+    } else {
+      showMessage("An unexpected error occurred.");
+    }
   } else {
-    showMessage("An unexpected error occurred.");
+    showMessage('Error al enviar la dirección del usuario');
   }
 
   setLoading(false);
 }
 
-// Fetches the payment intent status after payment submission
 async function checkStatus() {
   const clientSecret = new URLSearchParams(window.location.search).get(
     "payment_intent_client_secret"
@@ -100,7 +113,9 @@ async function checkStatus() {
   }
 }
 
-// ------- UI helpers -------
+function set_address(address) {
+  direccion = address;
+}
 
 function showMessage(messageText) {
   const messageContainer = document.querySelector("#payment-message");
@@ -114,10 +129,8 @@ function showMessage(messageText) {
   }, 4000);
 }
 
-// Show a spinner on payment submission
 function setLoading(isLoading) {
   if (isLoading) {
-    // Disable the button and show a spinner
     document.querySelector("#submit").disabled = true;
     document.querySelector("#spinner").classList.remove("hidden");
     document.querySelector("#button-text").classList.add("hidden");

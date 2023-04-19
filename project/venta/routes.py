@@ -1,8 +1,8 @@
-from flask import Blueprint,render_template,abort,session
+from flask import Blueprint,render_template,abort,session, flash
 from flask_security import login_required,current_user, login_user
 from flask_security.decorators import roles_required,roles_accepted
 from ..models import Producto,Venta,db,Pedidos,Pedidos_Productos,User
-from flask import Flask, jsonify, request, redirect, url_for
+from flask import Flask, jsonify, request, redirect, url_for,make_response
 import json,os,stripe,logging
 from decimal import Decimal
 from datetime import datetime
@@ -14,6 +14,7 @@ import requests
 venta=Blueprint('venta', __name__)
 
 items = []
+direccion_global = ''
 
 #venta.config(RAPPI_CLIENT_ID = "TU_ID_DE_CLIENTE_RAPPI")
 #venta.config(RAPPI_CLIENT_SECRET = "TU_CLAVE_SECRETA_RAPPI")
@@ -42,38 +43,6 @@ def calculate_order_description():
         else :
             descripcion=descripcion+' '+item.cantidad_disponible+' '+item.nombre+',' 
     return descripcion
-
-@venta.route('/create-payment-intent', methods=['POST'])
-@login_required
-#@roles_required('')
-@roles_accepted('Usuario')
-def create_payment():
-    try:
-        global items
-        data = json.loads(request.data)
-        # Create a PaymentIntent with the order amount and currency
-        intent = stripe.PaymentIntent.create(
-            amount=int(calculate_order_amount()),  # Amount in cents, so 20 pesos is 2000 cents
-            currency='mxn',  # Mexican pesos
-            payment_method_types=['card'],  # Only allow card payments
-            description=calculate_order_description(),
-        )
-        return jsonify({
-            'clientSecret': intent['client_secret'],
-            'description': intent['description'],# Agrega la descripción a la respuesta del JSON
-        })
-        order_info = {
-            "customer_name": current_user.name,
-            "product_name": calculate_order_description(),
-            "store_id": 99,
-            "user_id" : current_user.id,
-            "total_price": int(calculate_order_amount()),
-            "payment_method": ['card'],
-            "items": items
-        }
-        #create_rappi_order(order_info)
-    except Exception as e:
-        return jsonify(error=str(e)), 403
 
 @venta.route("/cart")
 @login_required
@@ -136,7 +105,7 @@ def getproduct():
         #alumnos = Alumnos.query.filter(Alumnos.nombre.like('%CO%')).all()
         return render_template('venta1.html',productos=lista_productos,items=len(items),csrf_token=csrf_token)
     if 'Administrador' in current_user.roles:
-        pedidos = Pedidos.query.filter(Pedidos.estado_pedido == 2).all()
+        pedidos = Pedidos.query.filter(Pedidos.estado_pedido == 5).all()
         lista_pedidos_estructurado1=[]
         total = Decimal('0.0')
         for pedido in pedidos:
@@ -148,11 +117,23 @@ def getproduct():
                 producto.tipo_producto=detalle.cantidad
                 total=producto.precio_venta+total
                 productos_pedido.append(producto)
+            cocinero={'name':'None'}
+            try :
+                cocinero=User.query.filter_by(id=pedido.cocinero).first()
+            except:
+                pass
+            repartidor={'name':'None'}
+            try :
+                repartidor=User.query.filter_by(id=pedido.repartidor).first()
+            except:
+                pass
             pedido_estructurado = {
                 'pedido': pedido,
                 'productos': productos_pedido,
                 'total': total,
-                'usuario': usuario
+                'usuario': usuario,
+                'cocinero':cocinero,
+                'repartidor':repartidor
             }
             lista_pedidos_estructurado1.append(pedido_estructurado)
         lista_pedidos_estructurado = []
@@ -175,6 +156,8 @@ def pasarela():
 @roles_accepted('Usuario')
 def thanks():
     global items
+    direccion = None
+    global direccion_global
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     logging.debug(f'Compra en linea por .... id:{current_user.id} name:{current_user.name} correo:{current_user.email} fecha:{current_time}')
     logging.shutdown()
@@ -227,7 +210,8 @@ def thanks():
     pedido = Pedidos(
         id_usuario=current_user.id,
         estado_pedido=1,
-        fecha_hora_pedido=current_time
+        fecha_hora_pedido=current_time,
+        domicilio=direccion_global
     )
 
     # Agregar el objeto a la sesión y hacer commit para que se realice la inserción en la tabla
@@ -251,10 +235,51 @@ def thanks():
     if 'Administrador' in [role.name for role in current_user.roles]:
         notification.notify(title=notification_title, message=notification_message, timeout=notification_timeout)
     items.clear()
-    db.session.commit()
     success_message='Gracias por su compra'
     flash(success_message,category='success')
     return render_template("thanks.html", items=items,verdura=promedio_verdura,salsa_verde=promedio_salsa_verde,salsa_roja=promedio_salsa_roja)
+
+@venta.route('/update-direccion', methods=['POST'])
+@login_required
+#@roles_required('')
+@roles_accepted('Usuario')
+def update_direccion():
+    global direccion_global
+    direccion_global = request.json['direccion']
+    return jsonify({'success': True})
+
+@venta.route('/create-payment-intent', methods=['POST'])
+@login_required
+#@roles_required('')
+@roles_accepted('Usuario')
+def create_payment():
+    try:
+        global items
+        data = json.loads(request.data)
+        # Create a PaymentIntent with the order amount and currency
+        intent = stripe.PaymentIntent.create(
+            amount=int(calculate_order_amount()),  # Amount in cents, so 20 pesos is 2000 cents
+            currency='mxn',  # Mexican pesos
+            payment_method_types=['card'],  # Only allow card payments
+            description=calculate_order_description(),
+        )
+        return jsonify({
+            'clientSecret': intent['client_secret'],
+            'description': intent['description'],# Agrega la descripción a la respuesta del JSON
+        })
+        order_info = {
+            "customer_name": current_user.name,
+            "product_name": calculate_order_description(),
+            "store_id": 99,
+            "user_id" : current_user.id,
+            "total_price": int(calculate_order_amount()),
+            "payment_method": ['card'],
+            "items": items
+        }
+        #create_rappi_order(order_info)
+    except Exception as e:
+        return jsonify(error=str(e)), 403
+
 
 def create_rappi_order(order_info):
     url = "https://services.rappi.com/api/orders/v2/create"

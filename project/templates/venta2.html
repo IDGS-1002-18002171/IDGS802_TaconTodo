@@ -18,6 +18,10 @@
                     <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Usuario</th>
                     <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Estado de la orden</th>
                     <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Fecha de la venta</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Domicilio</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Cocinero</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Repartidor</th>
+                    <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Fecha de la entrega</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,13 +50,41 @@
                     </td>
                     <td style="text-align: center;vertical-align: middle;margin: auto;">
                         {%if pedido.pedido.estado_pedido ==1 :%}
-                        <p>En proceso</p>
-                        {%else :%}
-                        <p>Finalizado</p>
+                        <p>Solicitado</p>
+                        {%endif%}
+                        {%if pedido.pedido.estado_pedido ==2 :%}
+                        <p>Se esta preparando</p>
+                        {%endif%}
+                        {%if pedido.pedido.estado_pedido ==3 :%}
+                        <p>Orden preparada</p>
+                        {%endif%}
+                        {%if pedido.pedido.estado_pedido ==4 :%}
+                        <p>Pedido en viaje</p>
+                        {%endif%}
+                        {%if pedido.pedido.estado_pedido ==5 :%}
+                        <p>Orden Entregada</p>
                         {%endif%}
                     </td>
                     <td style="text-align: center;vertical-align: middle;margin: auto;">
                         {{ pedido.pedido.fecha_hora_pedido }}
+                    </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {{ pedido.pedido.domicilio }}
+                    </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {%if pedido.cocinero.name:%}
+                        {{ pedido.cocinero.name }}
+                        {%endif%}
+                      </td>
+                      <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {%if pedido.repartidor.name:%}
+                        {{ pedido.repartidor.name }}
+                        {%endif%}
+                      </td>
+                    <td style="text-align: center;vertical-align: middle;margin: auto;">
+                        {%if pedido.pedido.fecha_hora_entrega:%}
+                        {{ pedido.pedido.fecha_hora_entrega }}
+                        {%endif%}
                     </td>
                 </tr>
                 {% endfor %}

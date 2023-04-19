@@ -6,6 +6,10 @@
 <script src="../static/bootstrap/js/checkout.js" defer></script>
 <!-- Display a payment form -->
 <form id="payment-form" class="form-control">
+    <div class="form-control">
+        <label for="address">Direccion:</label>
+        <input type="text" name="address" id="address" placeholder="Colonia/Calle/Numero " class="form-control" style="height: 2rem;">
+    </div>
     <div id="link-authentication-element">
         <!--Stripe.js injects the Link Authentication Element-->
     </div>
