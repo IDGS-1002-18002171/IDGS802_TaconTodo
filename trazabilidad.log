@@ -20333,6 +20333,7 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 427-992-630
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2023 17:25:33] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2023 17:25:34] "GET / HTTP/1.1" 200 -
@@ -20349,6 +20350,9 @@ INFO:werkzeug:127.0.0.1 - - [11/Apr/2023 17:25:46] "GET /static/bootstrap/css/bo
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2023 17:25:46] "GET /static/bootstrap/img/carrito.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2023 17:25:46] "[33mGET /static/bootstrap/img/fondo1.jpeg HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2023 17:25:46] "GET /getproduct HTTP/1.1" 200 -
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
 INFO:root:Arranque de aplicacion
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -20356,6 +20360,7 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 427-992-630
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:51:00] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:51:01] "GET / HTTP/1.1" 200 -
@@ -20393,6 +20398,26 @@ INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 427-992-630
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 15:59:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 15:59:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 15:59:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 15:59:59] "GET /security/login HTTP/1.1" 200 -
+DEBUG:root:Inicio sesion del usuario .... id:6 name:Jorge finnRamirez Patlan correo:xxthefinn150xx@gmail.com fecha:2023-04-12 16:00:46
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 16:00:46] "[32mPOST /security/login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 16:00:46] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
 INFO:root:Arranque de aplicacion
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -20400,6 +20425,7 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 427-992-630
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:53:59] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:53:59] "GET / HTTP/1.1" 200 -
@@ -20420,6 +20446,132 @@ INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 427-992-630
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:51:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:51:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:51:22] "[35m[1mGET /obtenerProveedores HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:51:23] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:51:23] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:51:23] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:51:23] "[36mGET /obtenerProveedores?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:59:50] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 12/04/2023 22:59:52
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 22:59:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id:  el dia: 12/04/2023 23:00:14
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:00:14] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 12/04/2023 23:00:14
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:00:14] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 3 el dia: 12/04/2023 23:01:01
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:01] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 3 el dia: 12/04/2023 23:01:04
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:04] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 12/04/2023 23:01:04
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:04] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 12/04/2023 23:01:06
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:06] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 12/04/2023 23:01:10
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:11] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 12/04/2023 23:01:13
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:13] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se elimino el proveedor con el id: 3 el dia: 12/04/2023 23:01:15
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:15] "[32mPOST /eliminarProveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 12/04/2023 23:01:15
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 23:01:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:42] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 13/04/2023 00:00:43
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:44] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se selecciono el usuario con el id: 7 el dia: 13/04/2023 00:00:46
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:46] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el usuario con el id: 7 el dia: 13/04/2023 00:00:50
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:50] "[35m[1mPOST /guardarUsuario HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:50] "GET /guardarUsuario?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:50] "GET /guardarUsuario?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:51] "GET /guardarUsuario?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:00:51] "[36mGET /guardarUsuario?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:root:se selecciono el usuario con el id: 7 el dia: 13/04/2023 00:01:16
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:01:16] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:root:se selecciono el usuario con el id: 6 el dia: 13/04/2023 00:01:17
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:01:17] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el usuario con el id: 6 el dia: 13/04/2023 00:01:23
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:01:23] "[32mPOST /guardarUsuario HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 13/04/2023 00:01:23
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:01:23] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:root:se selecciono el usuario con el id: 6 el dia: 13/04/2023 00:07:12
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:07:12] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 13/04/2023 00:07:14
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:07:14] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se guardo el usuario con el id:  el dia: 13/04/2023 00:07:25
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:07:25] "[32mPOST /guardarUsuario HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 13/04/2023 00:07:25
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 00:07:25] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
 INFO:root:Arranque de aplicacion
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -20427,6 +20579,7 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 427-992-630
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:58:01] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:58:01] "GET / HTTP/1.1" 200 -
@@ -20446,6 +20599,9 @@ INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 427-992-630
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
 INFO:root:Arranque de aplicacion
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -20453,6 +20609,7 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 427-992-630
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:59:14] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [12/Apr/2023 21:59:14] "GET / HTTP/1.1" 200 -
@@ -29283,6 +29440,14 @@ INFO:flask_wtf.csrf:The CSRF session token is missing.
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2023 22:27:47] "[31m[1mPOST /security/login HTTP/1.1[0m" 400 -
 INFO:flask_wtf.csrf:The CSRF session token is missing.
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2023 22:27:52] "[31m[1mPOST /security/login HTTP/1.1[0m" 400 -
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:03:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:03:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 08:03:50
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:03:51] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:flask_wtf.csrf:The CSRF token is missing.
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:04:17] "[31m[1mPOST /guardarproveedor HTTP/1.1[0m" 400 -
 INFO:root:Arranque de aplicacion
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -29290,6 +29455,51 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:14:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:14:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 08:14:41
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:14:43] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:flask_wtf.csrf:The CSRF token is missing.
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:14:59] "[31m[1mPOST /guardarproveedor HTTP/1.1[0m" 400 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 08:15:01
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:15:01] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:17:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:19:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 08:19:22
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:19:22] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id:  el dia: 13/04/2023 08:22:35
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:22:35] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 08:22:35
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 08:22:35] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:20:33
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:20:33] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:20:35
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:20:35] "GET /obtenerProveedores HTTP/1.1" 200 -
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 885-709-443
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2023 22:29:16] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2023 22:29:16] "[36mGET /static/bootstrap/css/usuarios.css HTTP/1.1[0m" 304 -
@@ -29343,6 +29553,75 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 885-709-443
 INFO:flask_wtf.csrf:The CSRF session token is missing.
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2023 22:32:38] "[31m[1mPOST /obtenerProveedores HTTP/1.1[0m" 400 -
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:20:47
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:20:48] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 13/04/2023 09:20:49
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:20:49] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 13/04/2023 09:21:02
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:21:02] "[35m[1mPOST /guardarproveedor HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:21:04] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:21:04] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:21:04] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:21:05] "[36mGET /guardarproveedor?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:flask_wtf.csrf:The CSRF session token is missing.
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:19] "[31m[1mPOST /guardarproveedor HTTP/1.1[0m" 400 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:22:35
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:35] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:22:37
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:37] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:22:38
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:38] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:22:38
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:38] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:22:38
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:38] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 13/04/2023 09:22:39
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:39] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 13/04/2023 09:22:52
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:52] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:22:52
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:22:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:50:13
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:50:13] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 13/04/2023 09:50:14
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:50:14] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 13/04/2023 09:50:15
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:50:15] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 13/04/2023 09:50:15
+INFO:werkzeug:127.0.0.1 - - [13/Apr/2023 09:50:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\proovedores\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug: * Detected change in 'C:\\Users\\93616\\Desktop\\proyecto final dudu\\IDGS802_TaconTodo-main\\project\\usuarios\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
 INFO:root:Arranque de aplicacion
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -29350,6 +29629,7 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 885-709-443
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2023 22:32:57] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2023 22:32:57] "[36mGET /static/bootstrap/css/usuarios.css HTTP/1.1[0m" 304 -
@@ -30332,6 +30612,512 @@ INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 885-709-443
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:27:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:27:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:27:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:29:54] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:30:00
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:30:08] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:39:08
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:39:09] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:40:18
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:40:18] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:40:58
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:40:58] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:41:18
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:41:18] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:42:26
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:42:26] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:42:41
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:42:41] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:44:36
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:44:36] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:45:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:45:53] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:45:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:46:26
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:46:26] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:46:40
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:46:40] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:47:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:47:07] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:47:24
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:47:24] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:47:38
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:47:38] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:50:14
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:50:14] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:50:14] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:50:40
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:50:40] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:50:40] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:51:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:12] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:12] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:51:22
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:22] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:22] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:51:57
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:57] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:57] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:51:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:52:13
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:13] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:13] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:52:34
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:34] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:34] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:52:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:53] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:54] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:52:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:53:18
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:53:18] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:53:18] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:53:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:53:49
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:53:49] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:53:49] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:54:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:07] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:07] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:54:25
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:25] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:25] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:54:35
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:35] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:35] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:54:55
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:55] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:54:55] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:55:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:55:10] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:55:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:55:38
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:55:38] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:55:39] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:55:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:55:53] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:55:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:55:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:01
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:01] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:01] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:16
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:16] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:16] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:18
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:18] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:18] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:20
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:20] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:20] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:36
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:36] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:36] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:41
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:41] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:41] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:46] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:51
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:51] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:51] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:56:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:56] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:56:56] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:57:01
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:01] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:01] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:57:08
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:09] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:09] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:57:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:15] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:15] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:57:20
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:20] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:20] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:57:51
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:52] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:57:52] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:58:04
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:58:04] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:58:04] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:58:25
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:58:25] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:58:25] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el usuario con el id: 8 el dia: 14/04/2023 07:59:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:07] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:08] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:13] "[35m[1mPOST /guardarUsuario HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:14] "[36mGET /guardarUsuario?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:14] "[36mGET /guardarUsuario?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:15] "[36mGET /guardarUsuario?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:root:se selecciono el usuario con el id: 8 el dia: 14/04/2023 07:59:44
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:44] "POST /usuarioSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:44] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el usuario con el id: 8 el dia: 14/04/2023 07:59:50
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:50] "[32mPOST /guardarUsuario HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 07:59:50
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:50] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 07:59:50] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:00:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:00:07] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:00:07] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:00:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:00:19] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:00:20] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:00:47
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:00:47] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:00:47] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:01:37
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:01:37] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:01:37] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:02:08
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:02:08] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:02:08] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:02:31
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:02:31] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:02:31] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:03:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:10] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:03:22
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:22] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:22] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:03:39
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:39] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:39] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:03:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:46] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:03:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:04:00
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:00] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:00] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:04:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:07] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:07] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:04:27
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:27] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:27] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:04:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:46] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:04:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:05:09
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:09] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:09] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:05:37
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:37] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:37] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:05:47
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:47] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:47] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:05:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:56] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:05:56] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:06:03
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:06:03] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:06:03] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:06:13
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:06:13] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:06:13] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:06:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:07:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:11] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:11] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:07:26
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:26] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:26] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:07:32
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:32] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:32] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:07:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:08:27
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:08:27] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:11:44
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:11:44] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:11:44] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:12:39
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:12:39] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:12:39] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:13:00
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:13:00] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:13:02] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:13:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:13:38
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:13:38] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:13:38] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:13:51
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:13:51] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:13:52] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:14:02
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:14:02] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:14:02] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:15:59
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:15:59] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:15:59] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:16:30
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:30] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:30] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:16:34
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:34] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:34] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:16:37
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:37] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:37] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:16:38
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:38] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:16:38] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:17:06
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:07] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:07] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:17:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:15] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:15] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:17:22
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:22] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:22] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:17:30
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:30] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:30] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:17:36
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:36] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:36] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:17:43
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:43] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:43] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:17:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:53] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:17:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:18:02
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:18:02] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:18:02] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:18:09
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:18:09] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:18:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:18:33
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:18:34] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:18:34] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:19:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:19] "POST /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:20] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:19:24
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:24] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:24] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:19:25
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:25] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:25] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 08:19:26
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:26] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:26] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:19:26
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:26] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:27] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 14/04/2023 08:19:29
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:29] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:29] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 14/04/2023 08:19:52
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:52] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:19:52
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:19:52] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:20:12
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:20:12] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:20:12] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:20:24
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:20:24] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:20:24] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:20:31
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:20:31] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:20:32] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:21:04
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:04] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:04] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 14/04/2023 08:21:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:07] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:07] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 14/04/2023 08:21:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:11] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:21:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:11] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:11] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 14/04/2023 08:21:18
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:18] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:18] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 14/04/2023 08:21:24
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:24] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:21:24
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:24] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:24] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:21:39
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:39] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:39] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 14/04/2023 08:21:41
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:41] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:41] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 14/04/2023 08:21:44
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:44] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:21:44
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:44] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:44] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 14/04/2023 08:21:48
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:48] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:48] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 14/04/2023 08:21:54
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:54] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:21:54
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:54] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:54] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 14/04/2023 08:21:57
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:57] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:21:57] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 14/04/2023 08:22:01
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:01] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:22:01
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:01] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:01] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se selecciono el proveedor con el id: 4 el dia: 14/04/2023 08:22:03
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:03] "POST /registroSeleccionado HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:03] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se guardo el proveedor con el id: 4 el dia: 14/04/2023 08:22:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:07] "[32mPOST /guardarproveedor HTTP/1.1[0m" 302 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:22:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:07] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:07] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 08:22:27
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:27] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 08:22:27] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:04:39
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:39] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:39] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:04:40
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:40] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:41] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:04:41
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:41] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:41] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:04:42
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:42] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:04:42] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:14
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:14] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:14] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:51
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:51] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:51] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:52
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:52] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:52
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:52] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:52
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:52] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:52
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:05:53
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:53] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:05:54] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:06:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:06:21] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:06:21] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:06:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:12
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:12] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:12] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:12] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:14
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:14
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:14
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:14
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:14
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:14] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:16] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:16] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:08:16
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:16] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:16] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:08:16] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
 INFO:root:Arranque de aplicacion
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
@@ -30339,6 +31125,7 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
+<<<<<<< HEAD
 INFO:werkzeug: * Debugger PIN: 885-709-443
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:33] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/css/usuarios.css HTTP/1.1" 200 -
@@ -30356,3 +31143,1362 @@ INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/au
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/servicio_al_cliente.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/innovacion.png HTTP/1.1" 200 -
 >>>>>>> Stashed changes
+=======
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:12:03] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:12:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:12:08] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:12:08] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:12:08] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:12:24
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:12:24] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:12:24] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:12:24] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:14:48
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:14:48] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:14:48] "[33mGET /static/img/ingredientes.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:14:48] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:15:07
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:15:07] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:15:07] "[33mGET /static/img/clientes.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:15:07] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:15:08
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:15:08] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:15:08] "[33mGET /static/img/clientes.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:15:08] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:19:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:19:21] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:19:21] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:19:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:19:22
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:19:22] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:19:22] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:19:22] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:20:30
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:30] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:30] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:30] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:30] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:20:48
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:48] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:48] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:48] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:48] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:20:49
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:49] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:49] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:49] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:20:49] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:21:39
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:39] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:39] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:39] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:40] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:21:41
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:21:41
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:21:41] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 818-305-310
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:22:31] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:22:40
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:22:40] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:22:40] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:22:40] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:22:40] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:24:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:25:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:10] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:11] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:13] "[33mGET /project/static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:16] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:25:28
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:28] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:29] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:29] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:29] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:25:37
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:37] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:37] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:37] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:37] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:25:38
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:39] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:39] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:39] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:25:39] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:08
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:08] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:08] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:08] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:09
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:09] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:09] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:09] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:11] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:11] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:11] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:21] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:21] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:22] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:22] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:27
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:27] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:27] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:27] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:27] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:27] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:27] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:29
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:29] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:29] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:29] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:29] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:29] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:29] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:30
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:30] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:30] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:30] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:30] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:30] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:30] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:26:52
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:52] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:52] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:52] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:26:52] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:27:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:46] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:46] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:47] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:27:51
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:51] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:51] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:51] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:27:51] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:29:02
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:02] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:02] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:02] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:02] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:02] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:29:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:19] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:19] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:19] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:19] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:19] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:29:21
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:21] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:21] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:21] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:21] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:21] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:29:42
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:42] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:42] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:42] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:42] "[33mGET /static/img/cinepolis-logo-9.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:42] "[33mGET /static/img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:29:42] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:10
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:10] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:10] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:10] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:10] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:20
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:20] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:20] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:20] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:20] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:44
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:44] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:44] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:44] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:44] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:45
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:45] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:45] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:45] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:45] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:46] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:47] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:55
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:55] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:55] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:55] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:55] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:30:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:56] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:57] "GET /resistencia.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:57] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:57] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:30:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:31:00
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:00] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:00] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:00] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:00] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:31:01
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:01] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:01] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:01] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:01] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:31:01
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:01] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:01] "[33mGET /img/resistencia.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:02] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:31:02] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:32:34
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:34] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:34] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:34] "[33mGET /img/tacos3.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:34] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:32:49
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:49] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:49] "[36mGET /resistencia.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:49] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:32:50] "GET /img/tacos3.jpeg HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:33:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:33:11] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:33:11] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:33:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:33:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:33:46] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:33:46] "GET /img/ingredientes.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:33:46] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:34:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:34:11] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:34:11] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:34:11] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:34:12
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:34:12] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:34:12] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:34:12] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:35:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:35:46] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:35:46] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:36:03
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:36:03] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:36:03] "GET /img/ingredientes2.jpg HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:36:24
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:36:24] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:36:25] "GET /img/fondo2.jpg HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:39:56
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:39:56] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:39:56] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:39:56] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:40:17
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:17] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:17] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:18] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:40:18
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:18] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:18] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:18] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:40:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:40:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:40:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:19] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:40:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:20] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:20] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:20] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:40:20
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:20] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:20] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:40:20] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:42:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:11] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:11] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:11] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:42:30
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:30] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:30] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:42:43
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:43] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:43] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:43] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:42:58
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:58] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:58] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:42:58] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:43:08
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:43:08] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:43:08] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:43:08] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:43:23
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:43:23] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:43:23] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:43:23] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:44:04
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:04] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:04] "[36mGET /img/ingredientes.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:04] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:44:26
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:26] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:26] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 09:44:28
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:28] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:28] "[33mGET /ruta-de-la-imagen.jpg HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 09:44:46
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:46] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:46] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:44:55] "GET / HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:46:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:11] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:11] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:11] "GET /img/TACONTODO2.png HTTP/1.1" 200 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 09:46:11
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:11] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:12] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:46:12
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:12] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:12] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:13] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:46:34
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:34] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:34] "GET /img/TACONTODO2.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:34] "GET /img/fondo2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:46:50
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:50] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:50] "GET /img/TACONTODO2.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:50] "GET /img/fondo2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:46:54
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:54] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:55] "GET /img/TACONTODO2.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:55] "GET /img/fondo2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:46:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:47:15
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:15] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:15] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:15] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 09:47:17
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:17] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:17] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:17] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 09:47:18
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:18] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:18] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:18] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 09:47:19
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:19] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:19] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:47:19] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:02] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:13] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:24] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:34] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:41] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:49:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:09] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:18] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:50:55] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:12] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:13] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:33] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:33] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:51:52] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:02] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:08] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:16] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:28] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:52:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:53:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:53:22] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:53:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:53:35] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:53:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:53:42] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:53:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:54:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:54:59] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:55:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:55:40] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:21] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:30] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:35] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:40] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:56:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:58:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:58:49] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:58:49] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:09] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:09] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:31] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:31] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:53] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:53] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 09:59:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:12] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:12] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:18] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:18] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:24] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:24] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:46] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:46] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:51] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:51] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:55] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:55] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:00:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:04] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:04] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:16] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:17] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:01:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:34] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:34] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:34] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:45] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:45] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:45] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:57] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:57] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:57] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:02:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:05] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:05] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:05] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:15] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:15] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:15] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:39] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:39] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:39] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:50] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:50] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:50] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:03:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:03] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:03] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:04] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:11] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:11] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:12] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:04:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:45] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:45] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:45] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:56] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:56] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:56] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:56:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:33] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:33] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:33] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:33] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:56] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:56] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:56] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:56] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:57:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:03] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:03] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:03] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:03] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:10] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:10] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:10] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:10] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:24] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:24] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:24] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:24] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:36] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:36] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:36] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:36] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:58:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:59:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:59:16] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:59:16] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:59:16] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:59:16] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:59:16] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 10:59:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:00] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:00] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:00] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:00] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:00] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:07] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:07] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:07] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:07] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:07] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:14] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:14] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:14] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:14] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:14] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:24] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:24] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:24] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:24] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:24] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:46] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:46] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:46] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:46] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:46] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:59] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:59] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:59] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:59] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:00:59] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:38] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:38] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:38] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:39] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:39] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:01:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:47] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:47] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:47] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:47] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:47] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:48] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:03:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:17] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:17] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:17] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:17] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:17] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:17] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:47] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:47] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:47] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:47] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:47] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:47] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:53] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:53] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:53] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:53] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:53] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:53] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:05:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:48] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:48] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:48] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:48] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:48] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:06:48] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:37] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:37] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:38] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:38] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:38] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:38] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:07:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:48] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:48] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:48] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:48] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:48] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:48] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:49] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:12:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:17] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:18] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:18] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:18] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:18] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:18] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:18] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:35] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:36] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:36] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:36] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:36] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:36] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:36] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:13:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:08] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:08] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:08] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:08] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:08] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:08] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:08] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:30] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:30] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:30] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:31] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:31] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:31] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:31] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:14:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:11] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:52] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:52] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:52] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:52] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:53] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:53] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:53] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:16:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:15] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:17:42] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:40] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:41] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:41] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:41] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:41] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:41] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:41] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:18:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:24] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:24] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:24] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:24] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:24] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:25] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:25] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:19:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:27] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:27] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:28] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:28] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:28] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:28] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:20:28] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:09] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:38] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:38] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:38] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:38] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:39] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:39] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:39] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:21:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:44] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:23:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:24:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:25:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:12] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:12] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:12] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:12] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:12] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:12] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:13] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:17] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:46] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:47] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:47] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:47] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:47] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:47] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:47] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:26:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:05] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:05] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:05] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:05] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:05] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:05] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:06] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:27:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:05] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:28:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:29:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:30:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:15] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:31:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:32:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:05] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:18] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:50] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:36:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:15] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:37:23] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "GET /img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "GET /img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "GET /img/tacos4.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "GET /img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "GET /img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "GET /img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "GET /img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:33] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:33] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:34] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:34] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:34] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:34] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:34] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:40:47] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:42:19] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:44:03] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:45:56] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:47:15] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "[36mGET /img/tacos.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "[36mGET /img/fototacos.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "[36mGET /img/tacos4.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "[36mGET /img/clientes.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "[36mGET /img/tacos2.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "[36mGET /img/personas.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:34] "[36mGET /img/TACONTODO.png HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de provedores en la fecha: 14/04/2023 11:49:38
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:38] "GET /obtenerProveedores HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:38] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:38] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+INFO:root:se cargaron las listas de usuarios en la fecha: 14/04/2023 11:49:42
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:42] "GET /obtenerUsuarios HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:42] "[36mGET /img/TACONTODO2.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2023 11:49:42] "[36mGET /img/fondo2.jpg HTTP/1.1[0m" 304 -
+>>>>>>> 09005a9a44141f6af6bd7da3d4f17c198e227ccc
