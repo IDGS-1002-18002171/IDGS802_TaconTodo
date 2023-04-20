@@ -30,12 +30,12 @@ proveedores=Blueprint('proveedores', __name__)
 
 @proveedores.route("/obtenerProveedores",  methods=['GET','POST'])
 def obtenerProveedores():
+    csrf_token = generate_csrf()
     date = datetime.datetime.now()
     logging.basicConfig(filename='trazabilidad.log', level=logging.INFO)
     logging.info("se cargaron las listas de provedores en la fecha: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
 
     filtro = request.form.get("filtro")
-    csrf_token = generate_csrf()
     if filtro:
         proveedores = Proveedor.query.filter(
             (Proveedor.id_proveedor.ilike(f"%{filtro}%")) |
@@ -53,11 +53,6 @@ def obtenerProveedores():
 
 @proveedores.route("/guardarproveedor", methods=['GET','POST'])
 def guardarproveedor():
-    try:
-        validate_csrf(request.form.get('csrf_token'))
-    except :
-        # El token CSRF no coincide, rechazar la solicitud
-        abort(403)
     id_proveedor= str(request.form.get("id_proveedor"))
     nombre_empresa = str(request.form.get("nombre_empresa"))
     nombre_contacto = str(request.form.get("nombre_contacto"))

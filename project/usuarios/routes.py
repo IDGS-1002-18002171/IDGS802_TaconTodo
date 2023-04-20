@@ -31,9 +31,8 @@ usuarios=Blueprint('usuarios', __name__)
 def obtenerUsuarios():
     csrf_token = generate_csrf()
     date = datetime.datetime.now()
-    logging.basicConfig(filename='trazabilidad.log', level=logging.INFO)
-    logging.info("se cargaron las listas de usuarios en la fecha: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-
+    logging.debug("se cargaron las listas de usuarios en la fecha: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+    logging.shutdown()
     filtro = request.form.get("filtro")
     if filtro:
         usuarios = User.query.filter(
@@ -50,30 +49,46 @@ def obtenerUsuarios():
 
 @usuarios.route("/guardarUsuario", methods=['GET','POST'])
 def guardarUsuario():
-    try:
-        validate_csrf(request.form.get('csrf_token'))
-    except :
-        # El token CSRF no coincide, rechazar la solicitud
-        abort(403)
     id= str(request.form.get("id"))
     name = str(request.form.get("name"))
     email = str(request.form.get("email"))
     password=str(request.form.get("contraseña"))
     #password = request.form.get('password')
     
+    rol = request.form['tipos']
+    print(rol)
+
+    
+
+
     print(len(id))
     if len(id) > 0 :
         usuarioElejido = User.query.filter_by(id=int(id)).first()
         usuarioElejido.name = name
         usuarioElejido.email = email
         db.session.commit()
+
+
+        if rol == 'Usuario':
+            rol = userDataStore.find_role('Usuario')
+        elif rol == 'empleado':
+            rol = userDataStore.find_role('empleado')
+        elif rol == 'repartidor':
+            rol = userDataStore.find_role('repartidor')
+        else:
+            rol = userDataStore.find_role('Administrador')
+        
+        user = User.query.filter_by(id=int(id)).first()
+        user.roles = []
+        user.roles.append(rol)
+        db.session.commit()
     else:
         userDataStore.create_user(email=email, name=name, password=generate_password_hash(password, method='sha512'))
         db.session.commit()
 
     date = datetime.datetime.now()
-    logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
-    logging.info("se guardo el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+    logging.debug("se guardo el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+    logging.shutdown()
     success_message = 'listo, usuario guardado'
     flash (success_message,category='success')
         
@@ -93,9 +108,8 @@ def eliminarUsuario():
     db.session.commit()
 
     date = datetime.datetime.now()
-    logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
-    logging.info("se elimino el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-
+    logging.debug("se elimino el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+    logging.shutdown()
     success_message = 'listo, usuario eliminado'
     flash (success_message,category='success')
     return redirect(url_for("usuarios.obtenerUsuarios"))
@@ -110,12 +124,12 @@ def usuarioSeleccionado():
     id= str(request.form.get("id"))
     name = str(request.form.get("name"))
     email = str(request.form.get("email"))
+    tipo = str(request.form.get("tipo"))
 
 
     date = datetime.datetime.now()
-    logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
-    logging.info("se selecciono el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-
+    logging.debug("se selecciono el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+    logging.shutdown()
     filtro = request.form.get("filtro")
     if filtro:
         usuarios = User.query.filter(
@@ -127,5 +141,5 @@ def usuarioSeleccionado():
     else:
         usuarios = User.query.all()
     return render_template("/usuarios.html", lista = usuarios, id=id, name=name,
-                           email=email)
+                           email=email, tipo=tipo)
 

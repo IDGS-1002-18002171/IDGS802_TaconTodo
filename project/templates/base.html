@@ -7,74 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ejemplo de Autenticación con Flask</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="..\static\bootstrap\css\usuarios.css">
+    <link rel="stylesheet" type="text/css" href="..\static\bootstrap\css\proveedores.css">
+    <link rel="stylesheet" type="text/css" href="..\static\bootstrap\css\nosotros.css">
 
-    <link rel="stylesheet" href="../static/bootstrap-5.2.3/css/bootstrap.min.css">
-    <script src="../static/bootstrap-5.2.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../static/css/diseño_inv.css">
-    <link rel="stylesheet" href="../static/css/compras.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../static/css/productos.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../static/bootstrap/img/TACONTODO.png" style="width: 300px; height: 80px;" alt="">
+            </a>
 
 
-    <div class="hero-head">
-        <nav class="navbar is-link">
-            <div class="container">
-
-                <div id="navbarMenuHeroA" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a href="{{ url_for('main.index') }}" class="navbar-item">
-                            Inicio
-                        </a>
-                        {% if not current_user.is_authenticated %}
-                        <a href="{{ url_for('auth.login') }}" class="navbar-item">
-                            Login
-                        </a>
-                        <a href="{{ url_for('auth.register') }}" class="navbar-item">
-                            Registro
-                        </a>
-                        {% endif %}
-                        {% if "Administrador" in current_user.roles %}
-                        <a href="{{ url_for('product.producto') }}" class="navbar-item">
-                            Productos
-                        </a>
-                        <a href="{{ url_for('compra.compras') }}" class="navbar-item">
-                            Compras
-                        </a>
-                        <a href="{{ url_for('inven.inventario') }}" class="navbar-item">
-                            Inventario
-                        </a>
-                        <a href="{{ url_for('proveedores.obtenerProveedores') }}" class="navbar-item">
-                            Proveedores
-                        </a>
-                        <a href="{{ url_for('usuarios.obtenerUsuarios') }}" class="navbar-item">
-                            usuarios
-                        </a>
-                        {% endif %}
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('main.profile') }}" class="navbar-item">
-                            Perfil de Usuario
-                        </a>
-                        <a href="{{ url_for('pedido.getpedidos') }}" class="navbar-item">
-                            Pedidos
-                        </a>
-                        <a href="{{ url_for('venta.getproduct') }}" class="navbar-item">
-                            Venta
-                        </a>
-                        <a href="{{ url_for('auth.logout') }}" class="navbar-item">
-                            Cerrar Sesión
-                        </a>
-                        {% endif %}
-                    </div>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <a href="{{ url_for('main.index') }}" class="navbar-item">
+                        Inicio
+                    </a>
+                    <a href="{{ url_for('venta.getproduct') }}" class="navbar-item">
+                        Venta
+                    </a>
+                    {% if not current_user.is_authenticated %}
+                    <a href="{{ url_for('auth.login') }}" class="navbar-item">
+                        Login
+                    </a>
+                    <a href="{{ url_for('auth.register') }}" class="navbar-item">
+                        Registro
+                    </a>
+                    {% endif %}
+                    {% if "Administrador" in current_user.roles %}
+                    <a href="{{ url_for('product.producto') }}" class="navbar-item">
+                        Productos
+                    </a>
+                    <a href="{{ url_for('compra.compras') }}" class="navbar-item">
+                        Compras
+                    </a>
+                    <a href="{{ url_for('inven.inventario') }}" class="navbar-item">
+                        Inventario
+                    </a>
+                    <a href="{{ url_for('proveedores.obtenerProveedores') }}" class="navbar-item">
+                        Proveedores
+                    </a>
+                    <a href="{{ url_for('usuarios.obtenerUsuarios') }}" class="navbar-item">
+                        usuarios
+                    </a>
+                    {% endif %}
+                    {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('main.profile') }}" class="navbar-item">
+                        Perfil de Usuario
+                    </a>
+                    <a href="{{ url_for('pedido.getpedidos') }}" class="navbar-item">
+                        Pedidos
+                    </a>
+                    <a href="{{ url_for('auth.logout') }}" class="navbar-item">
+                        Cerrar Sesión
+                    </a>
+                    {% endif %}
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+
 
     <div>
         <div style="background-color: white;">
@@ -84,13 +85,6 @@
         </div>
     </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="../static/js/jquery-3.6.4.js"></script>
-    <script src="../static/js/main.js"></script>
-    <!-- <script src="../static/js/compras.js"></script>
-    <script src="../static/js/inventario.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

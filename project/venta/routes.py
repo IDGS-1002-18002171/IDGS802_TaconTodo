@@ -10,6 +10,8 @@ from plyer import notification
 from flask_wtf.csrf import generate_csrf,validate_csrf
 from datetime import datetime
 import requests
+from sqlalchemy import create_engine
+import pymysql
 
 venta=Blueprint('venta', __name__)
 
@@ -26,8 +28,40 @@ def make_rappi_request(url, params={}):
     response = requests.post(url, headers=headers, json=params)
     return response.json()
 
+def Descontar_materia_prima(id_pedido):
+    # Open database connection
+    db1 = pymysql.connect(
+        host="localhost",
+        user="root",
+        password="root",
+        database="TaconTodo"
+    )
+    cursor = db1.cursor()
+    # execute the stored procedure
+    cursor.callproc('Descuento_Materias_Primas', [id_pedido])
+    # commit the transaction
+    db1.commit()
+    # close the database connection
+    db1.close()
+
+def Descontar_materia_prima1(id_pedido):
+    # Open database connection
+    db1 = pymysql.connect(
+        host="localhost",
+        user="root",
+        password="root",
+        database="TaconTodo"
+    )
+    cursor = db1.cursor()
+    # execute the stored procedure
+    cursor.callproc('Descuento_Materias_Primas1', [id_pedido])
+    # commit the transaction
+    db1.commit()
+    # close the database connection
+    db1.close()
+
 def calculate_order_amount():
-    cuenta = Decimal('0.0')
+    cuenta = Decimal('2000.0')
     for item in items:
         precio = Decimal(item.precio_venta)*100
         cantidad = Decimal(item.cantidad_disponible)
@@ -47,22 +81,30 @@ def calculate_order_description():
 @venta.route("/cart")
 @login_required
 #@roles_required('')
-@roles_accepted('Usuario')
+@roles_accepted('Usuario','Empleado')
 def cart():
     global items
     csrf_token = generate_csrf()
-    cuenta = Decimal('0.0')
-    for item in items:
-        precio = Decimal(item.precio_venta)
-        cantidad = Decimal(item.cantidad_disponible)
-        total = precio * cantidad
-        cuenta += total
+    if 'Usuario' in current_user.roles:
+        cuenta = Decimal('20.0')
+        for item in items:
+            precio = Decimal(item.precio_venta)
+            cantidad = Decimal(item.cantidad_disponible)
+            total = precio * cantidad
+            cuenta += total
+    else :
+        cuenta = Decimal('00.0')
+        for item in items:
+            precio = Decimal(item.precio_venta)
+            cantidad = Decimal(item.cantidad_disponible)
+            total = precio * cantidad
+            cuenta += total
     return render_template("carrito.html", items=items,total=cuenta,csrf_token=csrf_token)
 
 @venta.route("/agregar_al_carrito", methods=["POST"])
 @login_required
 #@roles_required('')
-@roles_accepted('Usuario')
+@roles_accepted('Usuario','Empleado')
 def agregar_al_carrito():
     global items
     try:
@@ -79,7 +121,7 @@ def agregar_al_carrito():
 @venta.route("/eliminar_al_carrito", methods=["POST"])
 @login_required
 #@roles_required('')
-@roles_accepted('Usuario')
+@roles_accepted('Usuario','Empleado')
 def eliminar_al_carrito():
     global items
     try:
@@ -94,20 +136,11 @@ def eliminar_al_carrito():
     return redirect(url_for("venta.getproduct"))
 
 @venta.route('/getproduct',methods=['GET'])
-@login_required
-#@roles_required('')
-@roles_accepted('Administrador','Usuario')
 def getproduct():
-    if 'Usuario' in current_user.roles:
-        productos=Producto.query.all()
-        lista_productos=productos
-        csrf_token = generate_csrf()
-        #alumnos = Alumnos.query.filter(Alumnos.nombre.like('%CO%')).all()
-        return render_template('venta1.html',productos=lista_productos,items=len(items),csrf_token=csrf_token)
     if 'Administrador' in current_user.roles:
         pedidos = Pedidos.query.filter(Pedidos.estado_pedido == 5).all()
         lista_pedidos_estructurado1=[]
-        total = Decimal('0.0')
+        total = Decimal('20.0')
         for pedido in pedidos:
             productos_pedido = []
             usuario=User.query.filter_by(id=pedido.id_usuario).first()
@@ -142,12 +175,63 @@ def getproduct():
         tittle='Ventas Concluidas'
         #alumnos = Alumnos.query.filter(Alumnos.nombre.like('%CO%')).all()
         return render_template('venta2.html',items=lista_pedidos_estructurado,csrf_token=csrf_token,tittle=tittle)
+    else :
+        productos=Producto.query.all()
+        lista_productos=productos
+        csrf_token = generate_csrf()
+        #alumnos = Alumnos.query.filter(Alumnos.nombre.like('%CO%')).all()
+        return render_template('venta1.html',productos=lista_productos,items=len(items),csrf_token=csrf_token)
+    
 
 @venta.route("/pasarela")
 @login_required
 #@roles_required('')
-@roles_accepted('Usuario')
+@roles_accepted('Usuario','Empleado')
 def pasarela():
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    if 'Empleado' in current_user.roles:
+        cuenta = Decimal('0.0')
+        for item in items:
+            idNew=item.id_producto
+            producto = Producto.query.get(idNew) # Get the product with the given ID
+            #producto.cantidad_disponible = (int(producto.cantidad_disponible)-int(item.cantidad_disponible)) # Subtract 1 from the cantidad_disponible attribute
+            precio = Decimal(item.precio_venta)
+            cantidad = Decimal(item.cantidad_disponible)
+            total = precio * cantidad
+            cuenta += total
+        venta =Venta(
+            id_usuario=current_user.id,
+            precio_total=cuenta,
+            fecha_hora_venta=current_time
+        )
+
+        # Agregar el objeto a la sesión y hacer commit para que se realice la inserción en la tabla
+        db.session.add(venta)
+        pedido = Pedidos(
+            id_usuario=current_user.id,
+            estado_pedido=5,
+            fecha_hora_pedido=current_time,
+            domicilio=direccion_global
+        )
+        # Agregar el objeto a la sesión y hacer commit para que se realice la inserción en la tabla
+        db.session.add(pedido)
+        db.session.commit()
+
+        id_pedido = pedido.id_pedido
+        # Insertar los productos del pedido en la tabla Pedidos_Productos
+        for producto in items:
+            pedido_productos = Pedidos_Productos.insert().values(
+                id_pedido=id_pedido,
+                id_producto=producto.id_producto,
+                cantidad=producto.cantidad_disponible
+            )
+            db.session.execute(pedido_productos)
+        db.session.commit()
+        items.clear()
+        success_message='Gracias por su compra'
+        flash(success_message,category='success')
+        Descontar_materia_prima1(id_pedido)
+        return redirect(url_for("venta.getproduct"))
     return render_template("venta.html", items=items)
 
 @venta.route("/thanks")
@@ -161,52 +245,30 @@ def thanks():
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     logging.debug(f'Compra en linea por .... id:{current_user.id} name:{current_user.name} correo:{current_user.email} fecha:{current_time}')
     logging.shutdown()
-    verdura=0
-    salsa_verde=0
-    salsa_roja=0
+    verdura=0.0
+    salsa_verde=0.0
+    salsa_roja=0.0
+    promedio_verdura=0.0
+    promedio_salsa_verde=0.0
+    promedio_salsa_roja=0.0
     for item in items:
         if 'Con verdura' in item.descripcion:
-            verdura+=1
+            verdura+=1.0*float(item.cantidad_disponible)
         if 'Salsa verde' in item.descripcion:
-            salsa_verde+=1
+            salsa_verde+=1.0*float(item.cantidad_disponible)
         if 'Salsa roja' in item.descripcion:
-            salsa_roja+=1
+            salsa_roja+=1.0*float(item.cantidad_disponible)
         if 'Ambas salsas' in item.descripcion:
-            salsa_roja+=.5
-            salsa_verde+=.5
-    promedio_verdura=(verdura/len(items))
-    promedio_salsa_verde=(salsa_verde/len(items))
-    promedio_salsa_roja=(salsa_roja/len(items))
-    cuenta = Decimal('0.0')
-    for item in items:
-        idNew=item.id_producto
-        producto = Producto.query.get(idNew) # Get the product with the given ID
-        #producto.cantidad_disponible = (int(producto.cantidad_disponible)-int(item.cantidad_disponible)) # Subtract 1 from the cantidad_disponible attribute
-        precio = Decimal(item.precio_venta)
-        cantidad = Decimal(item.cantidad_disponible)
-        total = precio * cantidad
-        cuenta += total
-    if promedio_verdura!=0.0:
-        if(cuenta>100):
-            promedio_verdura=.003*promedio_verdura
-        if(cuenta>500):
-            promedio_verdura=.007*promedio_verdura
-        if(cuenta<100):
-            promedio_verdura=.001*promedio_verdura
-    if promedio_salsa_verde!=0.0:
-        if(cuenta>100):
-            promedio_salsa_verde=.002*promedio_salsa_verde
-        if(cuenta>500):
-            promedio_salsa_verde=.006*promedio_salsa_verde
-        if(cuenta<100):
-            promedio_salsa_verde=.0001*promedio_salsa_verde
-    if promedio_salsa_roja!=0.0:
-        if(cuenta>100):
-            promedio_salsa_roja=.002*promedio_salsa_roja
-        if(cuenta>500):
-            promedio_salsa_roja=.006*promedio_salsa_roja
-        if(cuenta<100):
-            promedio_salsa_roja=.0001*promedio_salsa_roja
+            salsa_roja+=.5*float(item.cantidad_disponible)
+            salsa_verde+=.5*float(item.cantidad_disponible)
+    if verdura>0.0:
+            promedio_verdura=.001*verdura
+
+    if salsa_verde>0.0:
+            promedio_salsa_verde=.0001*salsa_verde
+
+    if salsa_roja>0.0:
+            promedio_salsa_roja=.0001*salsa_roja
     pedido = Pedidos(
         id_usuario=current_user.id,
         estado_pedido=1,
@@ -228,6 +290,9 @@ def thanks():
         )
         db.session.execute(pedido_productos)
     db.session.commit()
+    items.clear()
+    success_message='Gracias por su compra'
+    flash(success_message,category='success')
     # Configure the notification
     notification_title = "Nueva orden"
     notification_message = "Se ha realizado una nueva venta. Por favor, revise los detalles en la sección de pedidos de la aplicación."

@@ -1,6 +1,6 @@
-{% extends "layout1.html" %}
+{% extends "base.html" %}
 
-{% block content1 %}
+{% block content %}
   <div class="container mt-5">
     <h1 class="text-center">Carrito de compras</h1>
     <hr>
@@ -34,6 +34,9 @@
         </tbody>
       </table>
       <h1 style="text-align: center;">Total :${{total}}</h1>
+      {% if current_user.has_role('Usuario')%}
+      <h7 style="text-align: center;">Incluyendo los $20.00 del servicio a domicilio</h7>
+      {% endif %}
       <div class="row">
         <div class="col-md-5">
             <form action="{{ url_for('venta.getproduct') }}">
