@@ -30325,3 +30325,34 @@ INFO:werkzeug: * Restarting with stat
 INFO:root:Arranque de aplicacion
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 885-709-443
+<<<<<<< Updated upstream
+=======
+INFO:werkzeug: * Detected change in 'C:\\Users\\dulce\\OneDrive\\Documents\\GitHub\\IDGS802_TaconTodo\\project\\auth.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 885-709-443
+INFO:root:Arranque de aplicacion
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:root:Arranque de aplicacion
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 885-709-443
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/css/usuarios.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/css/proveedores.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/css/nosotros.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/fototacos.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/TACONTODO.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/tacos.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/rueda_tacos.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/clientes.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/tacos2.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/personas.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/calidad.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/autenticidad.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/servicio_al_cliente.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2023 01:06:34] "GET /static/bootstrap/img/innovacion.png HTTP/1.1" 200 -
+>>>>>>> Stashed changes
