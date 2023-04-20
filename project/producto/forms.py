@@ -1,13 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, FileField, FloatField, validators, TextAreaField, SelectField
 
-class ProductoForm(Form):
-    idProducto = IntegerField("Id Producto:")
-    productName = StringField("Nombre producto:")
-    descripcion = TextAreaField("Descripción:")
-    imagen = FileField("Cargar imagen:")
-    tipo_prod = IntegerField("Tipo de producto:")
-    precioVenta = FloatField("Precio venta:")
 
 def precio_validate(form,field):
     if field.data <= 0:

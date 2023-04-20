@@ -26,7 +26,7 @@ def producto():
 
     prod = Producto.query.filter_by(estatus=1).all()
     csrf_token = generate_csrf()
-    return render_template("producto.html", form=prod_form, producto=prod,csrf_token=csrf_token)
+    return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod,csrf_token=csrf_token)
 
 @product.route("/agregarProducto", methods=["POST"])
 @login_required

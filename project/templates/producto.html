@@ -5,24 +5,6 @@
 {%from "_macros.html" import render_field%}
 <br>
 <h1 style="color: #f4640a" class="text-center">Productos</h1>
-{% with messages = get_flashed_messages(with_categories=True) %}
-  {% if messages %}
-      {% for category, message in messages %}
-        {% if category, message%}
-          <script>
-            swal.fire({
-              title: "{{ category.title() }}",
-              // posibles categorias a recibir: success , error , warning ,info
-              text: "{{ message }}",
-              // menasaje a mandar
-              icon: "{{ category }}"
-              // posibles categorias a recibir: success , error , warning ,info
-            });
-          </script>
-        {%endif%}
-      {% endfor %}
-  {% endif %}
-{% endwith %}
 <script>
 
 document.addEventListener('DOMContentLoaded', function() {
