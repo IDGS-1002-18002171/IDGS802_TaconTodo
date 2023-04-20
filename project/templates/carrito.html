@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h1 class="text-center">Carrito de compras</h1>
+    <hr>
+    {% if items %}
+      <table class="table table-light table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Producto</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Precio</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Cantidad Solicitada</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Detalles de la orden</th>
+            <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %}
+            <tr>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.nombre }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.precio_venta }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.cantidad_disponible }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">{{ item.descripcion }}</td>
+              <td style="text-align: center;vertical-align: middle;margin: auto;">
+                <form action="/eliminar_al_carrito" method="POST">
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                  <input type="hidden" id="id" name="id" value="{{ item.id_producto }}">
+                  <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <h1 style="text-align: center;">Total :${{total}}</h1>
+      {% if current_user.has_role('Usuario')%}
+      <h7 style="text-align: center;">Incluyendo los $20.00 del servicio a domicilio</h7>
+      {% endif %}
+      <div class="row">
+        <div class="col-md-5">
+            <form action="{{ url_for('venta.getproduct') }}">
+                <button type="submit" class="btn btn-outline-danger offset-1">Regresar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form action="{{ url_for('venta.pasarela') }}">
+                <button type="submit" class="btn btn-outline-info">Realizar Compra</button>
+            </form>
+        </div>
+      </div>
+    {% else %}
+      <p>No hay productos en el carrito.</p>
+      <div class="col-md-6">
+        <form action="{{ url_for('venta.getproduct') }}">
+            <button type="submit" class="btn btn-outline-info">Regresar</button>
+        </form>
+    </div>
+    {% endif %}
+  </div>
+{% endblock %}

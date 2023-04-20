@@ -19,7 +19,7 @@ def index():
 @main.route('/profile')
 @login_required
 #@roles_required('')
-@roles_accepted('Administrador','Usuario')
+@roles_accepted('Administrador','Usuario','Empleado','Repartidor')
 def profile():
     return render_template('profile.html', name=current_user.name)
 

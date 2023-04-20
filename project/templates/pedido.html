@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+  <h1 class="text-center">Pedidos Actuales</h1>
+  <hr>
+  {% if items %}
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">ID</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Productos</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Cantidad Solicitada</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Usuario</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Estado de la orden</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Fecha del pedido</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Domicilio</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Cocinero</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Repartidor</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Fecha de la entrega</th>
+          <th scope="col" style="text-align: center;vertical-align: middle;margin: auto;">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for pedido in items %}
+        <tr>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {{ pedido.pedido.id_pedido }}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {% for producto in pedido.productos %}
+            {{ producto.nombre }}<br>
+            {% endfor %}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {% for producto in pedido.productos %}
+            {{ producto.tipo_producto }}<br>
+            {% endfor %}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {{ pedido.usuario.name }}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {%if pedido.pedido.estado_pedido ==1 :%}
+              <p>Solicitado</p>
+            {%endif%}
+            {%if pedido.pedido.estado_pedido ==2 :%}
+              <p>Se esta preparando</p>
+            {%endif%}
+            {%if pedido.pedido.estado_pedido ==3 :%}
+              <p>Orden preparada</p>
+            {%endif%}
+            {%if pedido.pedido.estado_pedido ==4 :%}
+              <p>Pedido en viaje</p>
+            {%endif%}
+            {%if pedido.pedido.estado_pedido ==5 :%}
+              <p>Orden Entregada</p>
+            {%endif%}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {{ pedido.pedido.fecha_hora_pedido }}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {{ pedido.pedido.domicilio }}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {%if pedido.cocinero.name:%}
+            {{ pedido.cocinero.name }}
+            {%endif%}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {%if pedido.repartidor.name:%}
+            {{ pedido.repartidor.name }}
+            {%endif%}
+          </td>
+          <td style="text-align: center;vertical-align: middle;margin: auto;">
+            {%if pedido.pedido.fecha_hora_entrega:%}
+            {{ pedido.pedido.fecha_hora_entrega }}
+            {%endif%}
+          </td>
+          <td>
+            {%if pedido.pedido.estado_pedido ==1 :%}
+            <form action="{{ url_for('pedido.terminado') }}" method="POST">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+              <input type="hidden" name="id" value="{{ pedido.pedido.id_pedido }}">
+              <button type="submit" class="btn btn-outline-info">Tomar orden</button>
+            </form>
+            {%endif%}
+            {%if pedido.pedido.estado_pedido ==2 :%}
+            <form action="{{ url_for('pedido.terminado') }}" method="POST">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+              <input type="hidden" name="id" value="{{ pedido.pedido.id_pedido }}">
+              <button type="submit" class="btn btn-outline-success">Orden Terminada</button>
+            </form>
+            {%endif%}
+            {%if pedido.pedido.estado_pedido ==3 :%}
+            <form action="{{ url_for('pedido.viaje') }}" method="POST">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+              <input type="hidden" name="id" value="{{ pedido.pedido.id_pedido }}">
+              <button type="submit" class="btn btn-outline-warning">Realizar Viaje</button>
+            </form>
+            {%endif%}
+            {%if pedido.pedido.estado_pedido ==4 :%}
+            <form action="{{ url_for('pedido.viaje') }}" method="POST">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+              <input type="hidden" name="id" value="{{ pedido.pedido.id_pedido }}">
+              <button type="submit" class="btn btn-outline-danger">Entregado</button>
+            </form>
+            {%endif%}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <p>No hay pedidos pendientes.</p>
+      <form action="{{ url_for('main.index') }}">
+        <button type="submit" class="btn btn-outline-info">Regresar</button>
+      </form>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -25,15 +25,18 @@ def producto():
     rect_form.idMateriaPri.choices = [(mat.id_materia_prima, mat.nombre) for mat in MateriaPrima.query.all()]
 
     prod = Producto.query.filter_by(estatus=1).all()
-    rect = Receta.query.all()
-
-    return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod)
+    csrf_token = generate_csrf()
+    return render_template("producto.html", form=prod_form, producto=prod,csrf_token=csrf_token)
 
 @product.route("/agregarProducto", methods=["POST"])
 @login_required
 @roles_accepted("Administrador")
 def agregarPro():
-
+    try:
+        validate_csrf(request.form.get('csrf_token'))
+    except :
+        # El token CSRF no coincide, rechazar la solicitud
+        abort(403)
     prod_form = ProductoForm(request.form)
     rect_form = RecetaForm(request.form)
     csrf_token = generate_csrf()

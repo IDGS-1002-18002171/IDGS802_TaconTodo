@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br>
+<center>
+<h1 id="textoUsuario">Bienvenido</h1>
+<h5 id="textoUsuario">A la seccion de usuarios</h5>
+
+</center>
+<br>
+
+
+
+<br>
+
+<div>
+<div id="divDerechoUsuario">
+
+  <form method="POST" action="/obtenerUsuarios">
+    <button class="btn btn-primary">Buscar</button>
+    <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
+    <input value="" name="filtro" type="text"/>
+    </form>
+
+    <br>
+<table  class="table table-hover">
+    <thead>
+      <tr id="trTablaUsuario">
+        <th id="thTablaUsuario">ID</th>
+        <th id="thTablaUsuario">nombre</th>
+        <th id="thTablaUsuario">correo electronico</th>
+        <th id="thTablaUsuario">estatus</th>
+        <th id="thTablaUsuario">Revision</th>
+        <th id="thTablaUsuario">Eliminacion</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for usuarios in lista %}
+      <tr id="tr2TablaUsuario">
+        <td>{{usuarios.id}}</td>
+        <td>{{usuarios.name}}</td>
+        <td>{{usuarios.email}}</td>
+
+    {%if usuarios.active == 1 %}
+        <td>Activo</td>
+    
+    {%endif%}
+    {%if usuarios.active == 0 %}
+        <td>Inactivo</td>
+    
+    {%endif%}
+        
+        <td>
+            
+            <form action="/usuarioSeleccionado" method="post">
+                <input name="id" value="{{ usuarios.id }}" hidden>
+                <input name="name" value="{{ usuarios.name }}" hidden>
+                <input name="email" value="{{ usuarios.email }}" hidden>
+                <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
+                
+                {% if 'Administrador' in usuarios.roles %}
+                <input name="tipo" value="Administrador" hidden> 
+                    {% elif 'Usuario' in usuarios.roles %}
+                    <input name="tipo" value="Usuario" hidden> 
+                    {% elif 'repartidor' in usuarios.roles %}
+                    <input name="tipo" value="repartidor" hidden> 
+                    {% else %}
+                    <input name="empleado" value="empleado" hidden> 
+                    {% endif %}
+                <button class="btn btn-warning" type="submit">Modificar</button>
+              </form>
+
+        </td>
+        <td>
+          {%if usuarios.active == 1 %}
+            <form action="/eliminarUsuario" method="post">
+                <input name="id" value="{{ usuarios.id }}" hidden>
+                <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
+                <button class="btn btn-danger" type="submit">Eliminar</button>
+              </form>
+              {%endif%}
+        </td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+</div>
+
+
+<div id="divIzquierdoUsuario">
+  <div class="card mb-3" id="formatoDelCardUsuario">
+    <div class="card-body">
+      <center>
+      <h2 class="card-title" id="tituloCardUsuario">Formulario</h3>
+      </center>
+      <form method="POST" action="/guardarUsuario">
+        <center>
+        <input value="{{id}}" name="id" type="hidden"/>
+        </center>
+        <br>
+        <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
+        <h5 id="textoUsuario">Nombre: <input value="{{name}}" name="name" type="text" id="tamañoInputNombreUsuario"/></h5>
+        
+        <br>
+        <h5 id="textoUsuario">Correo: <input value="{{email}}" name="email" type="text" id="tamañoInputCorreoUsuario"/></h5>
+        
+        <br>
+        <h5 id="textoUsuario">Contraseña: <input value="" name="contraseña" type="text" id="tamañoInputContraseñaUsuario"/></h5>
+        
+
+        <br>
+        <h5 style="font-family: sans-serif; color: black">Tipo: 
+          <select name="tipos" style="width: 234px; height: 30px;">
+            <option value="Usuario" {% if tipo == 'Usuario' %} selected {% endif %}>Usuario</option>
+            <option value="empleado" {% if tipo == 'empleado' %} selected {% endif %}>Empleado</option>
+            <option value="repartidor" {% if tipo == 'repartidor' %} selected {% endif %}>Repartidor</option>
+            <option value="Administrador" {% if tipo == 'Administrador' %} selected {% endif %}>Administrador</option>
+          </select>
+        </h5>
+        
+        
+        </h5>
+
+        <br>
+        <br>
+      <center>
+        <button type="submit" class="btn btn-success">Guardar</button>
+      </center>
+        </form>
+    
+    </div>
+  </div>
+</div>
+
+</div>
+
+  
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout1.html" %}
+
+{% block content1 %}
+<link rel="stylesheet" href="../static/bootstrap/css/checkout.css" />
+<script src="https://js.stripe.com/v3/"></script>
+<script src="../static/bootstrap/js/checkout.js" defer></script>
+<!-- Display a payment form -->
+<form id="payment-form" class="form-control">
+    <div class="form-control">
+        <label for="address">Direccion:</label>
+        <input type="text" name="address" id="address" placeholder="Colonia/Calle/Numero " class="form-control" style="height: 2rem;">
+    </div>
+    <div id="link-authentication-element">
+        <!--Stripe.js injects the Link Authentication Element-->
+    </div>
+    <div id="payment-element">
+        <!--Stripe.js injects the Payment Element-->
+    </div>
+    <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pagar Ahora!</span>
+    </button>
+    <div id="payment-message" class="hidden"></div>
+</form>
+
+{% endblock %}

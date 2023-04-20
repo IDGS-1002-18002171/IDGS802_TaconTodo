@@ -20,3 +20,8 @@ requests
 toml
 Werkzeug
 plyer
+pymysql
+python-decouple
+sqlalchemy
+requests
+plyer
