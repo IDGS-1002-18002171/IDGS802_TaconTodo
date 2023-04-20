@@ -41,9 +41,9 @@ def agregarMateria():
         db.session.commit()
 
         mensaje = "Se agrego correctamente la materia prima"
-        flash(mensaje)
+        flash(mensaje, "success")
 
-        return redirect(url_for("main.inventario"))
+        return redirect(url_for("inven.inventario"))
 
     return render_template("inventario.html",csrf_token=csrf_token)
 

@@ -155,7 +155,7 @@ def buscarProducto():
             (Producto.precio_venta.ilike(f"%{search}%")) 
             ).all()
     else:
-       prod = Producto.query.filter_by(estatus=1).all()
+       flash("No existe", "error")
 
     return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod)
 
