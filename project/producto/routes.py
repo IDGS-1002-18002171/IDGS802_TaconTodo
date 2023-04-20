@@ -18,15 +18,24 @@ product = Blueprint('product', __name__)
 @login_required
 @roles_accepted('Administrador')
 def producto():
-
     prod_form = ProductoForm(request.form)
     rect_form = RecetaForm(request.form)
     rect_form.idProducto.choices = [(prod.id_producto, prod.nombre)for prod in Producto.query.filter_by(estatus=1).all()]
     rect_form.idMateriaPri.choices = [(mat.id_materia_prima, mat.nombre) for mat in MateriaPrima.query.all()]
-
     prod = Producto.query.filter_by(estatus=1).all()
+    recetas=Receta.query.all()
+    lista_recetas_estructurado=[]
+    for receta in recetas:
+        producto=Producto.query.filter_by(id_producto=receta.id_producto).first()
+        materia=MateriaPrima.query.filter_by(id_materia_prima=receta.id_materia_prima).first()
+        receta_estructurada = {
+                'receta': receta,
+                'producto': producto,
+                'materia': materia
+            }
+        lista_recetas_estructurado.append(receta_estructurada)
     csrf_token = generate_csrf()
-    return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod,csrf_token=csrf_token)
+    return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod,csrf_token=csrf_token,recetas=lista_recetas_estructurado)
 
 @product.route("/agregarProducto", methods=["POST"])
 @login_required
@@ -166,19 +175,20 @@ def buscarProducto():
 @login_required
 @roles_accepted("Administrador")
 def crearReceta():
-    prod_form = ProductoForm(request.form)
-    rect_form = RecetaForm(request.form)
+    id_materia_prima = request.form['idMateriaPri']
+    id_producto = request.form['idProducto']
+    cantidad_requerida = request.form['cantidadReq']
+    receta = Receta(id_materia_prima=id_materia_prima, id_producto=id_producto, cantidad_requerida=cantidad_requerida)
+    db.session.add(receta)
+    db.session.commit()
+    return redirect(url_for('product.producto'))
 
-    if request.method == "POST":
 
-        
-        
-        
-        return redirect(url_for("product.producto"))
-        # receta = Receta(
-        #     id_materia_prima = 
-        #     id_producto = 
-        #     cantidad_requerida = 
-        # )
-
-    return render_template("producto.html", form=prod_form,formR=rect_form)
+@product.route('/eliminarReceta', methods=['POST'])
+def eliminarReceta():
+    receta_id = request.form.get('id_receta')
+    receta = Receta.query.filter(Receta.id_receta==receta_id).first()
+    print(receta)
+    db.session.delete(receta)
+    db.session.commit()
+    return redirect(url_for('product.producto'))

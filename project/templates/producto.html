@@ -1,4 +1,4 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 
 {% block content %}
 
@@ -7,34 +7,34 @@
 <h1 style="color: #f4640a" class="text-center">Productos</h1>
 <script>
 
-document.addEventListener('DOMContentLoaded', function() {
-  
+  document.addEventListener('DOMContentLoaded', function () {
 
-  document.getElementById('btnEliminarProducto').addEventListener('click', function(e) {
-    
-    e.preventDefault();
 
-    Swal.fire({
-      title: '¿Estás seguro?',
-      text: 'Esta acción no se puede deshacer',
-      icon: 'warning',
-      showCancelButton: true,
-      confirmButtonText: 'Sí, continuar',
-      cancelButtonText: 'Cancelar'
-    }).then((result) => {
-      
-      if (result.isConfirmed) {
-        location.href = e.target.href;
-      } else {
-        
-        
-      }
+    document.getElementById('btnEliminarProducto').addEventListener('click', function (e) {
+
+      e.preventDefault();
+
+      Swal.fire({
+        title: '¿Estás seguro?',
+        text: 'Esta acción no se puede deshacer',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Sí, continuar',
+        cancelButtonText: 'Cancelar'
+      }).then((result) => {
+
+        if (result.isConfirmed) {
+          location.href = e.target.href;
+        } else {
+
+
+        }
+      });
     });
   });
-});
 
 
-  
+
   function agregarProducto() {
     var selectProducto = document.getElementById("select_idproducto");
     var selectMateria = document.getElementById("select_idmateria");
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
 
-  
+
   function quitarProducto(elemento) {
     var fila = elemento.parentNode.parentNode;
     fila.parentNode.removeChild(fila);
@@ -63,17 +63,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <ul class="nav nav-tabs" id="tabs_content" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos-tab-pane" type="button" role="tab" aria-controls="productos-tab-pane" aria-selected="true">Productos</button>
+      <button class="nav-link active" id="productos-tab" data-bs-toggle="tab" data-bs-target="#productos-tab-pane"
+        type="button" role="tab" aria-controls="productos-tab-pane" aria-selected="true">Productos</button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="recetas-tab" data-bs-toggle="tab" data-bs-target="#recetas-tab-pane" type="button" role="tab" aria-controls="recetas-tab-pane" aria-selected="false">Recetas</button>
+      <button class="nav-link" id="recetas-tab" data-bs-toggle="tab" data-bs-target="#recetas-tab-pane" type="button"
+        role="tab" aria-controls="recetas-tab-pane" aria-selected="false">Recetas</button>
     </li>
   </ul>
 
   <div class="tab-content" id="tabs_panels">
 
-    <div class="tab-pane fade show active" id="productos-tab-pane" role="tabpanel" aria-labelledby="productos-tab" tabindex="0">
-      
+    <div class="tab-pane fade show active" id="productos-tab-pane" role="tabpanel" aria-labelledby="productos-tab"
+      tabindex="0">
+
       <div class="contenedor_product_1">
         <div class="form_product tab-pane fade show activate">
           <h3 style="color: #6b6b6b;">Registro de productos</h3>
@@ -130,16 +133,20 @@ document.addEventListener('DOMContentLoaded', function() {
               </thead>
               <tbody>
                 {% for products in producto %}
-                  <tr>
-                    <td>{{products.id_producto}}</td>
-                    <td>{{products.nombre}}</td>
-                    <td>{{products.descripcion}}</td>
-                    <td class="align-content-center"><img src="data:image/png;base64,{{ products.imagen }}" width="128px" height="128px"></td>
-                    <td>{{products.tipo_producto}}</td>
-                    <td>{{products.precio_venta}}</td>
-                    <td><button class="btn btn-outline-danger btn-sm" id="btnEliminarProducto" title="eliminar" type="button" onclick="window.location.href='/eliminar_producto/{{products.id_producto}}'"><i class="bi bi-x-square"></i></button></td>
-                    <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarProducto?id={{products.id_producto}}"><i class="bi bi-pencil-square"></i></a></td>
-                  </tr>
+                <tr>
+                  <td>{{products.id_producto}}</td>
+                  <td>{{products.nombre}}</td>
+                  <td>{{products.descripcion}}</td>
+                  <td class="align-content-center"><img src="data:image/png;base64,{{ products.imagen }}" width="128px"
+                      height="128px"></td>
+                  <td>{{products.tipo_producto}}</td>
+                  <td>{{products.precio_venta}}</td>
+                  <td><button class="btn btn-outline-danger btn-sm" id="btnEliminarProducto" title="eliminar"
+                      type="button" onclick="window.location.href='/eliminar_producto/{{products.id_producto}}'"><i
+                        class="bi bi-x-square"></i></button></td>
+                  <td><a class="btn btn-outline-warning btn-sm" title="editar"
+                      href="/editarProducto?id={{products.id_producto}}"><i class="bi bi-pencil-square"></i></a></td>
+                </tr>
                 {%endfor%}
               </tbody>
             </table>
@@ -149,75 +156,74 @@ document.addEventListener('DOMContentLoaded', function() {
 
     </div>
 
-    <div class="tab-pane fade" id="recetas-tab-pane" role="tabpanel" aria-labelledby="recetas-tab"  tabindex="0">
+    <div class="tab-pane fade" id="recetas-tab-pane" role="tabpanel" aria-labelledby="recetas-tab" tabindex="0">
       <div class="contenedor_recetas">
         <div class="cont_form_receta">
           <h3 class="text-secondary">Crear Receta</h3>
+          <div class="col" style="overflow-y: scroll; height: 200px;">
+            <table class="table table-striped" id="miniTabla" name="miniTabla">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Ingrediente</th>
+                  <th>Cantidad requerida</th>
+                  <th>Acción</th>
+                </tr>
+                {%for item in recetas:%}
+                <tr>
+                  <td>
+                    {{item.producto.nombre}}
+                  </td>
+                  <td>
+                    {{item.materia.nombre}}
+                  </td>
+                  <td>
+                    {{item.receta.cantidad_requerida}}
+                  </td>
+                  <td>
+                    <form action="{{ url_for('product.eliminarReceta') }}" method="POST">
+                      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                      <input type="hidden" value="{{ item.receta.id_receta }}" name="id_receta">
+                      <button type="submit" class="btn btn-outline-danger">eliminar material</button>
+                    </form>
+                  </td>
+                </tr>
+                {%endfor%}
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
           <hr>
           <div>
-            <h5>Seleccionar ingredientes</h5>
-            <div class="row">
-              {{render_field(formR.idMateriaPri,class="form-select",id="select_idmateria")}}
-              <div class="col">
-                <label for="cantidadReq">Cantidad requerida: </label>
-                <input type="number" min="1" step="any" class="form-control" id="cantidadReq" name="cantidadReq" required>
+            <form action="/crearReceta" method="post" class="row" id="form-recetas">
+              <h3>Seleccionar producto</h3>
+              <hr>
+              {{formR.idProducto(class="form-select", id="select_idproducto")}}
+              <hr>
+              <h3>Seleccionar ingrediente</h3>
+              <div class="row">
+                {{formR.idMateriaPri(class="form-select", id="select_idmateria")}}
+                <div class="col">
+                  <label for="cantidadReq">Cantidad requerida: </label>
+                  <input type="number" min="1" step="any" class="form-control" id="cantidadReq" name="cantidadReq"
+                    required>
+                </div>
               </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-12">
-                <button class="btn btn-success" id="btn_agregarIngrediente" onclick="agregarProducto()"><i class="bi bi-plus"></i> Agregar ingrediente</button>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <form action="/crearReceta" method="post" class="row" id="form-recetas">
-              {{render_field(formR.idProducto,class="form-select",id="select_idproducto")}}
-            <hr>
-            <div class="col" style="overflow-y: scroll; height: 200px;">
-              <table class="table table-striped" id="miniTabla" name="miniTabla">
-                <thead>
-                  <tr>
-                    <th>Id Ingrediente</th>
-                    <th>Id Producto</th>
-                    <th>Cantidad requerida</th>
-                    <th>Acción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-            </div>
-            <hr>
-            <div class="col">
-              <button class="btn btn-warning" type="submit">Crear receta</button>
-            </div>
-          </form>
-        </div>
-        <div class="cont_second_recetas">
-          <div class="buscar_recetas">
-            <form action="" method="post" class="row g-3">
-              <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-search"></i> Buscar</button>
-              </div>
-              <div class="col-auto">
-                <input type="text" name="searchReceta" id="searchReceta" class="form-control" required>
+              <br>
+              <div class="row">
+                <div class="col-12">
+                  <button class="btn btn-success" id="btn_agregarIngrediente" onclick="agregarProducto()"><i
+                      class="bi bi-plus"></i> Agregar ingrediente</button>
+                </div>
               </div>
             </form>
-            <hr>
           </div>
-          <div class="cont_tabla_recetas">
-            <p>PVKMEFKVNJERNVOENVKWENF</p>
-          </div>
+          <hr>
         </div>
+
       </div>
     </div>
-
   </div>
-
 </div>
-
 {% endblock %}
-
-
