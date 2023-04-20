@@ -8,6 +8,8 @@ import logging
 from .forms import ProductoForm, RecetaForm
 import base64
 from flask_wtf.csrf import generate_csrf,validate_csrf
+import logging
+import datetime
 
 product = Blueprint('product', __name__)
 
@@ -20,6 +22,7 @@ def producto():
     prod_form = ProductoForm(request.form)
     rect_form = RecetaForm(request.form)
     rect_form.idProducto.choices = [(prod.id_producto, prod.nombre)for prod in Producto.query.filter_by(estatus=1).all()]
+    rect_form.idMateriaPri.choices = [(mat.id_materia_prima, mat.nombre) for mat in MateriaPrima.query.all()]
 
     prod = Producto.query.filter_by(estatus=1).all()
     rect = Receta.query.all()
@@ -34,6 +37,10 @@ def agregarPro():
     prod_form = ProductoForm(request.form)
     rect_form = RecetaForm(request.form)
     csrf_token = generate_csrf()
+
+    date = datetime.datetime.now()
+    logging.basicConfig(filename='trazabilidad.log', level=logging.INFO)
+    logging.info("se cargaron las listas de usuarios en la fecha: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
 
     if request.method == "POST":
         
@@ -131,4 +138,44 @@ def eliminar_producto(id):
         return redirect(url_for("product.producto"))
     
 
+@product.route("/buscarProducto", methods=["GET","POST"])
+@login_required
+def buscarProducto():
+    search = request.form.get("searchProducto")
+    prod_form = ProductoForm(request.form)
+    rect_form = RecetaForm(request.form)
+    csrf_token = generate_csrf()
 
+    if search:
+        prod = Producto.query.filter_by( estatus=1 and
+            (Producto.id_producto.ilike(f"%{search}%")) |
+            (Producto.nombre.ilike(f"%{search}%")) |
+            (Producto.descripcion.ilike(f"%{search}%")) |
+            (Producto.tipo_producto.ilike(f"%{search}%")) |
+            (Producto.precio_venta.ilike(f"%{search}%")) 
+            ).all()
+    else:
+       prod = Producto.query.filter_by(estatus=1).all()
+
+    return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod)
+
+@product.route("/crearReceta", methods=["POST"])
+@login_required
+@roles_accepted("Administrador")
+def crearReceta():
+    prod_form = ProductoForm(request.form)
+    rect_form = RecetaForm(request.form)
+
+    if request.method == "POST":
+
+        
+        
+        
+        return redirect(url_for("product.producto"))
+        # receta = Receta(
+        #     id_materia_prima = 
+        #     id_producto = 
+        #     cantidad_requerida = 
+        # )
+
+    return render_template("producto.html", form=prod_form,formR=rect_form)

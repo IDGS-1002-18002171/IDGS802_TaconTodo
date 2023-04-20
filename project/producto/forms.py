@@ -14,7 +14,7 @@ def estatus_validate(form, field):
 
 def validator_select(form,field):
     if field.data == 0:
-        raise validators.ValidationError("Debe seleccionar un proveedor")
+        raise validators.ValidationError("Debe seleccionar una opción")
 
 class ProductoForm(FlaskForm):
     idProducto = IntegerField("Id Producto:")
@@ -26,6 +26,6 @@ class ProductoForm(FlaskForm):
 
 class RecetaForm(FlaskForm):
     idReceta = IntegerField("Id Receta:")
-    idMateriaPri = IntegerField("Id Materia prima:")
+    idMateriaPri = SelectField("Materia prima:", choices=[], validators=[validator_select])
     idProducto = SelectField('Producto:', choices=[], validators=[validator_select])
-    cantidadReq = FloatField("Cantidad requerida:")
+    cantidadReq = FloatField("Cantidad requerida:",[validators.DataRequired(message="Ingrese una cantidad")])

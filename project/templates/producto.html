@@ -9,17 +9,74 @@
   {% if messages %}
       {% for category, message in messages %}
         {% if category, message%}
-          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
-            {{ message }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
+          <script>
+            swal.fire({
+              title: "{{ category.title() }}",
+              // posibles categorias a recibir: success , error , warning ,info
+              text: "{{ message }}",
+              // menasaje a mandar
+              icon: "{{ category }}"
+              // posibles categorias a recibir: success , error , warning ,info
+            });
+          </script>
         {%endif%}
       {% endfor %}
   {% endif %}
 {% endwith %}
 <script>
+
+document.addEventListener('DOMContentLoaded', function() {
   
+
+  document.getElementById('btnEliminarProducto').addEventListener('click', function(e) {
+    
+    e.preventDefault();
+
+    Swal.fire({
+      title: '¿Estás seguro?',
+      text: 'Esta acción no se puede deshacer',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sí, continuar',
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      
+      if (result.isConfirmed) {
+        location.href = e.target.href;
+      } else {
+        
+        
+      }
+    });
+  });
+});
+
+
+  
+  function agregarProducto() {
+    var selectProducto = document.getElementById("select_idproducto");
+    var selectMateria = document.getElementById("select_idmateria");
+    var inputCantidad = document.getElementById("cantidadReq");
+    var tablaProductos = document.getElementById("miniTabla").getElementsByTagName("tbody")[0];
+    var fila = tablaProductos.insertRow();
+    var celdaMateria = fila.insertCell(0);
+    var celdaProducto = fila.insertCell(1);
+    var celdaCantidad = fila.insertCell(2);
+    var celdaQuitar = fila.insertCell(3);
+    celdaMateria.textContent = selectMateria.options[selectMateria.selectedIndex].value;
+    celdaProducto.textContent = selectProducto.options[selectProducto.selectedIndex].value;
+    celdaCantidad.textContent = inputCantidad.value;
+    celdaQuitar.innerHTML = '<a href="#" onclick="quitarProducto(this)" class="btn btn-danger"><i class="bi bi-x"></i></a>';
+
+  }
+
+  
+  function quitarProducto(elemento) {
+    var fila = elemento.parentNode.parentNode;
+    fila.parentNode.removeChild(fila);
+  }
 </script>
+
 <div class="contenedor_producto">
 
   <ul class="nav nav-tabs" id="tabs_content" role="tablist">
@@ -64,34 +121,47 @@
             <button class="btn btn-success" type="submit"><i class="bi bi-bag-plus"></i> Registrar</button>
           </form>
         </div>
-        <div class="cont_table_product tab-pane fade show active">
-          <table class="tabla_producto">
-            <thead>
-              <tr>
-                <th class="sticky2">ID producto</th>
-                <th class="sticky2">Producto</th>
-                <th class="sticky2">Descripción</th>
-                <th class="sticky2">Imagen</th>
-                <th class="sticky2">Tipo</th>
-                <th class="sticky2">Precio</th>
-                <th class="sticky2" colspan="2">Acciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for products in producto %}
+        <div class="cont_second_pro">
+          <div class="buscar_producto">
+            <form action="/buscarProducto" method="post" class="row g-3">
+              <div class="col-auto">
+                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-search"></i> Buscar</button>
+              </div>
+              <div class="col-auto">
+                <input type="text" name="searchProducto" id="searchProducto" class="form-control" required>
+              </div>
+            </form>
+          </div>
+          <br>
+          <div class="cont_table_product tab-pane fade show active">
+            <table class="tabla_producto">
+              <thead>
                 <tr>
-                  <td>{{products.id_producto}}</td>
-                  <td>{{products.nombre}}</td>
-                  <td>{{products.descripcion}}</td>
-                  <td class="align-content-center"><img src="data:image/png;base64,{{ products.imagen }}" width="128px" height="128px"></td>
-                  <td>{{products.tipo_producto}}</td>
-                  <td>{{products.precio_venta}}</td>
-                  <td><button class="btn btn-outline-danger btn-sm" id="btnEliminarProducto" title="eliminar" onclick="window.location.href='/eliminar_producto/{{products.id_producto}}'"><i class="bi bi-x-square"></i></button></td>
-                  <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarProducto?id={{products.id_producto}}"><i class="bi bi-pencil-square"></i></a></td>
+                  <th class="sticky2">ID producto</th>
+                  <th class="sticky2">Producto</th>
+                  <th class="sticky2">Descripción</th>
+                  <th class="sticky2">Imagen</th>
+                  <th class="sticky2">Tipo</th>
+                  <th class="sticky2">Precio</th>
+                  <th class="sticky2" colspan="2">Acciones</th>
                 </tr>
-              {%endfor%}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {% for products in producto %}
+                  <tr>
+                    <td>{{products.id_producto}}</td>
+                    <td>{{products.nombre}}</td>
+                    <td>{{products.descripcion}}</td>
+                    <td class="align-content-center"><img src="data:image/png;base64,{{ products.imagen }}" width="128px" height="128px"></td>
+                    <td>{{products.tipo_producto}}</td>
+                    <td>{{products.precio_venta}}</td>
+                    <td><button class="btn btn-outline-danger btn-sm" id="btnEliminarProducto" title="eliminar" type="button" onclick="window.location.href='/eliminar_producto/{{products.id_producto}}'"><i class="bi bi-x-square"></i></button></td>
+                    <td><a class="btn btn-outline-warning btn-sm" title="editar" href="/editarProducto?id={{products.id_producto}}"><i class="bi bi-pencil-square"></i></a></td>
+                  </tr>
+                {%endfor%}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -102,26 +172,62 @@
         <div class="cont_form_receta">
           <h3 class="text-secondary">Crear Receta</h3>
           <hr>
-          <form action="">
+          <div>
+            <h5>Seleccionar ingredientes</h5>
             <div class="row">
-              {{render_field(formR.idProducto,class="form-select")}}
+              {{render_field(formR.idMateriaPri,class="form-select",id="select_idmateria")}}
+              <div class="col">
+                <label for="cantidadReq">Cantidad requerida: </label>
+                <input type="number" min="1" step="any" class="form-control" id="cantidadReq" name="cantidadReq" required>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-12">
+                <button class="btn btn-success" id="btn_agregarIngrediente" onclick="agregarProducto()"><i class="bi bi-plus"></i> Agregar ingrediente</button>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <form action="/crearReceta" method="post" class="row" id="form-recetas">
+              {{render_field(formR.idProducto,class="form-select",id="select_idproducto")}}
+            <hr>
+            <div class="col" style="overflow-y: scroll; height: 200px;">
+              <table class="table table-striped" id="miniTabla" name="miniTabla">
+                <thead>
+                  <tr>
+                    <th>Id Ingrediente</th>
+                    <th>Id Producto</th>
+                    <th>Cantidad requerida</th>
+                    <th>Acción</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+            <hr>
+            <div class="col">
+              <button class="btn btn-warning" type="submit">Crear receta</button>
             </div>
           </form>
         </div>
         <div class="cont_second_recetas">
           <div class="buscar_recetas">
-            <form action="" class="row g-3">
+            <form action="" method="post" class="row g-3">
+              <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
               <div class="col-auto">
                 <button type="submit" class="btn btn-outline-primary"><i class="bi bi-search"></i> Buscar</button>
               </div>
               <div class="col-auto">
-                <input type="text" name="searchProducto" id="searchProducto" class="form-control" required>
+                <input type="text" name="searchReceta" id="searchReceta" class="form-control" required>
               </div>
             </form>
             <hr>
           </div>
           <div class="cont_tabla_recetas">
-            <p>KSDNKSMKCMSKCMKLSMCLSMKCC</p>
+            <p>PVKMEFKVNJERNVOENVKWENF</p>
           </div>
         </div>
       </div>

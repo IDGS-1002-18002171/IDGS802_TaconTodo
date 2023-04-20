@@ -12,6 +12,15 @@
     margin: auto;
 }
 
+.cont_second_pro{
+    display: flex;
+    flex-direction: column;
+}
+
+.buscar_producto {
+    margin: 10px;
+}
+
 .form_product{
     border: 3px solid #ff5757;
     border-radius: 15px;
@@ -23,7 +32,7 @@
 .cont_table_product{
     width: 100%;
     max-width: 850px;
-    height: 500px;
+    height: 400px;
     margin-left: 5px;
 }
 
@@ -86,14 +95,14 @@
 .cont_form_receta {
     border: 3px solid #ff5757;
     border-radius: 15px;
-    width: 400px;
-    height: 600px;
+    width: 500px;
+    height: 625px;
     padding: 10px;
 }
 
 .cont_second_recetas {
     width: 800px;
-    height: 600px;
+    height: 625px;
     padding: 10px;
     display: flex;
     flex-direction: column;
