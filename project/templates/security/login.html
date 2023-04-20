@@ -1,9 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+<br>
 <div class="column is-4 is-offset-4">
-    <h3 class="title">Login</h3>
     <div class="box">
+        <center>
+            <img src="../static/bootstrap/img/usuario.png" style="width: 100px; height: 100px;" alt="">
+            <h4>Inicio de Sesión</h4>
+            <hr>
+        </center>
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         <div class="notification is-danger">
@@ -14,23 +19,41 @@
         <form method="POST" action="/security/login">
             <div class="field">
                 <div class="control">
-                    <input class="input is-large" type="email" name="email" placeholder="Your Email" autofocus="">
+                    <center>
+                         <label for="">Ingresa tu correo electrónico: </label>
+                        <input class="input" type="email" name="email" placeholder="Correo electrónico" autofocus="">
                 </div>
+                </center>
             </div>
             <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
             <div class="field">
                 <div class="control">
-                    <input class="input is-large" type="password" name="password" placeholder="Password">
+                    <center>
+                         <label for="">Ingresa tu contraseña: </label>
+                        <input class="input" type="password" name="password" placeholder="Contraseña">
+                    </center>
                 </div>
             </div>
             <div class="field">
-                <label class="checkbox">
-                    <input type="checkbox">
-                    Recuerdame
-                </label>
+                <center>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Recuerdame
+                    </label>
+                </center>
             </div>
-            <button class="button is-block is-info is-large is-fullwidth">Login</button>
+            <center>
+                <button class="button is-block is-danger is-fullwidth">Ingresar</button>
+            </center>
         </form>
     </div>
 </div>
+<br>
+<center>
+    <hr id="hrNostros">
+    <b>
+        <p>TaconTodo© 2023</p>
+    </b>
+    <br>
+</center>
 {% endblock %}

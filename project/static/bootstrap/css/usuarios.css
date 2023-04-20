@@ -6,11 +6,12 @@
     font-size: 16px;
 }
 #thTablaUsuario {
-    color: white"
+    color: white;
+    width: 30px;
 }
 #divDerechoUsuario {
     float: right; 
-    padding-right: 30px;
+    padding-right: 40px;
 }
 #tr2TablaUsuario {
     background-color: #ffffff; 
@@ -32,6 +33,11 @@
 #tituloCardUsuario {
     color:black
 }
+
+#titUsuario {
+    font-family: sans-serif; 
+    color: black;
+}
 #tamañoInputNombreUsuario {
     width: 205px;
 }
@@ -43,5 +49,19 @@
 }
 #textoUsuario {
     font-family: sans-serif; 
-    color: black
+    color: black;
+    padding-top: 5px;
+}
+#tipoUsuario{
+    font-family: sans-serif; 
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#guardarUsuario{
+    background-color: #f4640a;
+    color: white;
+}
+#hrUsuarios{
+    border-top: 4px solid #f4640a;
 }

@@ -6,7 +6,9 @@
     font-size: 16px;
 }
 #thTablaProveedores {
-    color: white"
+    color: white;
+    
+    width: 30px;
 }
 #divDerechoProveedores {
     float: right; 
@@ -30,13 +32,16 @@
     font-family: 'Roboto', sans-serif;
 }
 #tituloCardProveedores {
-    color:black
+    color:black;
+}
+#hrProveedores{
+    border-top: 4px solid #f4640a;
 }
 #tamañoInputEmpresa{
     width: 198px;
 }
 #tamañoInputContacto {
-    width: 298px;
+    width: 200px;
 }
 #tamañoInputCorreo{
     width: 216px;
@@ -49,5 +54,14 @@
 }
 #textoProveedores {
     font-family: sans-serif; 
-    color: black
+    color: black;
+    padding-top: 5px;
+}
+#titProveedores {
+    font-family: sans-serif; 
+    color: black;
+}
+#guardarProveedor{
+    background-color: #f4640a;
+    color: white;
 }

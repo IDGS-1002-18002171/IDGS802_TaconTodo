@@ -46,6 +46,9 @@ def obtenerProveedores():
             ).all()
     else:
         proveedores = Proveedor.query.all()
+    if len(proveedores) == 0:
+        success_message = 'Lo sentimos, no se encontraron coincidencias.'
+        flash (success_message,category='warning')
     return render_template("/proveedores.html", lista = proveedores)
 
 
@@ -60,26 +63,31 @@ def guardarproveedor():
     direccion = str(request.form.get("direccion"))
     
     print(len(id_proveedor))
-    if len(id_proveedor) > 0 :
-        proveedorElejido = Proveedor.query.filter_by(id_proveedor=int(id_proveedor)).first()
-        proveedorElejido.nombre_empresa = nombre_empresa
-        proveedorElejido.nombre_contacto = nombre_contacto
-        proveedorElejido.correo_electronico = correo_electronico
-        proveedorElejido.telefono = telefono
-        proveedorElejido.direccion=direccion
-        db.session.commit()
+
+    if int(telefono) < 0 or len(nombre_empresa) == 0 or len(nombre_contacto) == 0 or len(correo_electronico) == 0 or len(telefono) == 0 or len(direccion) == 0:
+        success_message = 'llena todos los campos correctamente'
+        flash (success_message,category='warning')
     else:
-        proveedorIngresado = Proveedor(nombre_empresa=nombre_empresa, nombre_contacto = nombre_contacto, 
-                                       correo_electronico=correo_electronico, telefono=telefono, direccion=direccion)
-        db.session.add(proveedorIngresado)
-        db.session.commit()
+        if len(id_proveedor) > 0 :
+            proveedorElejido = Proveedor.query.filter_by(id_proveedor=int(id_proveedor)).first()
+            proveedorElejido.nombre_empresa = nombre_empresa
+            proveedorElejido.nombre_contacto = nombre_contacto
+            proveedorElejido.correo_electronico = correo_electronico
+            proveedorElejido.telefono = telefono
+            proveedorElejido.direccion=direccion
+            db.session.commit()
+        else:
+            proveedorIngresado = Proveedor(nombre_empresa=nombre_empresa, nombre_contacto = nombre_contacto, 
+                                        correo_electronico=correo_electronico, telefono=telefono, direccion=direccion)
+            db.session.add(proveedorIngresado)
+            db.session.commit()
 
-    date = datetime.datetime.now()
-    logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
-    logging.info("se guardo el proveedor con el id: " + id_proveedor + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+        date = datetime.datetime.now()
+        logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
+        logging.info("se guardo el proveedor con el id: " + id_proveedor + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
 
-    success_message = 'listo, proveedor guardado'
-    flash (success_message,category='success')
+        success_message = 'listo, proveedor guardado'
+        flash (success_message,category='success')
     
     return redirect(url_for("proveedores.obtenerProveedores"))
 

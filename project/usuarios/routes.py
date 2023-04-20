@@ -43,6 +43,9 @@ def obtenerUsuarios():
             ).all()
     else:
         usuarios = User.query.all()
+    if len(usuarios) == 0:
+        success_message = 'Lo sentimos, no se encontraron coincidencias.'
+        flash (success_message,category='warning')
     return render_template("/usuarios.html", lista = usuarios)
 
 
@@ -55,21 +58,41 @@ def guardarUsuario():
     password=str(request.form.get("contraseña"))
     #password = request.form.get('password')
     
-    print(len(id))
-    if len(id) > 0 :
-        usuarioElejido = User.query.filter_by(id=int(id)).first()
-        usuarioElejido.name = name
-        usuarioElejido.email = email
-        db.session.commit()
+    rol = request.form['tipos']
+    
+    if len(name) == 0 or len(email) == 0:
+        success_message = 'llena todos los campos correctamente'
+        flash (success_message,category='warning')
     else:
-        userDataStore.create_user(email=email, name=name, password=generate_password_hash(password, method='sha512'))
-        db.session.commit()
+        if len(id) > 0 :
+            usuarioElejido = User.query.filter_by(id=int(id)).first()
+            usuarioElejido.name = name
+            usuarioElejido.email = email
+            db.session.commit()
 
-    date = datetime.datetime.now()
-    logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
-    logging.info("se guardo el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-    success_message = 'listo, usuario guardado'
-    flash (success_message,category='success')
+
+            if rol == 'Usuario':
+                rol = userDataStore.find_role('Usuario')
+            elif rol == 'empleado':
+                rol = userDataStore.find_role('empleado')
+            elif rol == 'repartidor':
+                rol = userDataStore.find_role('repartidor')
+            else:
+                rol = userDataStore.find_role('Administrador')
+            
+            user = User.query.filter_by(id=int(id)).first()
+            user.roles = []
+            user.roles.append(rol)
+            db.session.commit()
+        else:
+            userDataStore.create_user(email=email, name=name, password=generate_password_hash(password, method='sha512'))
+            db.session.commit()
+
+        date = datetime.datetime.now()
+        logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
+        logging.info("se guardo el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+        success_message = 'listo, usuario guardado'
+        flash (success_message,category='success')
         
     return redirect(url_for("usuarios.obtenerUsuarios"))
 
@@ -77,8 +100,8 @@ def guardarUsuario():
 @usuarios.route("/eliminarUsuario", methods=['GET','POST'])
 def eliminarUsuario():
     id= str(request.form.get("id"))
-    usuarioElejido = User.query.filter_by(id=int(id)).first()
-    usuarioElejido.active = 0
+    usuarioElegido = User.query.filter_by(id=int(id)).first()
+    usuarioElegido.active = 0
     db.session.commit()
 
     date = datetime.datetime.now()
@@ -94,6 +117,7 @@ def usuarioSeleccionado():
     id= str(request.form.get("id"))
     name = str(request.form.get("name"))
     email = str(request.form.get("email"))
+    tipo = str(request.form.get("tipo"))
 
 
     date = datetime.datetime.now()
@@ -111,5 +135,5 @@ def usuarioSeleccionado():
     else:
         usuarios = User.query.all()
     return render_template("/usuarios.html", lista = usuarios, id=id, name=name,
-                           email=email)
+                           email=email, tipo=tipo)
 

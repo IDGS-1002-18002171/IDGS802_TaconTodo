@@ -3,117 +3,121 @@
 {% block content %}
 
 
-
 <br>
 <center>
-<h1 id="textoProveedores">Bienvenido</h1>
-<h5 id="textoProveedores">A la seccion de proveedores</h5>
+  <b>
+    <h2 id="titProveedores">Catálogo de Proveedores</h2>
+  </b>
+  <hr>
+</center>
 
+<center>
+  <form method="POST" action="/obtenerProveedores">
+    <button class="btn btn-secondary">Buscar</button>
+    <input type="hidden" name="csrf_token" value="{{csrf_token()}}" />
+    <input value="" name="filtro" type="text" />
+  </form>
 </center>
 <br>
-<br>
-
-
 <div>
   <div id="divDerechoProveedores">
-  
-<form method="POST" action="/obtenerProveedores">
-<button class="btn btn-primary">Buscar</button>
-<input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
-<input value="" name="filtro" type="text"/>
-</form>
+    <br>
+    <table class="table table-hover">
+      <thead>
+        <tr id="trTablaProveedores">
+          <th id="thTablaProveedores">ID</th>
+          <th id="thTablaProveedores">Empresa</th>
+          <th id="thTablaProveedores">Contacto</th>
+          <th id="thTablaProveedores">Correo</th>
+          <th id="thTablaProveedores">Teléfono</th>
+          <th id="thTablaProveedores">Dirección</th>
+          <th id="thTablaProveedores">Revisión</th>
+          <th id="thTablaProveedores">Eliminación</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for proveedores in lista %}
+        <tr id="tr2TablaProveedores">
+          <td>{{proveedores.id_proveedor}}</td>
+          <td>{{proveedores.nombre_empresa}}</td>
+          <td>{{proveedores.nombre_contacto}}</td>
+          <td>{{proveedores.correo_electronico}}</td>
+          <td>{{proveedores.telefono}}</td>
+          <td>{{proveedores.direccion}}</td>
+          <td>
 
-<br>
-
-<table class="table table-hover">
-    <thead>
-      <tr id="trTablaProveedores">
-        <th id="thTablaProveedores">ID</th>
-        <th id="thTablaProveedores">Empresa</th>
-        <th id="thTablaProveedores">Contacto</th>
-        <th id="thTablaProveedores">Correo</th>
-        <th id="thTablaProveedores">Telefono</th>
-        <th id="thTablaProveedores">Direccion</th>
-        <th id="thTablaProveedores">Revision</th>
-        <th id="thTablaProveedores">Eliminacion</th>
-      </tr>
-    </thead>
-    <tbody>
-    {% for proveedores in lista %}
-      <tr id="tr2TablaProveedores">
-        <td>{{proveedores.id_proveedor}}</td>
-        <td>{{proveedores.nombre_empresa}}</td>
-        <td>{{proveedores.nombre_contacto}}</td>
-        <td>{{proveedores.correo_electronico}}</td>
-        <td>{{proveedores.telefono}}</td>
-        <td>{{proveedores.direccion}}</td>
-        <td>
-            
             <form action="/registroSeleccionado" method="post">
-                <input name="id_proveedor" value="{{ proveedores.id_proveedor }}" hidden>
-                <input name="nombre_empresa" value="{{ proveedores.nombre_empresa }}" hidden>
-                <input name="nombre_contacto" value="{{ proveedores.nombre_contacto }}" hidden>
-                <input name="correo_electronico" value="{{ proveedores.correo_electronico }}" hidden>
-                <input name="telefono" value="{{ proveedores.telefono }}" hidden>
-                <input name="direccion" value="{{ proveedores.direccion }}" hidden>
-                <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
-                <button class="btn btn-warning" type="submit">Modificar</button>
-              </form>
+              <input name="id_proveedor" value="{{ proveedores.id_proveedor }}" hidden>
+              <input name="nombre_empresa" value="{{ proveedores.nombre_empresa }}" hidden>
+              <input name="nombre_contacto" value="{{ proveedores.nombre_contacto }}" hidden>
+              <input name="correo_electronico" value="{{ proveedores.correo_electronico }}" hidden>
+              <input name="telefono" value="{{ proveedores.telefono }}" hidden>
+              <input name="direccion" value="{{ proveedores.direccion }}" hidden>
+              <input type="hidden" name="csrf_token" value="{{csrf_token()}}" />
+              <button class="btn btn-warning" type="submit">Modificar</button>
+            </form>
 
-        </td>
-        <td>
-            
+          </td>
+          <td>
+
             <form action="/eliminarProveedor" method="post">
-                <input name="id_proveedor" value="{{ proveedores.id_proveedor }}" hidden>
-                <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
-                <button class="btn btn-danger" type="submit">Eliminar</button>
-              </form>
-        </td>
-      </tr>
-      {%endfor%}
-    </tbody>
-  </table>
+              <input name="id_proveedor" value="{{ proveedores.id_proveedor }}" hidden>
+              <input type="hidden" name="csrf_token" value="{{csrf_token()}}" />
+              <button class="btn btn-danger" type="submit">Eliminar</button>
+            </form>
+          </td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
   </div>
 
 
 
 
 
-  
-<div id="divIzquierdoProveedores">
-<div class="card mb-3" id="formatoDelCardProveedores">
-  <div class="card-body">
-    <center>
-    <h2 class="card-title" id="tituloCardProveedores">Formulario</h3>
-    </center>
-  <form method="POST" action="/guardarproveedor">
-  <input value="{{id_proveedor}}" name="id_proveedor" type="hidden"/>
- 
-  <br>
-  <h5 id="textoProveedores">Empresa: <input value="{{nombre_empresa}}" name="nombre_empresa" type="text" id="tamañoInputEmpresa"/></h5>
-  
-  <br>
-  <h5 id="textoProveedores">Contacto: <input value="{{nombre_contacto}}" name="nombre_contacto" type="text" id="tamañoInputContacto"/></h5>
-  
-  <br>
-  <h5 id="textoProveedores">Correo: <input value="{{correo_electronico}}" name="correo_electronico" type="text" id="tamañoInputCorreo"/></h5>
-  
-  <br>
-  <h5 id="textoProveedores">Telefono: <input value="{{telefono}}" name="telefono" type="text" id="tamañoInputTelefono"/></h5>
-  
-  <br>
-  <h5 id="textoProveedores">Direccion: <input value="{{direccion}}" name="direccion" type="text" id="tamañoInputDireccion"/></h5>
-  
-  <br>
-  <br>
-<center>
-  <input type="hidden" name="csrf_token" value="{{csrf_token()}}"/>
-  <button class="btn btn-success">Guardar</button>
-</center>
-  </form>
+
+  <div id="divIzquierdoProveedores">
+    <div class="card mb-3" id="formatoDelCardProveedores">
+      <div class="card-body">
+        <center>
+          <b>
+            <h4 class="card-title" id="tituloCardProveedores">Detalle Proveedor</h4>
+          </b>
+        </center>
+        <hr id="hrProveedores">
+        <form method="POST" action="/guardarproveedor">
+          <input value="{{id_proveedor}}" name="id_proveedor" type="hidden" />
+
+          <h6 id="textoProveedores">Empresa: </h6>
+          <input value="{{nombre_empresa}}" name="nombre_empresa" type="text" id="" minlength="10" maxlength="50" required/>
+
+          <br>
+          <h6 id="textoProveedores">Contacto: </h6>
+          <input value="{{nombre_contacto}}" name="nombre_contacto" type="text" id=""  minlength="10" maxlength="50" required/>
+
+          <br>
+          <h6 id="textoProveedores">Correo:</h6>
+          <input value="{{correo_electronico}}" name="correo_electronico" type="email" id=""  minlength="15" maxlength="50"required/>
+
+          <br>
+          <h6 id="textoProveedores">Teléfono: </h6>
+          <input value="{{telefono}}" name="telefono" type="number" id=""  minlength="10" maxlength="12" min="0" required/>
+
+          <br>
+          <h6 id="textoProveedores">Dirección: </h6>
+          <input value="{{direccion}}" name="direccion" type="text" id="" required/>
+
+          <br>
+          <br>
+          <center>
+            <input type="hidden" name="csrf_token" value="{{csrf_token()}}"  minlength="10" maxlength="255" required/>
+            <button id="guardarProveedor" class="btn">Guardar</button>
+          </center>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
 </div>
 
@@ -122,4 +126,12 @@
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 
+
+<center>
+  <hr id="hrNostros">
+  <b>
+    <p>TaconTodo© 2023</p>
+  </b>
+  <br>
+</center>
 {% endblock %}
