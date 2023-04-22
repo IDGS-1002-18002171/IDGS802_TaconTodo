@@ -118,8 +118,8 @@
             </form>
           </div>
           <br>
-          <div class="cont_table_product tab-pane fade show active">
-            <table class="tabla_producto">
+          <div class="col" style="overflow-y: scroll; height: 400px;">
+            <table class="table table-striped" id="miniTabla" name="miniTabla">
               <thead>
                 <tr>
                   <th class="sticky2">ID producto</th>
@@ -160,40 +160,6 @@
       <div class="contenedor_recetas">
         <div class="cont_form_receta">
           <h3 class="text-secondary">Crear Receta</h3>
-          <div class="col" style="overflow-y: scroll; height: 200px;">
-            <table class="table table-striped" id="miniTabla" name="miniTabla">
-              <thead>
-                <tr>
-                  <th>Producto</th>
-                  <th>Ingrediente</th>
-                  <th>Cantidad requerida</th>
-                  <th>Acción</th>
-                </tr>
-                {%for item in recetas:%}
-                <tr>
-                  <td>
-                    {{item.producto.nombre}}
-                  </td>
-                  <td>
-                    {{item.materia.nombre}}
-                  </td>
-                  <td>
-                    {{item.receta.cantidad_requerida}}
-                  </td>
-                  <td>
-                    <form action="{{ url_for('product.eliminarReceta') }}" method="POST">
-                      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
-                      <input type="hidden" value="{{ item.receta.id_receta }}" name="id_receta">
-                      <button type="submit" class="btn btn-outline-danger">eliminar material</button>
-                    </form>
-                  </td>
-                </tr>
-                {%endfor%}
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
-          </div>
           <hr>
           <div>
             <form action="/crearReceta" method="post" class="row" id="form-recetas">
@@ -220,10 +186,56 @@
             </form>
           </div>
           <hr>
+          <div class="col" style="overflow-y: scroll; height: 400px;">
+            <table class="table table-striped" id="miniTabla" name="miniTabla">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Ingrediente</th>
+                  <th>Cantidad requerida</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                {%for item in recetas:%}
+                <tr>
+                  <td>
+                    {{item.producto.nombre}}
+                  </td>
+                  <td>
+                    {{item.materia.nombre}}
+                  </td>
+                  <td>
+                    {{item.receta.cantidad_requerida}}
+                  </td>
+                  <td>
+                    <form action="{{ url_for('product.eliminarReceta') }}" method="POST">
+                      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+                      <input type="hidden" value="{{ item.receta.id_receta }}" name="id_receta">
+                      <button type="submit" class="btn btn-outline-danger">eliminar material</button>
+                    </form>
+                  </td>
+                </tr>
+                {%endfor%}
+              </tbody>
+            </table>
+          </div>
         </div>
-
       </div>
     </div>
   </div>
 </div>
+
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+<center>
+  <hr id="hrNostros">
+  <b>
+    <p>TaconTodo© 2023</p>
+  </b>
+  <br>
+</center>
 {% endblock %}

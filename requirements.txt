@@ -25,3 +25,5 @@ python-decouple
 sqlalchemy
 requests
 plyer
+safety
+sqlmap

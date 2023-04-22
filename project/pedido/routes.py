@@ -8,7 +8,6 @@ from decimal import Decimal
 from datetime import datetime
 from plyer import notification
 from flask_wtf.csrf import generate_csrf,validate_csrf
-from datetime import datetime
 from sqlalchemy import create_engine
 import pymysql
 
@@ -16,7 +15,7 @@ pedido=Blueprint('pedido', __name__)
 
 lista_pedidos_estructurado=[]
 
-def Descontar_materia_prima(id_pedido):
+def Descontar_materia_prima1(id_pedido):
     # Open database connection
     db1 = pymysql.connect(
         host="localhost",
@@ -26,7 +25,7 @@ def Descontar_materia_prima(id_pedido):
     )
     cursor = db1.cursor()
     # execute the stored procedure
-    cursor.callproc('Descuento_Materias_Primas', [id_pedido])
+    cursor.callproc('Descuento_Materias_Primas1', [id_pedido])
     # commit the transaction
     db1.commit()
     # close the database connection
@@ -41,15 +40,15 @@ def getpedidos():
     if 'Usuario' in current_user.roles:
         pedidos = Pedidos.query.filter(Pedidos.id_usuario == current_user.id).all()
         lista_pedidos_estructurado1=[]
-        total = Decimal('0.0')
         for pedido in pedidos:
+            total = Decimal('20.0')
             productos_pedido = []
             usuario=User.query.filter_by(id=pedido.id_usuario).first()
             detalles_pedido = db.session.query(Pedidos_Productos).filter_by(id_pedido=pedido.id_pedido).all()
             for detalle in detalles_pedido:
                 producto = Producto.query.filter_by(id_producto=detalle.id_producto).first()
                 producto.tipo_producto=detalle.cantidad
-                total=producto.precio_venta+total
+                total+=producto.precio_venta*detalle.cantidad
                 productos_pedido.append(producto)
             cocinero={'name':'None'}
             try :
@@ -128,7 +127,7 @@ def terminado():
         logging.shutdown()
     elif  pedido.estado_pedido==2:
         pedido.estado_pedido=3
-        Descontar_materia_prima(id_pedido)
+        Descontar_materia_prima1(id_pedido)
         success_message='Orden Terminada con exito'
         flash(success_message,category='success')
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

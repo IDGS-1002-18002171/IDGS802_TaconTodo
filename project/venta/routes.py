@@ -28,6 +28,46 @@ def make_rappi_request(url, params={}):
     response = requests.post(url, headers=headers, json=params)
     return response.json()
 
+def insertar_pedido():
+    global items
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    cuenta = Decimal('20.0')
+    for item in items:
+        idNew=item.id_producto
+        producto = Producto.query.get(idNew) # Get the product with the given ID
+        #producto.cantidad_disponible = (int(producto.cantidad_disponible)-int(item.cantidad_disponible)) # Subtract 1 from the cantidad_disponible attribute
+        precio = Decimal(item.precio_venta)
+        cantidad = Decimal(item.cantidad_disponible)
+        total = precio * cantidad
+        cuenta += total
+    venta =Venta(
+        id_usuario=current_user.id,
+        precio_total=cuenta,
+        fecha_hora_venta=current_time
+    )
+    # Agregar el objeto a la sesión y hacer commit para que se realice la inserción en la tabla
+    db.session.add(venta)
+    pedido = Pedidos(
+        id_usuario=current_user.id,
+        estado_pedido=1,
+        fecha_hora_pedido=current_time,
+        domicilio=direccion_global
+    )
+    # Agregar el objeto a la sesión y hacer commit para que se realice la inserción en la tabla
+    db.session.add(pedido)
+    db.session.commit()
+
+    id_pedido = pedido.id_pedido
+    # Insertar los productos del pedido en la tabla Pedidos_Productos
+    for producto in items:
+        pedido_productos = Pedidos_Productos.insert().values(
+        id_pedido=id_pedido,
+        id_producto=producto.id_producto,
+        cantidad=producto.cantidad_disponible
+        )
+        db.session.execute(pedido_productos)
+    db.session.commit()
+
 def Descontar_materia_prima(id_pedido):
     # Open database connection
     db1 = pymysql.connect(
@@ -39,22 +79,6 @@ def Descontar_materia_prima(id_pedido):
     cursor = db1.cursor()
     # execute the stored procedure
     cursor.callproc('Descuento_Materias_Primas', [id_pedido])
-    # commit the transaction
-    db1.commit()
-    # close the database connection
-    db1.close()
-
-def Descontar_materia_prima1(id_pedido):
-    # Open database connection
-    db1 = pymysql.connect(
-        host="localhost",
-        user="root",
-        password="root",
-        database="TaconTodo"
-    )
-    cursor = db1.cursor()
-    # execute the stored procedure
-    cursor.callproc('Descuento_Materias_Primas1', [id_pedido])
     # commit the transaction
     db1.commit()
     # close the database connection
@@ -102,21 +126,23 @@ def cart():
     return render_template("carrito.html", items=items,total=cuenta,csrf_token=csrf_token)
 
 @venta.route("/agregar_al_carrito", methods=["POST"])
-@login_required
-#@roles_required('')
-@roles_accepted('Usuario','Empleado')
 def agregar_al_carrito():
     global items
-    try:
-        validate_csrf(request.form.get('csrf_token'))
-        producto = Producto.query.get(request.form["id"])
-        producto.cantidad_disponible = request.form["cantidad"]
-        producto.descripcion = ' '+request.form["options1"]+' y '+request.form["salsa"]
-        items.append(producto)
-    except :
-        # El token CSRF no coincide, rechazar la solicitud
-        abort(403)
-    return redirect(url_for("venta.getproduct"))
+    if 'Usuario' in current_user.roles or 'Empleado' in current_user.roles:
+        try:
+            validate_csrf(request.form.get('csrf_token'))
+            producto = Producto.query.get(request.form["id"])
+            producto.cantidad_disponible = request.form["cantidad"]
+            producto.descripcion = ' '+request.form["options1"]+' y '+request.form["salsa"]
+            items.append(producto)
+            return redirect(url_for("venta.getproduct"))
+        except :
+            # El token CSRF no coincide, rechazar la solicitud
+            abort(403)
+    else :
+        flash('Inicia sesion como Cliente antes de realizar compras')
+        return redirect(url_for("auth.login"))
+    
 
 @venta.route("/eliminar_al_carrito", methods=["POST"])
 @login_required
@@ -140,15 +166,15 @@ def getproduct():
     if 'Administrador' in current_user.roles:
         pedidos = Pedidos.query.filter(Pedidos.estado_pedido == 5).all()
         lista_pedidos_estructurado1=[]
-        total = Decimal('20.0')
         for pedido in pedidos:
+            total = Decimal('20.0')
             productos_pedido = []
             usuario=User.query.filter_by(id=pedido.id_usuario).first()
             detalles_pedido = db.session.query(Pedidos_Productos).filter_by(id_pedido=pedido.id_pedido).all()
             for detalle in detalles_pedido:
                 producto = Producto.query.filter_by(id_producto=detalle.id_producto).first()
                 producto.tipo_producto=detalle.cantidad
-                total=producto.precio_venta+total
+                total+=producto.precio_venta*detalle.cantidad
                 productos_pedido.append(producto)
             cocinero={'name':'None'}
             try :
@@ -211,7 +237,7 @@ def pasarela():
             id_usuario=current_user.id,
             estado_pedido=5,
             fecha_hora_pedido=current_time,
-            domicilio=direccion_global
+            domicilio='Sucursal Zona Centro'
         )
         # Agregar el objeto a la sesión y hacer commit para que se realice la inserción en la tabla
         db.session.add(pedido)
@@ -230,9 +256,10 @@ def pasarela():
         items.clear()
         success_message='Gracias por su compra'
         flash(success_message,category='success')
-        Descontar_materia_prima1(id_pedido)
+        Descontar_materia_prima(id_pedido)
         return redirect(url_for("venta.getproduct"))
-    return render_template("venta.html", items=items)
+    else :
+        return render_template("venta.html", items=items)
 
 @venta.route("/thanks")
 @login_required
@@ -240,7 +267,6 @@ def pasarela():
 @roles_accepted('Usuario')
 def thanks():
     global items
-    direccion = None
     global direccion_global
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     logging.debug(f'Compra en linea por .... id:{current_user.id} name:{current_user.name} correo:{current_user.email} fecha:{current_time}')
@@ -261,35 +287,17 @@ def thanks():
         if 'Ambas salsas' in item.descripcion:
             salsa_roja+=.5*float(item.cantidad_disponible)
             salsa_verde+=.5*float(item.cantidad_disponible)
+
     if verdura>0.0:
-            promedio_verdura=.001*verdura
+        promedio_verdura=.001*verdura
 
     if salsa_verde>0.0:
-            promedio_salsa_verde=.0001*salsa_verde
+        promedio_salsa_verde=.0001*salsa_verde
 
     if salsa_roja>0.0:
-            promedio_salsa_roja=.0001*salsa_roja
-    pedido = Pedidos(
-        id_usuario=current_user.id,
-        estado_pedido=1,
-        fecha_hora_pedido=current_time,
-        domicilio=direccion_global
-    )
-
-    # Agregar el objeto a la sesión y hacer commit para que se realice la inserción en la tabla
-    db.session.add(pedido)
-    db.session.commit()
-
-    id_pedido = pedido.id_pedido
-    # Insertar los productos del pedido en la tabla Pedidos_Productos
-    for producto in items:
-        pedido_productos = Pedidos_Productos.insert().values(
-            id_pedido=pedido.id_pedido,
-            id_producto=producto.id_producto,
-            cantidad=1
-        )
-        db.session.execute(pedido_productos)
-    db.session.commit()
+        promedio_salsa_roja=.0001*salsa_roja
+    
+    insertar_pedido()
     items.clear()
     success_message='Gracias por su compra'
     flash(success_message,category='success')
@@ -297,12 +305,9 @@ def thanks():
     notification_title = "Nueva orden"
     notification_message = "Se ha realizado una nueva venta. Por favor, revise los detalles en la sección de pedidos de la aplicación."
     notification_timeout = 5  # Timeout in seconds
-    if 'Administrador' in [role.name for role in current_user.roles]:
+    if 'Administrador' in [role.name for role in current_user.roles] or 'Empleado' in [role.name for role in current_user.roles] or 'Repartidor' in [role.name for role in current_user.roles]:
         notification.notify(title=notification_title, message=notification_message, timeout=notification_timeout)
-    items.clear()
-    success_message='Gracias por su compra'
-    flash(success_message,category='success')
-    return render_template("thanks.html", items=items,verdura=promedio_verdura,salsa_verde=promedio_salsa_verde,salsa_roja=promedio_salsa_roja)
+    return redirect(url_for('pedido.getpedidos'))
 
 @venta.route('/update-direccion', methods=['POST'])
 @login_required

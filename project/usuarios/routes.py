@@ -29,10 +29,10 @@ usuarios=Blueprint('usuarios', __name__)
 
 @usuarios.route("/obtenerUsuarios",  methods=['GET','POST'])
 def obtenerUsuarios():
-    csrf_token = generate_csrf()
     date = datetime.datetime.now()
-    logging.debug("se cargaron las listas de usuarios en la fecha: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-    logging.shutdown()
+    logging.basicConfig(filename='trazabilidad.log', level=logging.INFO)
+    logging.info("se cargaron las listas de usuarios en la fecha: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+    csrf_token = generate_csrf()
     filtro = request.form.get("filtro")
     if filtro:
         usuarios = User.query.filter(
@@ -43,12 +43,20 @@ def obtenerUsuarios():
             ).all()
     else:
         usuarios = User.query.all()
+    if len(usuarios) == 0:
+        success_message = 'Lo sentimos, no se encontraron coincidencias.'
+        flash (success_message,category='warning')
     return render_template("/usuarios.html", lista = usuarios,csrf_token=csrf_token)
 
 
 
 @usuarios.route("/guardarUsuario", methods=['GET','POST'])
 def guardarUsuario():
+    try:
+        validate_csrf(request.form.get('csrf_token'))
+    except :
+        # El token CSRF no coincide, rechazar la solicitud
+        abort(403)
     id= str(request.form.get("id"))
     name = str(request.form.get("name"))
     email = str(request.form.get("email"))
@@ -56,41 +64,48 @@ def guardarUsuario():
     #password = request.form.get('password')
     
     rol = request.form['tipos']
-    print(rol)
-
     
+    existing_user = User.query.filter_by(email=email).first()
+    if existing_user:
+        logging.error('Error de registro, usuario existente')
+        logging.shutdown()
+        success_message = 'Ya existe un usuario con este correo electrónico.'
+        flash(success_message, category='warning')
+        return redirect(url_for("usuarios.obtenerUsuarios"))
 
-
-    print(len(id))
-    if len(id) > 0 :
-        usuarioElejido = User.query.filter_by(id=int(id)).first()
-        usuarioElejido.name = name
-        usuarioElejido.email = email
-        db.session.commit()
-
-
-        if rol == 'Usuario':
-            rol = userDataStore.find_role('Usuario')
-        elif rol == 'empleado':
-            rol = userDataStore.find_role('empleado')
-        elif rol == 'repartidor':
-            rol = userDataStore.find_role('repartidor')
-        else:
-            rol = userDataStore.find_role('Administrador')
-        
-        user = User.query.filter_by(id=int(id)).first()
-        user.roles = []
-        user.roles.append(rol)
-        db.session.commit()
+    if len(name) == 0 or len(email) == 0:
+        success_message = 'llena todos los campos correctamente'
+        flash (success_message,category='warning')
     else:
-        userDataStore.create_user(email=email, name=name, password=generate_password_hash(password, method='sha512'))
-        db.session.commit()
+        if len(id) > 0 :
+            usuarioElejido = User.query.filter_by(id=int(id)).first()
+            usuarioElejido.name = name
+            usuarioElejido.email = email
+            db.session.commit()
 
-    date = datetime.datetime.now()
-    logging.debug("se guardo el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-    logging.shutdown()
-    success_message = 'listo, usuario guardado'
-    flash (success_message,category='success')
+
+            if rol == 'Usuario':
+                rol = userDataStore.find_role('Usuario')
+            elif rol == 'empleado':
+                rol = userDataStore.find_role('empleado')
+            elif rol == 'repartidor':
+                rol = userDataStore.find_role('repartidor')
+            else:
+                rol = userDataStore.find_role('Administrador')
+            
+            user = User.query.filter_by(id=int(id)).first()
+            user.roles = []
+            user.roles.append(rol)
+            db.session.commit()
+        else:
+            userDataStore.create_user(email=email, name=name, password=generate_password_hash(password, method='sha512'))
+            db.session.commit()
+
+        date = datetime.datetime.now()
+        logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
+        logging.info("se guardo el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+        success_message = 'listo, usuario guardado'
+        flash (success_message,category='success')
         
     return redirect(url_for("usuarios.obtenerUsuarios"))
 
@@ -103,33 +118,30 @@ def eliminarUsuario():
         # El token CSRF no coincide, rechazar la solicitud
         abort(403)
     id= str(request.form.get("id"))
-    usuarioElejido = User.query.filter_by(id=int(id)).first()
-    usuarioElejido.active = 0
+    usuarioElegido = User.query.filter_by(id=int(id)).first()
+    usuarioElegido.active = 0
     db.session.commit()
 
     date = datetime.datetime.now()
-    logging.debug("se elimino el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-    logging.shutdown()
+    logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
+    logging.info("se elimino el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+
     success_message = 'listo, usuario eliminado'
     flash (success_message,category='success')
     return redirect(url_for("usuarios.obtenerUsuarios"))
 
 @usuarios.route("/usuarioSeleccionado", methods=['GET','POST'])
 def usuarioSeleccionado():
-    try:
-        validate_csrf(request.form.get('csrf_token'))
-    except :
-        # El token CSRF no coincide, rechazar la solicitud
-        abort(403)
     id= str(request.form.get("id"))
     name = str(request.form.get("name"))
     email = str(request.form.get("email"))
     tipo = str(request.form.get("tipo"))
-
+    csrf_token = generate_csrf()
 
     date = datetime.datetime.now()
-    logging.debug("se selecciono el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
-    logging.shutdown()
+    logging.basicConfig(filename='EventosUsuario.log', level=logging.INFO)
+    logging.info("se selecciono el usuario con el id: " + id + " el dia: " + date.strftime("%d/%m/%Y") + " " + date.strftime("%H:%M:%S") )
+
     filtro = request.form.get("filtro")
     if filtro:
         usuarios = User.query.filter(
@@ -141,5 +153,5 @@ def usuarioSeleccionado():
     else:
         usuarios = User.query.all()
     return render_template("/usuarios.html", lista = usuarios, id=id, name=name,
-                           email=email, tipo=tipo)
+                           email=email, tipo=tipo,csrf_token=csrf_token)
 

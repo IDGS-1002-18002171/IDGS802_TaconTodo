@@ -4,142 +4,152 @@
 
 <br>
 <center>
-<h1 id="textoUsuario">Bienvenido</h1>
-<h5 id="textoUsuario">A la seccion de usuarios</h5>
-
+  <b>
+    <h2 id="titUsuario">Catálogo de Usuarios</h2>
+  </b>
+  <hr>
+</center>
+<center>
+  <form method="POST" action="/obtenerUsuarios">
+    <button class="btn btn-secondary">Buscar</button>
+    <input type="hidden" name="csrf_token" value="{{csrf_token}}" />
+    <input value="" name="filtro" type="text" />
+  </form>
 </center>
 <br>
 
-
-
-<br>
-
 <div>
-<div id="divDerechoUsuario">
+  <div id="divDerechoUsuario">
 
-  <form method="POST" action="/obtenerUsuarios">
-    <button class="btn btn-primary">Buscar</button>
-    <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
-    <input value="" name="filtro" type="text"/>
-    </form>
+
 
     <br>
-<table  class="table table-hover">
-    <thead>
-      <tr id="trTablaUsuario">
-        <th id="thTablaUsuario">ID</th>
-        <th id="thTablaUsuario">nombre</th>
-        <th id="thTablaUsuario">correo electronico</th>
-        <th id="thTablaUsuario">estatus</th>
-        <th id="thTablaUsuario">Revision</th>
-        <th id="thTablaUsuario">Eliminacion</th>
-      </tr>
-    </thead>
-    <tbody>
-    {% for usuarios in lista %}
-      <tr id="tr2TablaUsuario">
-        <td>{{usuarios.id}}</td>
-        <td>{{usuarios.name}}</td>
-        <td>{{usuarios.email}}</td>
+    <table class="table table-hover">
+      <thead>
+        <tr id="trTablaUsuario">
+          <th id="thTablaUsuario">ID</th>
+          <th id="thTablaUsuario">Nombre</th>
+          <th id="thTablaUsuario">Correo electrónico</th>
+          <th id="thTablaUsuario">Estatus</th>
+          <th id="thTablaUsuario">Revisión</th>
+          <th id="thTablaUsuario">Eliminación</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for usuarios in lista %}
+        <tr id="tr2TablaUsuario">
+          <td>{{usuarios.id}}</td>
+          <td>{{usuarios.name}}</td>
+          <td>{{usuarios.email}}</td>
 
-    {%if usuarios.active == 1 %}
-        <td>Activo</td>
-    
-    {%endif%}
-    {%if usuarios.active == 0 %}
-        <td>Inactivo</td>
-    
-    {%endif%}
-        
-        <td>
-            
-            <form action="/usuarioSeleccionado" method="post">
-                <input name="id" value="{{ usuarios.id }}" hidden>
-                <input name="name" value="{{ usuarios.name }}" hidden>
-                <input name="email" value="{{ usuarios.email }}" hidden>
-                <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
-                
-                {% if 'Administrador' in usuarios.roles %}
-                <input name="tipo" value="Administrador" hidden> 
-                    {% elif 'Usuario' in usuarios.roles %}
-                    <input name="tipo" value="Usuario" hidden> 
-                    {% elif 'repartidor' in usuarios.roles %}
-                    <input name="tipo" value="repartidor" hidden> 
-                    {% else %}
-                    <input name="empleado" value="empleado" hidden> 
-                    {% endif %}
-                <button class="btn btn-warning" type="submit">Modificar</button>
-              </form>
-
-        </td>
-        <td>
           {%if usuarios.active == 1 %}
+          <td>Activo</td>
+
+          {%endif%}
+          {%if usuarios.active == 0 %}
+          <td>Inactivo</td>
+
+          {%endif%}
+
+          <td>
+
+            <form action="/usuarioSeleccionado" method="post">
+              <input name="id" value="{{ usuarios.id }}" hidden>
+              <input name="name" value="{{ usuarios.name }}" hidden>
+              <input name="email" value="{{ usuarios.email }}" hidden>
+              <input type="hidden" name="csrf_token" value="{{csrf_token}}" />
+
+              {% if 'Administrador' in usuarios.roles %}
+              <input name="tipo" value="Administrador" hidden>
+              {% elif 'Usuario' in usuarios.roles %}
+              <input name="tipo" value="Usuario" hidden>
+              {% elif 'repartidor' in usuarios.roles %}
+              <input name="tipo" value="repartidor" hidden>
+              {% else %}
+              <input name="empleado" value="empleado" hidden>
+              {% endif %}
+              <button class="btn btn-warning" type="submit">Modificar</button>
+            </form>
+
+          </td>
+          <td>
+            {%if usuarios.active == 1 %}
             <form action="/eliminarUsuario" method="post">
-                <input name="id" value="{{ usuarios.id }}" hidden>
-                <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
-                <button class="btn btn-danger" type="submit">Eliminar</button>
-              </form>
-              {%endif%}
-        </td>
-      </tr>
-      {%endfor%}
-    </tbody>
-  </table>
-</div>
+              <input name="id" value="{{ usuarios.id }}" hidden>
+              <input type="hidden" name="csrf_token" value="{{csrf_token}}" />
+              <button class="btn btn-danger" type="submit">Eliminar</button>
+            </form>
+            {%endif%}
+          </td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </div>
 
 
-<div id="divIzquierdoUsuario">
-  <div class="card mb-3" id="formatoDelCardUsuario">
-    <div class="card-body">
-      <center>
-      <h2 class="card-title" id="tituloCardUsuario">Formulario</h3>
-      </center>
-      <form method="POST" action="/guardarUsuario">
+  <div id="divIzquierdoUsuario">
+    <div class="card mb-3" id="formatoDelCardUsuario">
+      <div class="card-body">
         <center>
-        <input value="{{id}}" name="id" type="hidden"/>
+          <b>
+            <h4 class="card-title" id="tituloCardUsuario">Detalle Usuario</h4>
+          </b>
         </center>
-        <br>
-        <input type="hidden" name="csrf_token" value="{{csrf_token}}"/>
-        <h5 id="textoUsuario">Nombre: <input value="{{name}}" name="name" type="text" id="tamañoInputNombreUsuario"/></h5>
-        
-        <br>
-        <h5 id="textoUsuario">Correo: <input value="{{email}}" name="email" type="text" id="tamañoInputCorreoUsuario"/></h5>
-        
-        <br>
-        <h5 id="textoUsuario">Contraseña: <input value="" name="contraseña" type="text" id="tamañoInputContraseñaUsuario"/></h5>
-        
+        <hr id="hrUsuarios">
+        <form method="POST" action="/guardarUsuario">
+          <center>
+            <input value="{{id}}" name="id" type="hidden" />
+          </center>
+          <h6 id="textoUsuario">Nombre: </h6>
+          <input value="{{name}}" name="name" type="text" id="tamañoInputNombreUsuario"  minlength="10" maxlength="100" required/>
+          <br>
+          <h6 id="textoUsuario">Correo: </h6>
+          <input value="{{email}}" name="email" type="email" id="tamañoInputCorreoUsuario"  minlength="15" maxlength="100" required/>
 
-        <br>
-        <h5 style="font-family: sans-serif; color: black">Tipo: 
-          <select name="tipos" style="width: 234px; height: 30px;">
-            <option value="Usuario" {% if tipo == 'Usuario' %} selected {% endif %}>Usuario</option>
-            <option value="empleado" {% if tipo == 'empleado' %} selected {% endif %}>Empleado</option>
-            <option value="repartidor" {% if tipo == 'repartidor' %} selected {% endif %}>Repartidor</option>
-            <option value="Administrador" {% if tipo == 'Administrador' %} selected {% endif %}>Administrador</option>
-          </select>
-        </h5>
-        
-        
-        </h5>
+          <br>
+          <h6 id="textoUsuario">Contraseña: </h6>
+          <input value="" name="contraseña" type="text" id="tamañoInputContraseñaUsuario"  minlength="8" maxlength="50" required/>
 
-        <br>
-        <br>
-      <center>
-        <button type="submit" class="btn btn-success">Guardar</button>
-      </center>
+
+          <br>
+          <h6 id="tipoUsuario" style="font-family: sans-serif; color: black">Tipo:
+            <br>
+            <select name="tipos" style="width: 234px; height: 30px;">
+              <option value="Usuario" {% if tipo=='Usuario' %} selected {% endif %}>Usuario</option>
+              <option value="empleado" {% if tipo=='empleado' %} selected {% endif %}>Empleado/Vendedor</option>
+              <option value="repartidor" {% if tipo=='repartidor' %} selected {% endif %}>Repartidor</option>
+              <option value="Administrador" {% if tipo=='Administrador' %} selected {% endif %}>Administrador</option>
+            </select>
+          </h6>
+
+
+          </h6>
+
+          <br>
+          <br>
+          <center>
+            <input type="hidden" name="csrf_token" value="{{csrf_token}}" />
+            <button id="guardarUsuario" class="btn">Guardar</button>
+          </center>
         </form>
-    
+
+      </div>
     </div>
   </div>
-</div>
 
 </div>
 
-  
+
 <br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br>
 <br><br><br><br><br>
 
-
-
+<center>
+  <hr id="hrNostros">
+  <b>
+    <p>TaconTodo© 2023</p>
+  </b>
+  <br>
+</center>
 {% endblock %}

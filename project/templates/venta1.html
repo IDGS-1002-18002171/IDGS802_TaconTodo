@@ -1,6 +1,6 @@
-{% extends "layout1.html" %}
+{% extends "base.html" %}
 
-{% block content1 %}
+{% block content %}
 <style>
     /* Estilos para el contenedor del carrito */
     .carrito {
@@ -173,7 +173,7 @@
                         <select id="id" name="id" class="form-control" style="height: 3rem;">
                             {% for producto in productos %}
                             {% if producto.tipo_producto==2:%}
-                            <option value="{{ producto.id_producto }}">{{ producto.nombre }}</option>
+                            <option value="{{ producto.id_producto }}">{{ producto.nombre }} ${{producto.precio_venta}}</option>
                             {% endif %}
                             {% endfor %}
                         </select>
@@ -209,6 +209,19 @@
             </div>
         </div>
     </div>
+    
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+<center>
+  <hr id="hrNostros">
+  <b>
+    <p>TaconTodo© 2023</p>
+  </b>
+  <br>
+</center>
     <script>
         // Obtener los elementos de los botones y los elementos que se deben ocultar
         const promocionesBtn = document.getElementById("promociones-btn");

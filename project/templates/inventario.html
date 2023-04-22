@@ -5,24 +5,6 @@
 <br>
 <h1 class="text-center" style="color: #f4640a">Inventario</h1>
 <br>
-{% with messages = get_flashed_messages(with_categories=True) %}
-  {% if messages %}
-      {% for category, message in messages %}
-        {% if category, message%}
-          <script>
-            swal.fire({
-              title: "{{ category.title() }}",
-              // posibles categorias a recibir: success , error , warning ,info
-              text: "{{ message }}",
-              // menasaje a mandar
-              icon: "{{ category }}"
-              // posibles categorias a recibir: success , error , warning ,info
-            });
-          </script>
-        {%endif%}
-      {% endfor %}
-  {% endif %}
-{% endwith %}
 <div class="contenedor-principal-inv">
     
     <div class="contenedor-form-inv">
@@ -87,8 +69,8 @@
 
         <div class="tab-content" id="myTabContent">
 
-            <div class="tab-pane fade show active" id="inventario-tab-pane" role="tabpanel" aria-labelledby="inventario-tab" tabindex="0">
-                <table id="tabla-inv">
+            <div class="tab-pane fade show active col" style="overflow-y: scroll; height: 400px;" id="inventario-tab-pane" role="tabpanel" aria-labelledby="inventario-tab" tabindex="0">
+                <table id="tabla-inv" class="table table-striped">
                     <thead>
                         <tr style="height: 60px;">
                             <th class="sticky">ID inventario</th>
@@ -112,8 +94,8 @@
                 </table>
             </div>
 
-            <div class="tab-pane fade" id="materia-tab-pane" role="tabpanel" aria-labelledby="materia-tab" tabindex="0">
-                <table id="tabla-materia">
+            <div class="col tab-pane fade" style="overflow-y: scroll; height: 400px;" id="materia-tab-pane" role="tabpanel" aria-labelledby="materia-tab" tabindex="0">
+                <table id="tabla-materia" class="table table-striped">
                     <thead>
                         <tr style="height: 60px;">
                             <th class="sticky">ID materia prima</th>
@@ -146,4 +128,16 @@
       
 </div>
 
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br>
+
+<center>
+  <hr id="hrNostros">
+  <b>
+    <p>TaconTodo© 2023</p>
+  </b>
+  <br>
+</center>
 {% endblock %}

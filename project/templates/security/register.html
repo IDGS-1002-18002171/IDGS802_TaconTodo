@@ -1,37 +1,59 @@
 {% extends "base.html" %}
 
 {% block content %}
+        <br>
 <div class="column is-4 is-offset-4">
-    <h3 class="title">Registro</h3>
     <div class="box">
+        <center>
+            <img src="../static/bootstrap/img/añadir_usuario.png" style="width: 110px; height: 100px;" alt="">
+            <h4>Registro Nueva Cuenta</h4>
+            <hr>
+        </center>
         {% with messages = get_flashed_messages() %}
-            {% if messages %}  
-                <div class="notification is-danger">      
-                    {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>.  
-                </div>
-            {% endif %}
+        {% if messages %} 
+        <div class="notification is-danger">     
+            {{ messages[0] }}. Go to <a href="{{ url_for('auth.login') }}">login page</a>. 
+        </div>
+        {% endif %}
         {% endwith %}
         <form method="POST" action="/security/register">
             <div class="field">
                 <div class="control">
-                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                    <center>
+                        <label for="">Ingresa tu correo electrónico: </label>
+                        <input class="input " type="email" name="email" placeholder="Correo electrónico" autofocus="">
+                    </center>
                 </div>
             </div>
 
             <div class="field">
                 <div class="control">
-                    <input class="input is-large" type="text" name="name" placeholder="Nombre" autofocus="">
+                    <center>
+                        <label for="">Ingresa tu nombre: </label>
+                        <input class="input " type="text" name="name" placeholder="Nombre" autofocus="">
+                    </center>
                 </div>
             </div>
 
             <div class="field">
                 <div class="control">
-                    <input class="input is-large" type="password" name="password" placeholder="Password">
+                    <center>
+                        <label for="">Ingresa tu contraseña: </label>
+                        <input class="input " type="password" name="password" placeholder="Contraseña">
+                    </center>
                 </div>
             </div>
 
-            <button class="button is-block is-info is-large is-fullwidth">Registrar</button>
+            <button class="button is-block is-danger is-fullwidth">Registrar</button>
         </form>
     </div>
 </div>
+<br>
+<center>
+    <hr id="hrNostros">
+    <b>
+        <p>TaconTodo© 2023</p>
+    </b>
+    <br>
+</center>
 {% endblock %}

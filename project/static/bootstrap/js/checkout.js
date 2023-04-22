@@ -68,7 +68,6 @@ async function handleSubmit(e) {
         receipt_email: emailAddress
       },
     });
-
     // Este punto solo se alcanzará si hay un error inmediato al
     // confirmar el pago. De lo contrario, el cliente será redirigido a
     // la `return_url`.

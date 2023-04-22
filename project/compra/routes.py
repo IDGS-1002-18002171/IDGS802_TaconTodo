@@ -51,9 +51,11 @@ def solicitud_compra():
 
         inventory.cantidad_almacenada = cant_new
         inventory.fecha_registro = now.date()
-
-
-        flash("Compra exitosa", "success")
+        success_message='Compra exitosa'
+        flash(success_message,category='success')
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        logging.debug(f'Compra de material realizada por .... id:{current_user.id} name:{current_user.name} correo:{current_user.email} fecha:{current_time}')
+        logging.shutdown()
         db.session.add(inventory)
         db.session.commit()
         

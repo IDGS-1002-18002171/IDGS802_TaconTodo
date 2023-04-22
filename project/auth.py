@@ -27,12 +27,11 @@ def login_post():
     remember = True if request.form.get('remember') else False
     try:
         validate_csrf(request.form.get('csrf_token'))
-    except ValidationError:
+    except:
         # El token CSRF no coincide, rechazar la solicitud
         abort(403)
     #Consultamos si existe el usuario registrado con ese email
     user = User.query.filter_by(email=email).first()
-    
     #Verificamos si el usuario existe y comprobamos el password
     if not user or not check_password_hash(user.password, password):
         flash('El usuario y/o password son incorrectos')
@@ -40,13 +39,22 @@ def login_post():
         logging.error(f'Fallo al iniciar sesion id:{user.id} name:{user.name} correo:{user.email} fecha:{current_time}')
         logging.shutdown()
         return redirect(url_for('auth.login')) #Rebotamos a la página de login
-
-    #Si llegamos aquí los datos son correctos y creamos una session para el usuario
-    login_user(user, remember=remember)
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    logging.debug(f'Inicio sesion del usuario .... id:{user.id} name:{user.name} correo:{user.email} fecha:{current_time}')
-    logging.shutdown()
-    return redirect(url_for('main.profile'))
+    if user and user.is_active:
+        #Si llegamos aquí los datos son correctos y creamos una session para el usuario
+        login_user(user, remember=remember)
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        logging.debug(f'Inicio sesion del usuario .... id:{user.id} name:{user.name} correo:{user.email} fecha:{current_time}')
+        logging.shutdown()
+        return redirect(url_for('main.profile'))
+    else:
+        logout_user()
+        flash('Tu cuenta ha sido desactivada. Por favor, contacta al administrador.')
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        logging.error(f'Fallo al iniciar sesion id:{user.id} name:{user.name} correo:{user.email} fecha:{current_time}')
+        logging.shutdown()
+        return redirect(url_for('auth.login')) #Rebotamos a la página de login
+    
+    
 
 @auth.route('/register')
 def register():
