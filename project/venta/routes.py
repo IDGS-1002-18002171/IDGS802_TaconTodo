@@ -315,8 +315,15 @@ def thanks():
 @roles_accepted('Usuario')
 def update_direccion():
     global direccion_global
-    direccion_global = request.json['direccion']
-    return jsonify({'success': True})
+    colonias_validas = ['Brisas del Lago', 'San Pedro', 'Villas de San Juan']
+    direccion_usuario = request.json['direccion']
+    if any(colonia in direccion_usuario for colonia in colonias_validas):
+        direccion_global=direccion_usuario
+        # la dirección del usuario contiene una colonia válida
+        return jsonify({'success': True})
+    else:
+        # la dirección del usuario no contiene una colonia válida
+        return jsonify({'success': False})
 
 @venta.route('/create-payment-intent', methods=['POST'])
 @login_required

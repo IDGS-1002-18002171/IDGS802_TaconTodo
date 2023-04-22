@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Ventas por mes</h1>
+            <canvas id="ventasChart"></canvas>
+        </div>
+        <div class="col-md-6">
+            <h1>Pedidos por mes</h1>
+            <canvas id="pedidosChart"></canvas>
+        </div>
+    </div>
+</div>
+<script>
+    var ventasData = {
+        labels: [{% for venta in ventas_por_mes %}'{{ venta.Anio }}-{{ venta.Mes }}',{% endfor %}],
+        datasets: [{
+            label: 'Ventas',
+            data: [{% for venta in ventas_por_mes %}{{ venta.Monto }},{% endfor %}],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+        }]
+    };
+
+    var ventasConfig = {
+        type: 'bar',
+        data: ventasData,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    };
+
+    var ventasChart = new Chart(document.getElementById('ventasChart'), ventasConfig);
+</script>
+<script>
+    var pedidosData = {
+        labels: [{% for pedido in pedidos_por_mes %}'{{ pedido.Anio }}-{{ pedido.Mes }}',{% endfor %}],
+        datasets: [{
+            label: 'Pedidos',
+            data: [{% for pedido in pedidos_por_mes %}{{ pedido.Cantidad }},{% endfor %}],
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+        }]
+    };
+
+    var pedidosConfig = {
+        type: 'bar',
+        data: pedidosData,
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    };
+
+    var pedidosChart = new Chart(document.getElementById('pedidosChart'), pedidosConfig);
+</script>
+{% endblock %}

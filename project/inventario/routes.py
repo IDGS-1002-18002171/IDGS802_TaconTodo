@@ -14,7 +14,7 @@ inven = Blueprint('inven', __name__)
 
 @inven.route('/inventario', methods=["GET"])
 @login_required
-@roles_accepted('Administrador')
+@roles_accepted('Administrador','Empleado')
 def inventario():
 
     inv = Inventario.query.all()

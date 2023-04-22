@@ -57,8 +57,10 @@ async function handleSubmit(e) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ direccion: address })
   });
+  const jsonResponse = await response.json();
 
-  // Si la solicitud fue exitosa, continúa con el pago
+  if (jsonResponse.success) {
+    // Si la solicitud fue exitosa, continúa con el pago
   if (response.ok) {
     const { error } = await stripe.confirmPayment({
       elements,
@@ -79,9 +81,11 @@ async function handleSubmit(e) {
       showMessage("An unexpected error occurred.");
     }
   } else {
-    showMessage('Error al enviar la dirección del usuario');
+    showMessage('Lamenamos que la Colonia ingresada no tiene alcance o carece de nuestros servicios');
   }
-
+  } else {
+    showMessage('Lamenamos que la Colonia ingresada no tiene alcance o carece de nuestros servicios');
+  }
   setLoading(false);
 }
 

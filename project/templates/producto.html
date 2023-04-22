@@ -186,6 +186,17 @@
             </form>
           </div>
           <hr>
+          <div class="buscar_producto">
+            <form action="/buscarReceta" method="post" class="row g-3">
+              <div class="col-auto">
+                <button type="submit" class="btn btn-outline-primary"><i class="bi bi-search"></i> Buscar</button>
+              </div>
+              <div class="col-auto">
+                <input type="text" name="searchReceta" id="searchReceta" class="form-control" required>
+              </div>
+            </form>
+          </div>
+          <hr>
           <div class="col" style="overflow-y: scroll; height: 400px;">
             <table class="table table-striped" id="miniTabla" name="miniTabla">
               <thead>

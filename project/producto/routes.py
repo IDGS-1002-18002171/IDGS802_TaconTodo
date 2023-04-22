@@ -16,7 +16,7 @@ product = Blueprint('product', __name__)
 
 @product.route("/producto")
 @login_required
-@roles_accepted('Administrador')
+@roles_accepted('Administrador','Empleado')
 def producto():
     prod_form = ProductoForm(request.form)
     rect_form = RecetaForm(request.form)
@@ -82,7 +82,7 @@ def agregarPro():
 @login_required
 @roles_accepted("Administrador")
 def editarProducto():
-    pr = ProductoForm(request.form);
+    pr = ProductoForm(request.form)
 
     if request.method == "GET":
         idProducto = request.args.get("id")
@@ -127,6 +127,7 @@ def editarProducto():
 
 @product.route("/eliminar_producto/<id>")
 @login_required
+@roles_accepted('Administrador')
 def eliminar_producto(id):
  
     producto = Producto.query.filter_by(id_producto=id).first()
@@ -152,6 +153,7 @@ def eliminar_producto(id):
 
 @product.route("/buscarProducto", methods=["GET","POST"])
 @login_required
+@roles_accepted('Administrador','Empleado')
 def buscarProducto():
     search = request.form.get("searchProducto")
     prod_form = ProductoForm(request.form)
@@ -185,6 +187,8 @@ def crearReceta():
 
 
 @product.route('/eliminarReceta', methods=['POST'])
+@login_required
+@roles_accepted('Administrador')
 def eliminarReceta():
     receta_id = request.form.get('id_receta')
     receta = Receta.query.filter(Receta.id_receta==receta_id).first()
@@ -192,3 +196,53 @@ def eliminarReceta():
     db.session.delete(receta)
     db.session.commit()
     return redirect(url_for('product.producto'))
+
+
+@product.route("/buscarReceta", methods=["GET","POST"])
+@login_required
+@roles_accepted('Administrador','Empleado')
+def buscarReceta():
+    search = request.form.get("searchReceta")
+    prod_form = ProductoForm(request.form)
+    rect_form = RecetaForm(request.form)
+    rect_form.idProducto.choices = [(prod.id_producto, prod.nombre)for prod in Producto.query.filter_by(estatus=1).all()]
+    rect_form.idMateriaPri.choices = [(mat.id_materia_prima, mat.nombre) for mat in MateriaPrima.query.all()]
+    csrf_token = generate_csrf()
+
+    if search:
+        prod = Producto.query.filter_by( estatus=1 and
+            (Producto.nombre.ilike(f"%{search}%"))
+            ).all()
+        recetas=Receta.query.all()
+        lista_recetas_estructurado=[]
+        for producto in prod:
+            try:
+                recetas=Receta.query.filter_by(id_producto=producto.id_producto).all()
+                for receta in recetas:
+                    producto=Producto.query.filter_by(id_producto=receta.id_producto).first()
+                    materia=MateriaPrima.query.filter_by(id_materia_prima=receta.id_materia_prima).first()
+                    receta_estructurada = {
+                            'receta': receta,
+                            'producto': producto,
+                            'materia': materia
+                        }
+                    lista_recetas_estructurado.append(receta_estructurada)
+            except:
+                pass
+        csrf_token = generate_csrf()
+        return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod,csrf_token=csrf_token,recetas=lista_recetas_estructurado)
+    else:
+       flash("No existe", "error")
+       prod = Producto.query.filter_by(estatus=1).all()
+       recetas=Receta.query.all()
+       lista_recetas_estructurado=[]
+       for receta in recetas:
+            producto=Producto.query.filter_by(id_producto=receta.id_producto).first()
+            materia=MateriaPrima.query.filter_by(id_materia_prima=receta.id_materia_prima).first()
+            receta_estructurada = {
+                    'receta': receta,
+                    'producto': producto,
+                    'materia': materia
+                }
+            lista_recetas_estructurado.append(receta_estructurada)
+    return render_template("producto.html", form=prod_form,formR=rect_form, producto=prod,csrf_token=csrf_token,recetas=lista_recetas_estructurado)

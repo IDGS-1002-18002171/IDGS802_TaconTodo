@@ -27,3 +27,5 @@ requests
 plyer
 safety
 sqlmap
+pandas 
+matplotlib

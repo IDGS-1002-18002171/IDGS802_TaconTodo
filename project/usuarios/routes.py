@@ -28,6 +28,8 @@ usuarios=Blueprint('usuarios', __name__)
 
 
 @usuarios.route("/obtenerUsuarios",  methods=['GET','POST'])
+@login_required
+@roles_accepted('Administrador')
 def obtenerUsuarios():
     date = datetime.datetime.now()
     logging.basicConfig(filename='trazabilidad.log', level=logging.INFO)
@@ -51,6 +53,8 @@ def obtenerUsuarios():
 
 
 @usuarios.route("/guardarUsuario", methods=['GET','POST'])
+@login_required
+@roles_accepted('Administrador')
 def guardarUsuario():
     try:
         validate_csrf(request.form.get('csrf_token'))
@@ -111,6 +115,8 @@ def guardarUsuario():
 
 
 @usuarios.route("/eliminarUsuario", methods=['GET','POST'])
+@login_required
+@roles_accepted('Administrador')
 def eliminarUsuario():
     try:
         validate_csrf(request.form.get('csrf_token'))

@@ -29,6 +29,8 @@ proveedores=Blueprint('proveedores', __name__)
 
 
 @proveedores.route("/obtenerProveedores",  methods=['GET','POST'])
+@login_required
+@roles_accepted('Administrador','Empleado')
 def obtenerProveedores():
     date = datetime.datetime.now()
     logging.basicConfig(filename='trazabilidad.log', level=logging.INFO)
@@ -54,6 +56,8 @@ def obtenerProveedores():
 
 
 @proveedores.route("/guardarproveedor", methods=['GET','POST'])
+@login_required
+@roles_accepted('Administrador')
 def guardarproveedor():
     try:
         validate_csrf(request.form.get('csrf_token'))
@@ -98,6 +102,8 @@ def guardarproveedor():
 
 
 @proveedores.route("/eliminarProveedor", methods=['GET','POST'])
+@login_required
+@roles_accepted('Administrador')
 def eliminarProveedor():
     try:
         validate_csrf(request.form.get('csrf_token'))
@@ -118,6 +124,8 @@ def eliminarProveedor():
     return redirect(url_for("proveedores.obtenerProveedores"))
 
 @proveedores.route("/registroSeleccionado", methods=['GET','POST'])
+@login_required
+@roles_accepted('Administrador','Empleado')
 def registroSeleccionado():
     id_proveedor= str(request.form.get("id_proveedor"))
     nombre_empresa = str(request.form.get("nombre_empresa"))

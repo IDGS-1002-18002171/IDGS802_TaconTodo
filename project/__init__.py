@@ -65,6 +65,9 @@ def create_app(test_config=None):
     from .producto.routes import product as product_blueprint
     app.register_blueprint(product_blueprint)
 
+    from .finanzas.routes import finanza as finanza_blueprint
+    app.register_blueprint(finanza_blueprint)
+
     logging.basicConfig(filename='trazabilidad.log',level=logging.DEBUG)
     logging.basicConfig(filename='pedidos.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
     logging.info('Arranque de aplicacion')

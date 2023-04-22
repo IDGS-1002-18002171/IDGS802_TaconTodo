@@ -10,7 +10,7 @@ compra = Blueprint('compra', __name__)
 
 @compra.route("/compra")
 @login_required
-@roles_accepted('Administrador')
+@roles_accepted('Administrador','Empleado')
 def compras():
     matpri = MateriaPrima.query.all()
 
@@ -34,7 +34,7 @@ def cargar_datos(id):
 
 @compra.route("/solicitud_compra", methods=["POST"])
 @login_required
-@roles_accepted('Administrador')
+@roles_accepted('Administrador','Empleado')
 def solicitud_compra():
 
     if request.method == "POST":
