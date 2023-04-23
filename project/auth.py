@@ -10,7 +10,6 @@ from datetime import datetime
 from flask_wtf.csrf import generate_csrf
 from flask_wtf.csrf import validate_csrf
 
-
 auth=Blueprint('auth', __name__,url_prefix='/security')
 
 
@@ -45,7 +44,7 @@ def login_post():
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         logging.debug(f'Inicio sesion del usuario .... id:{user.id} name:{user.name} correo:{user.email} fecha:{current_time}')
         logging.shutdown()
-        return redirect(url_for('main.profile'))
+        return redirect(url_for('main.index'))
     else:
         logout_user()
         flash('Tu cuenta ha sido desactivada. Por favor, contacta al administrador.')

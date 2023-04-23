@@ -9,6 +9,9 @@ import logging
 
 
 main=Blueprint('main', __name__)
+@main.errorhandler(404)
+def no_encontrada(e):
+    return render_template('404.html'),404
 
 #Definimos la ruta para la página principal
 @main.route('/')

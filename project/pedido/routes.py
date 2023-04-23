@@ -113,7 +113,7 @@ def getpedidos():
 @pedido.route('/terminando',methods=['POST'])
 @login_required
 #@roles_required('')
-@roles_accepted('Administrador','Empleado')
+@roles_accepted('Empleado')
 def terminado():
     id_pedido=request.form["id"]
     pedido=Pedidos.query.filter_by(id_pedido=id_pedido).first()
@@ -140,7 +140,7 @@ def terminado():
 @pedido.route('/viaje',methods=['POST'])
 @login_required
 #@roles_required('')
-@roles_accepted('Administrador','Repartidor')
+@roles_accepted('Repartidor')
 def viaje():
     try:
         validate_csrf(request.form.get('csrf_token'))

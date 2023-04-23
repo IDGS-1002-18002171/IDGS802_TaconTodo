@@ -160,13 +160,6 @@
                                 Quesadillas
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="filtro-productos" id="tortas"
-                                value="Torta">
-                            <label class="form-check-label" for="tortas">
-                                Tortas
-                            </label>
-                        </div>
                     </div>
                     <div class="form-group">
                         <label for="id">Producto:</label>
@@ -278,7 +271,13 @@
                 });
 
                 Array.from(selectElement.options).forEach(option => {
-                    if (selectedOptionType === 'Torta' && 'Torta' in option.value ) {
+                    if (selectedOptionType === 'Tortas' && 'Torta' in option.value ) {
+                        option.style.display = '';
+                    }
+                });
+
+                Array.from(selectElement.options).forEach(option => {
+                    if (selectedOptionType === 'Gringas' && 'Gringa' in option.value ) {
                         option.style.display = '';
                     }
                 });

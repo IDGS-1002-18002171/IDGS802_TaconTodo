@@ -315,7 +315,7 @@ def thanks():
 @roles_accepted('Usuario')
 def update_direccion():
     global direccion_global
-    colonias_validas = ['Brisas del Lago', 'San Pedro', 'Villas de San Juan']
+    colonias_validas = ['San Juan de Dios', 'Altavista', 'Piedra Azul']
     direccion_usuario = request.json['direccion']
     if any(colonia in direccion_usuario for colonia in colonias_validas):
         direccion_global=direccion_usuario
